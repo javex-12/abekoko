@@ -7,10 +7,125 @@
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  <!-- Include the script that builds the page and powers Netlify CMS -->
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  
   <script>
+    window.CMS_MANUAL_INIT = true;
+  </script>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    CMS.init({
+      config: {
+        backend: {
+          name: 'git-gateway',
+          branch: 'main'
+        },
+        media_folder: 'images/uploads',
+        public_folder: '/images/uploads',
+        collections: [
+          // Service Information Collection
+          {
+            name: 'service',
+            label: 'Service Information',
+            folder: 'content/service',
+            create: true,
+            slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
+            fields: [
+              {label: 'Title', name: 'title', widget: 'string', default: 'This Sunday\'s Service'},
+              {label: 'Date', name: 'date', widget: 'datetime'},
+              {label: 'Service Date', name: 'service_date', widget: 'string', hint: 'e.g., 27th July, 2025'},
+              {label: 'Collect', name: 'collect', widget: 'string', hint: 'e.g., 6th Sunday After Trinity'},
+              {label: 'Liturgical Colour', name: 'liturgical_colour', widget: 'select', options: ['Red', 'Green', 'Purple', 'White', 'Gold', 'Blue']},
+              {label: 'Theme', name: 'theme', widget: 'string', hint: 'e.g., Minister\'s Appreciation Day'},
+              {label: 'Special Notes', name: 'notes', widget: 'text', required: false}
+            ]
+          },
+          // Announcements Collection
+          {
+            name: 'announcements',
+            label: 'Announcements',
+            folder: 'content/announcements',
+            create: true,
+            slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
+            fields: [
+              {label: 'Title', name: 'title', widget: 'string'},
+              {label: 'Category', name: 'category', widget: 'select', options: ['Weekly/Monthly Services', 'Upcoming Events', 'Church Needs', 'General']},
+              {label: 'Content', name: 'body', widget: 'markdown'},
+              {label: 'Priority', name: 'priority', widget: 'select', options: ['High', 'Medium', 'Low'], default: 'Medium'},
+              {label: 'Publish Date', name: 'date', widget: 'datetime'},
+              {label: 'Expiry Date', name: 'expiry', widget: 'datetime', required: false, hint: 'When should this announcement be removed?'}
+            ]
+          },
+          // Prayer Points Collection
+          {
+            name: 'prayer',
+            label: 'Prayer & Devotion',
+            folder: 'content/prayer',
+            create: true,
+            slug: '{{year}}-week-{{slug}}',
+            fields: [
+              {label: 'Title', name: 'title', widget: 'string', default: 'Prayer Points for the Week'},
+              {label: 'Week Starting', name: 'week_start', widget: 'date'},
+              {label: 'Prayer Points', name: 'prayer_points', widget: 'list', field: {label: 'Prayer Point', name: 'point', widget: 'string'}},
+              {label: 'Food for Thought', name: 'food_for_thought', widget: 'text'},
+              {label: 'Scripture Reference', name: 'scripture', widget: 'string', required: false}
+            ]
+          },
+          // Events Collection
+          {
+            name: 'events',
+            label: 'Church Events',
+            folder: 'content/events',
+            create: true,
+            slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
+            fields: [
+              {label: 'Event Title', name: 'title', widget: 'string'},
+              {label: 'Event Date', name: 'event_date', widget: 'datetime'},
+              {label: 'Description', name: 'description', widget: 'text'},
+              {label: 'Event Flyer', name: 'flyer', widget: 'image', required: false},
+              {label: 'Location', name: 'location', widget: 'string', default: 'Salem African Church, Abekoko Parish'},
+              {label: 'Contact Person', name: 'contact', widget: 'string', required: false},
+              {label: 'Registration Required', name: 'registration', widget: 'boolean', default: false},
+              {label: 'Event Type', name: 'type', widget: 'select', options: ['Service', 'Fellowship', 'Outreach', 'Meeting', 'Celebration', 'Other']}
+            ]
+          },
+          // Gallery Collection
+          {
+            name: 'gallery',
+            label: 'Photo Gallery',
+            folder: 'content/gallery',
+            create: true,
+            slug: '{{year}}-{{month}}-{{slug}}',
+            fields: [
+              {label: 'Album Title', name: 'title', widget: 'string'},
+              {label: 'Date', name: 'date', widget: 'date'},
+              {label: 'Description', name: 'description', widget: 'text', required: false},
+              {label: 'Photos', name: 'photos', widget: 'list', fields: [
+                {label: 'Image', name: 'image', widget: 'image'},
+                {label: 'Caption', name: 'caption', widget: 'string', required: false}
+              ]},
+              {label: 'Event Type', name: 'category', widget: 'select', options: ['Gethsemane', 'Sunday Service', 'Special Events', 'Community Outreach', 'Celebrations', 'Other']}
+            ]
+          },
+          // Church Leadership Collection
+          {
+            name: 'leadership',
+            label: 'Church Leadership',
+            folder: 'content/leadership',
+            create: true,
+            slug: '{{slug}}',
+            fields: [
+              {label: 'Name', name: 'name', widget: 'string'},
+              {label: 'Position', name: 'position', widget: 'string'},
+              {label: 'Photo', name: 'photo', widget: 'image', required: false},
+              {label: 'Bio', name: 'bio', widget: 'text', required: false},
+              {label: 'Contact', name: 'contact', widget: 'string', required: false},
+              {label: 'Order', name: 'order', widget: 'number', default: 1, hint: 'Display order (1 = first)'}
+            ]
+          }
+        ]
+      }
+    });
+
+    // Netlify Identity integration
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
         if (!user) {
