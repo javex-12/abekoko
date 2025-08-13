@@ -23,7 +23,7 @@
         collections: [
           // Service Information Collection
           {
-            name: 'service',
+            name: 'service_info',
             label: 'Service Information',
             folder: 'content/service',
             create: true,
@@ -56,7 +56,7 @@
           },
           // Prayer Points Collection
           {
-            name: 'prayer',
+            name: 'prayer_devotion',
             label: 'Prayer & Devotion',
             folder: 'content/prayer',
             create: true,
@@ -71,7 +71,7 @@
           },
           // Events Collection
           {
-            name: 'events',
+            name: 'church_events',
             label: 'Church Events',
             folder: 'content/events',
             create: true,
@@ -89,7 +89,7 @@
           },
           // Gallery Collection
           {
-            name: 'gallery',
+            name: 'photo_gallery',
             label: 'Photo Gallery',
             folder: 'content/gallery',
             create: true,
@@ -107,7 +107,7 @@
           },
           // Church Leadership Collection
           {
-            name: 'leadership',
+            name: 'church_leadership',
             label: 'Church Leadership',
             folder: 'content/leadership',
             create: true,
@@ -119,6 +119,56 @@
               {label: 'Bio', name: 'bio', widget: 'text', required: false},
               {label: 'Contact', name: 'contact', widget: 'string', required: false},
               {label: 'Order', name: 'order', widget: 'number', default: 1, hint: 'Display order (1 = first)'}
+            ]
+          },
+          // Website Settings Collection
+          {
+            name: 'website_settings',
+            label: 'Website Settings',
+            files: [
+              {
+                label: 'General Settings',
+                name: 'general_settings',
+                file: 'content/settings/general.yml',
+                fields: [
+                  {label: 'Church Name', name: 'church_name', widget: 'string', default: 'Salem African Church of Christ'},
+                  {label: 'Parish', name: 'parish', widget: 'string', default: 'Abekoko Parish, Agege Lagos'},
+                  {label: 'Tagline', name: 'tagline', widget: 'string', default: 'Stay Updated • Stay Blessed'},
+                  {label: 'Phone', name: 'phone', widget: 'string'},
+                  {label: 'Email', name: 'email', widget: 'string'},
+                  {label: 'Address', name: 'address', widget: 'text'},
+                  {label: 'Service Times', name: 'service_times', widget: 'list', field: {label: 'Service', name: 'service', widget: 'string'}}
+                ]
+              },
+              {
+                label: 'Account Details',
+                name: 'account_details',
+                file: 'content/settings/accounts.yml',
+                fields: [
+                  {label: 'Bank Name', name: 'bank_name', widget: 'string'},
+                  {label: 'Account Name', name: 'account_name', widget: 'string'},
+                  {label: 'Account Number', name: 'account_number', widget: 'string'},
+                  {label: 'Sort Code', name: 'sort_code', widget: 'string', required: false},
+                  {label: 'Additional Info', name: 'additional_info', widget: 'text', required: false}
+                ]
+              }
+            ]
+          },
+          // Weekly Services Collection
+          {
+            name: 'weekly_services',
+            label: 'Weekly Services Schedule',
+            folder: 'content/weekly',
+            create: true,
+            slug: '{{slug}}',
+            fields: [
+              {label: 'Service Name', name: 'title', widget: 'string'},
+              {label: 'Day', name: 'day', widget: 'select', options: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']},
+              {label: 'Time', name: 'time', widget: 'string'},
+              {label: 'Description', name: 'description', widget: 'text', required: false},
+              {label: 'Location', name: 'location', widget: 'string', default: 'Salem African Church, Abekoko Parish'},
+              {label: 'Active', name: 'active', widget: 'boolean', default: true},
+              {label: 'Order', name: 'order', widget: 'number', default: 1}
             ]
           }
         ]

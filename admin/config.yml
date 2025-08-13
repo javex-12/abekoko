@@ -10,7 +10,7 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 
 collections:
   # Service Information Collection
-  - name: "service"
+  - name: "service_info"
     label: "Service Information"
     folder: "content/service"
     create: true
@@ -39,7 +39,7 @@ collections:
       - {label: "Expiry Date", name: "expiry", widget: "datetime", required: false, hint: "When should this announcement be removed?"}
 
   # Prayer Points Collection
-  - name: "prayer"
+  - name: "prayer_devotion"
     label: "Prayer & Devotion"
     folder: "content/prayer"
     create: true
@@ -52,7 +52,7 @@ collections:
       - {label: "Scripture Reference", name: "scripture", widget: "string", required: false}
 
   # Events Collection
-  - name: "events"
+  - name: "church_events"
     label: "Church Events"
     folder: "content/events"
     create: true
@@ -68,7 +68,7 @@ collections:
       - {label: "Event Type", name: "type", widget: "select", options: ["Service", "Fellowship", "Outreach", "Meeting", "Celebration", "Other"]}
 
   # Gallery Collection
-  - name: "gallery"
+  - name: "photo_gallery"
     label: "Photo Gallery"
     folder: "content/gallery"
     create: true
@@ -96,7 +96,7 @@ collections:
       - {label: "Last Updated", name: "date", widget: "datetime"}
 
   # Leadership Collection
-  - name: "leadership"
+  - name: "church_leadership"
     label: "Church Leadership"
     folder: "content/leadership"
     create: true
@@ -110,11 +110,11 @@ collections:
       - {label: "Order", name: "order", widget: "number", default: 1, hint: "Display order (1 = first)"}
 
   # Settings Collection (Single file)
-  - name: "settings"
+  - name: "website_settings"
     label: "Website Settings"
     files:
       - label: "General Settings"
-        name: "general"
+        name: "general_settings"
         file: "content/settings/general.yml"
         fields:
           - {label: "Church Name", name: "church_name", widget: "string", default: "Salem African Church of Christ"}
@@ -126,7 +126,7 @@ collections:
           - {label: "Service Times", name: "service_times", widget: "list", field: {label: "Service", name: "service", widget: "string"}}
       
       - label: "Account Details"
-        name: "accounts"
+        name: "account_details"
         file: "content/settings/accounts.yml"
         fields:
           - {label: "Bank Name", name: "bank_name", widget: "string"}
