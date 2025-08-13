@@ -1,0 +1,2855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salem African Church of Christ – Abekoko Parish, Agege Lagos</title>
+
+<!-- Basic SEO -->
+<meta name="description" content="Salem African Church of Christ, Abekoko Parish, Agege Lagos – Join us for worship, praise, and community fellowship. Stay Updated, Stay Blessed.">
+<meta name="keywords" content="Salem African Church, Abekoko Parish, Agege, Lagos, African Church of Christ, Worship, Christian Fellowship, Church Service, Lagos Church">
+<meta name="author" content="Salem African Church of Christ">
+
+<!-- Open Graph (Facebook/WhatsApp) -->
+<meta property="og:title" content="Salem African Church of Christ – Abekoko Parish, Agege Lagos">
+<meta property="og:description" content="Join Salem African Church of Christ in Agege, Lagos for uplifting worship, Bible teachings, and community fellowship.">
+<meta property="og:image" content="https://abekokoparish.netlify.app/images/logo.jpg">
+<meta property="og:url" content="https://abekokoparish.netlify.app">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_NG">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Salem African Church of Christ – Abekoko Parish, Agege Lagos">
+<meta name="twitter:description" content="Worship with us at Salem African Church of Christ, Abekoko Parish in Agege Lagos. Stay updated and stay blessed.">
+<meta name="twitter:image" content="https://abekokoparish.netlify.app/images/logo.jpg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/jpeg" href="images/logo.jpg">
+
+<!-- PWA Meta Tags -->
+<meta name="theme-color" content="#c41e3a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Salem Church">
+<link rel="apple-touch-icon" href="images/logo.jpg">
+
+<!-- PWA Manifest -->
+<link rel="manifest" href="manifest.json">
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- EmailJS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        emailjs.init({
+            publicKey: "Tk_a5VuZRTEMNh4SL",
+        });
+    })();
+</script>
+
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init({ publicKey: "Tk_a5VuZRTEMNh4SL" });
+  })();
+</script>
+
+    <style>
+        /* Updated CSS styles - Red Color Scheme v3.0 */
+        :root {
+            --primary-color: #c41e3a;
+            --secondary-color: #8b1538;
+            --accent-color: #ffd700;
+            --dark-color: #1a1a1a;
+            --light-color: #f8f8f8;
+            --white: #ffffff;
+            --success-color: #c41e3a;
+            --error-color: #dc3545;
+            --font-primary: 'Poppins', sans-serif;
+            --font-secondary: 'Playfair Display', serif;
+            --transition: all 0.3s ease;
+            --shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            color: var(--dark-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-secondary);
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Container will be overridden by responsive system below */
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.8rem;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-radius: 4px;
+            font-weight: 600;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @keyframes gradientShift {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        @keyframes sparkle {
+            0% {
+                transform: translateY(0px);
+            }
+            100% {
+                transform: translateY(-100px);
+            }
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .logo span {
+            color: var(--dark-color);
+        }
+
+        .logo p {
+            font-size: 0.8rem;
+            color: var(--dark-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Menu toggle styles moved to responsive section */
+
+        /* Hero Section */
+        .hero {
+            background: url('images/flyer1.jpg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            margin-top: 70px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(2px);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-content h2 {
+            font-size: 3.5rem;
+            margin-bottom: 0.8rem;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 1), 1px 1px 2px rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-align: center;
+            line-height: 1.2;
+            text-stroke: 1px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 2.2rem;
+            margin-bottom: 1.8rem;
+            color: var(--accent-color);
+            font-style: italic;
+            font-weight: 600;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 1), 1px 1px 2px rgba(0, 0, 0, 0.8);
+            text-align: center;
+            font-family: var(--font-secondary);
+            position: relative;
+        }
+
+        .hero-subtitle::before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: var(--accent-color);
+            border-radius: 2px;
+            box-shadow: 0 0 10px rgba(248, 180, 0, 0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+            font-weight: 500;
+        }
+
+
+
+        /* Current Service */
+        .current-service {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 2rem 0;
+        }
+
+        .service-card {
+            background-color: var(--white);
+            color: var(--dark-color);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .service-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .service-details p {
+            margin-bottom: 0.5rem;
+        }
+
+        .red {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        /* Announcements */
+        .announcements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .announcement-card {
+            background-color: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .announcement-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .announcement-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .announcement-card li {
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .announcement-card li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+
+        /* Services */
+        .service-schedule {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--primary-color);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .service-schedule.communion-service {
+            border-left-color: var(--accent-color);
+        }
+        
+        .service-header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 1.5rem;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--primary-color);
+            flex-shrink: 0;
+        }
+        
+        .service-icon.communion-icon {
+            border-color: var(--accent-color);
+        }
+
+        .service-time h3 {
+            color: var(--primary-color);
+            margin: 0;
+            font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+            text-align: left;
+        }
+
+        .service-time ol {
+            padding-left: 1.5rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .service-time li {
+            margin-bottom: 0.5rem;
+            word-wrap: break-word;
+        }
+        
+        .service-time ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        .service-time ul li {
+            margin-bottom: 0.3rem;
+        }
+
+        /* Prayer Section */
+        .prayer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .prayer-points, .food-for-thought {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .prayer-points h3, .food-for-thought h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .food-for-thought p {
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+
+        /* Contact Section */
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .contact-info {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .contact-info p {
+            margin-bottom: 1rem;
+        }
+
+        .map-container {
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .contact-form {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-form h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: var(--font-primary);
+        }
+
+        .contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        /* Account Details Styling */
+        .account-details {
+            background: var(--light-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+            margin: 1rem 0;
+        }
+
+        .account-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .account-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .account-label {
+            font-weight: 600;
+            color: var(--primary-color);
+            min-width: 120px;
+        }
+
+        .account-value {
+            font-weight: 600;
+            color: var(--dark-color);
+            text-align: right;
+            flex: 1;
+        }
+
+        .large-text {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: 1px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .account-number {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex: 1;
+            justify-content: flex-end;
+        }
+
+        .copy-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+
+        .copy-btn:hover {
+            background: var(--secondary-color);
+            transform: scale(1.1);
+        }
+
+        .copy-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Custom Notification */
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            z-index: 10000;
+            transform: translateX(400px);
+            transition: transform 0.4s ease, opacity 0.4s ease;
+            opacity: 0;
+            max-width: 350px;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .notification.show {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .notification.success {
+            border-left-color: var(--success-color);
+        }
+
+        .notification.error {
+            border-left-color: var(--error-color);
+        }
+
+        .notification-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.8rem;
+        }
+
+        .notification-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .notification.success .notification-icon {
+            background: var(--success-color);
+        }
+
+        .notification.error .notification-icon {
+            background: var(--error-color);
+        }
+
+        .notification-content h4 {
+            margin: 0 0 0.3rem 0;
+            font-size: 1.1rem;
+            color: var(--dark-color);
+        }
+
+        .notification-content p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .notification-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            color: #999;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .notification-close:hover {
+            background: #f0f0f0;
+            color: var(--dark-color);
+        }
+
+        /* Notification mobile styles moved to main responsive section */
+
+
+
+
+
+
+
+
+
+        /* Footer */
+        .footer {
+            background-color: var(--dark-color);
+            color: var(--white);
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer h3 {
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-about p {
+            margin-bottom: 1rem;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .social-icons a:hover {
+            background-color: var(--accent-color);
+            color: var(--dark-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-bottom p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        /* Enhanced Responsive Design System */
+        
+        /* Base responsive improvements */
+        img {
+            max-width: 100%;
+            height: auto;
+            box-sizing: border-box;
+        }
+        
+        /* Ensure all elements stay within viewport */
+        * {
+            max-width: 100%;
+        }
+        
+        /* Fix for any potential overflow elements */
+        .hero, .section, .header, .footer {
+            width: 100%;
+            max-width: 100vw;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+        
+        /* Improved container system */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 clamp(0.8rem, 3vw, 2rem);
+            box-sizing: border-box;
+        }
+        
+        /* Prevent horizontal overflow */
+        .section {
+            width: 100%;
+            max-width: 100vw;
+            overflow-x: hidden;
+        }
+        
+        /* Fluid Typography System */
+        .hero-content h2 {
+            font-size: clamp(1.8rem, 5vw, 3.5rem);
+            line-height: 1.2;
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 3.5vw, 2.2rem);
+        }
+        
+        .hero-content p {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+        }
+        
+        .section-title {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+        }
+        
+        .logo h1 {
+            font-size: clamp(0.9rem, 2.5vw, 1.5rem);
+        }
+        
+        .logo p {
+            font-size: clamp(0.6rem, 1.5vw, 0.8rem);
+        }
+        
+        /* Enhanced Mobile Navigation */
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 4px;
+            transition: var(--transition);
+            background: transparent;
+            border: none;
+            color: var(--primary-color);
+            min-width: 44px;
+            min-height: 44px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+        }
+        
+        .menu-toggle:hover {
+            background-color: rgba(196, 30, 58, 0.1);
+        }
+        
+        /* Hamburger Icon */
+        .hamburger {
+            width: 24px;
+            height: 18px;
+            position: relative;
+            transform: rotate(0deg);
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        
+        .hamburger span {
+            display: block;
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            background: var(--primary-color);
+            border-radius: 2px;
+            opacity: 1;
+            left: 0;
+            transform: rotate(0deg);
+            transition: 0.25s ease-in-out;
+        }
+        
+        .hamburger span:nth-child(1) {
+            top: 0px;
+        }
+        
+        .hamburger span:nth-child(2) {
+            top: 7px;
+        }
+        
+        .hamburger span:nth-child(3) {
+            top: 14px;
+        }
+        
+        .menu-toggle.active .hamburger span:nth-child(1) {
+            top: 7px;
+            transform: rotate(135deg);
+        }
+        
+        .menu-toggle.active .hamburger span:nth-child(2) {
+            opacity: 0;
+            left: -60px;
+        }
+        
+        .menu-toggle.active .hamburger span:nth-child(3) {
+            top: 7px;
+            transform: rotate(-135deg);
+        }
+        
+        /* Improved button touch targets */
+        .btn {
+            min-height: 44px;
+            min-width: 44px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: clamp(0.6rem, 2vw, 0.8rem) clamp(1.2rem, 3vw, 1.8rem);
+            font-size: clamp(0.8rem, 2vw, 1rem);
+        }
+        
+        /* Enhanced Grid Systems */
+        .announcements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(280px, calc(100% - 2rem)), 1fr));
+            gap: clamp(1rem, 3vw, 2rem);
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(250px, calc(100% - 2rem)), 1fr));
+            gap: clamp(0.8rem, 2vw, 1.5rem);
+            margin-top: 2rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .prayer-content, .contact-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(320px, calc(100% - 2rem)), 1fr));
+            gap: clamp(1rem, 3vw, 2rem);
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(300px, calc(100% - 2rem)), 1fr));
+            gap: clamp(1rem, 3vw, 2rem);
+            align-items: stretch;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        /* Responsive Form Improvements */
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: clamp(0.6rem, 2vw, 0.8rem);
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: var(--font-primary);
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            min-height: 44px;
+            box-sizing: border-box;
+        }
+        
+        .contact-form textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        /* Enhanced Card Responsiveness */
+        .announcement-card, .service-card, .prayer-points, .food-for-thought, .contact-info, .contact-form {
+            padding: clamp(1rem, 3vw, 2rem);
+            margin-bottom: 1rem;
+        }
+        
+        /* Improved Flyer Cards */
+        .flyers-content {
+            display: flex;
+            justify-content: center;
+            gap: clamp(1rem, 3vw, 2rem);
+            flex-wrap: wrap;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 1rem;
+        }
+        
+        .flyer-card {
+            width: 100%;
+            max-width: 300px;
+            min-width: 250px;
+            flex: 1 1 280px;
+            box-sizing: border-box;
+        }
+        
+        /* Leadership Cards */
+        .leadership-content {
+            display: flex;
+            justify-content: center;
+            gap: clamp(1rem, 3vw, 2rem);
+            flex-wrap: wrap;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 1rem;
+        }
+        
+        .leader-card {
+            width: 100%;
+            max-width: 320px;
+            min-width: 250px;
+            flex: 1 1 280px;
+            box-sizing: border-box;
+        }
+        
+        .leader-image {
+            width: clamp(150px, 25vw, 200px);
+            height: clamp(150px, 25vw, 200px);
+        }
+        
+        /* Enhanced Footer */
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+            gap: clamp(1rem, 3vw, 2rem);
+            margin-bottom: 2rem;
+        }
+        
+        /* Tablet Specific (768px to 1023px) */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .hero {
+                height: 70vh;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+            
+            .announcements-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+        }
+        
+        /* Mobile Landscape (up to 767px height) */
+        @media (max-height: 600px) and (orientation: landscape) {
+            .hero {
+                height: 85vh;
+            }
+            
+            .section {
+                padding: clamp(1.5rem, 4vw, 3rem) 0;
+            }
+        }
+        
+        /* Mobile Portrait and Small Screens (up to 767px) */
+        @media (max-width: 767px) {
+            /* Force left alignment for all content on mobile */
+            .service-time h3,
+            .account-label,
+            .account-value,
+            .large-text {
+                text-align: left !important;
+            }
+            
+            .menu-toggle {
+                display: flex;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 100vw;
+                height: 100vh;
+                background-color: var(--white);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 2rem 1rem;
+                transition: left 0.3s ease;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+                z-index: 9999;
+                overflow-y: auto;
+                box-sizing: border-box;
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .nav-links a {
+                padding: 1.2rem 2rem;
+                font-size: 1.2rem;
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+                min-height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 0.5rem;
+                border-radius: 8px;
+                transition: all 0.3s ease;
+            }
+            
+            .nav-links a:hover {
+                background-color: var(--light-color);
+                color: var(--primary-color);
+            }
+            
+            .nav-links a:last-child {
+                border-bottom: none;
+            }
+            
+            .hero {
+                height: 60vh;
+                margin-top: 80px;
+            }
+            
+            .hero-content {
+                padding: 0 1rem;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+            }
+            
+            .gallery-image {
+                height: clamp(200px, 40vw, 300px);
+            }
+            
+            .section {
+                padding: clamp(2rem, 5vw, 4rem) 0;
+            }
+            
+            .logo {
+                flex-direction: row;
+                align-items: center;
+                gap: 0.8rem;
+            }
+            
+            .logo img {
+                height: clamp(35px, 8vw, 50px);
+                margin-right: 0;
+                margin-bottom: 0;
+                flex-shrink: 0;
+            }
+            
+            .header {
+                padding: 0.8rem 0;
+            }
+            
+            .service-schedule {
+                margin-bottom: 1rem;
+                padding: 1.5rem;
+            }
+            
+            .service-header {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+                gap: 0.8rem;
+            }
+            
+            .service-icon {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .service-time h3 {
+                text-align: left;
+                font-size: clamp(1rem, 3vw, 1.2rem);
+            }
+            
+            .service-time ol {
+                padding-left: 1rem;
+                font-size: clamp(0.85rem, 2vw, 1rem);
+            }
+            
+            .service-time ul {
+                margin-left: 1rem;
+            }
+            
+            .account-details {
+                padding: 1rem;
+            }
+            
+            .account-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+                text-align: left;
+            }
+            
+            .account-number {
+                justify-content: flex-start;
+                width: 100%;
+                flex-wrap: wrap;
+            }
+            
+            .account-value {
+                text-align: left;
+            }
+            
+            .large-text {
+                font-size: clamp(1.5rem, 5vw, 2.5rem);
+                word-break: break-all;
+                text-align: left;
+            }
+            
+            .copy-btn {
+                margin-top: 0.5rem;
+            }
+        }
+        
+        /* Extra Small Screens (up to 480px) */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 0.8rem;
+                max-width: calc(100vw - 1.6rem);
+            }
+            
+            .hero {
+                height: 50vh;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .announcements-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .prayer-content, .contact-content {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .service-schedule {
+                padding: 1rem;
+            }
+            
+            .service-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+            
+            .service-icon {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .service-time h3 {
+                font-size: clamp(0.9rem, 3vw, 1.1rem);
+                text-align: left;
+            }
+            
+            .service-time ol {
+                padding-left: 0.8rem;
+                font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+            }
+            
+            .service-time ul {
+                margin-left: 0.8rem;
+            }
+            
+            .flyers-content {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+            
+            .flyer-card {
+                max-width: calc(100vw - 2rem);
+                min-width: auto;
+                width: 100%;
+            }
+            
+            .leader-card {
+                max-width: calc(100vw - 2rem);
+                min-width: auto;
+                width: 100%;
+            }
+            
+            .footer-content {
+                text-align: center;
+                grid-template-columns: 1fr;
+            }
+            
+            .social-icons {
+                justify-content: center;
+            }
+            
+            .logo {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.3rem;
+            }
+            
+            .logo img {
+                margin-bottom: 0.3rem;
+            }
+            
+            .logo h1 {
+                font-size: clamp(0.8rem, 3vw, 1.2rem);
+                line-height: 1.2;
+            }
+        }
+        
+        /* Very Small Screens (up to 360px) */
+        @media (max-width: 360px) {
+            .container {
+                padding: 0 0.6rem;
+                max-width: calc(100vw - 1.2rem);
+            }
+            
+            .hero-content {
+                padding: 0 0.5rem;
+            }
+            
+            .announcement-card, .service-card, .prayer-points, .food-for-thought, .contact-info, .contact-form {
+                padding: 0.8rem;
+                margin-bottom: 0.8rem;
+            }
+            
+            .btn {
+                padding: 0.6rem 1rem;
+                font-size: 0.85rem;
+                width: auto;
+                max-width: 100%;
+            }
+            
+            .section-title {
+                margin-bottom: 1rem;
+                font-size: clamp(1.2rem, 5vw, 1.8rem);
+            }
+            
+            .flyer-card, .leader-card {
+                max-width: calc(100vw - 1.2rem);
+            }
+            
+            .logo h1 {
+                font-size: clamp(0.7rem, 4vw, 1rem);
+            }
+            
+            .logo p {
+                font-size: clamp(0.5rem, 2vw, 0.7rem);
+            }
+            
+            .account-details {
+                padding: 0.8rem;
+            }
+            
+            .large-text {
+                font-size: clamp(1.2rem, 6vw, 2rem);
+                word-break: break-all;
+            }
+        }
+        
+        /* High DPI Displays */
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .logo img {
+                image-rendering: -webkit-optimize-contrast;
+                image-rendering: crisp-edges;
+            }
+        }
+        
+        /* Accessibility Improvements */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+        
+        /* Focus improvements for keyboard navigation */
+        .nav-links a:focus,
+        .btn:focus,
+        .menu-toggle:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+        
+        /* Print styles */
+        @media print {
+            .header, .menu-toggle, .nav-links {
+                display: none;
+            }
+            
+            .hero {
+                height: auto;
+                margin-top: 0;
+            }
+            
+            .section {
+                padding: 1rem 0;
+                break-inside: avoid;
+            }
+        }
+        
+        /* Additional Mobile Optimizations */
+        
+        /* Improve touch interactions */
+        @media (hover: none) and (pointer: coarse) {
+            .btn:hover {
+                transform: none;
+            }
+            
+            .announcement-card:hover,
+            .gallery-item:hover,
+            .flyer-card:hover {
+                transform: none;
+            }
+            
+            .gallery-item:hover .gallery-image {
+                transform: none;
+            }
+        }
+        
+        /* Optimize for mobile performance */
+        .gallery-image,
+        .flyer-image {
+            will-change: auto;
+        }
+        
+        /* Better loading states */
+        .gallery-image,
+        .flyer-image,
+        .leader-image {
+            background-color: #f0f0f0;
+            background-image: linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.5) 50%, transparent 60%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+        }
+        
+        .gallery-image[src],
+        .flyer-image[src],
+        .leader-image[src] {
+            background: none;
+            animation: none;
+        }
+        
+        @keyframes loading {
+            0% {
+                background-position: -200% 0;
+            }
+            100% {
+                background-position: 200% 0;
+            }
+        }
+        
+        /* Improve form validation feedback */
+        .contact-form input:invalid,
+        .contact-form textarea:invalid {
+            border-color: #dc3545;
+        }
+        
+        .contact-form input:valid,
+        .contact-form textarea:valid {
+            border-color: var(--success-color);
+        }
+        
+        /* Better focus states for mobile */
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+            border-color: var(--primary-color);
+        }
+        
+        /* Improve social links for mobile */
+        .church-social-links a {
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            padding: 0.8rem 1rem;
+        }
+        
+        /* Better notification positioning on mobile */
+        @media (max-width: 576px) {
+            .notification {
+                top: 10px;
+                right: 10px;
+                left: 10px;
+                max-width: none;
+                transform: translateY(-100px);
+            }
+            
+            .notification.show {
+                transform: translateY(0);
+            }
+        }
+
+        /* Flyers Section */
+        .flyers-content {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .flyer-card {
+            position: relative;
+            width: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            background-color: #f5f5f5;
+        }
+
+        .flyer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .flyer-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .flyer-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            padding: 1.5rem;
+            color: var(--white);
+            transform: translateY(100px);
+            transition: transform 0.3s ease;
+        }
+
+        .flyer-card:hover .flyer-overlay {
+            transform: translateY(0);
+        }
+
+        .flyer-overlay h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .flyer-overlay p {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .flyer-overlay .btn {
+            background-color: var(--accent-color);
+            color: var(--dark-color);
+            font-size: 0.9rem;
+            padding: 0.5rem 1rem;
+        }
+
+        .flyer-overlay .btn:hover {
+            background-color: var(--white);
+        }
+
+        /* Leadership Section */
+        .leadership-content {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .leader-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            padding: 1.5rem;
+            text-align: center;
+            width: 280px;
+            transition: var(--transition);
+        }
+
+        .leader-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .leader-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid var(--primary-color);
+        }
+
+        .leader-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .leader-card p {
+            color: var(--dark-color);
+            font-style: italic;
+        }
+
+        /* Gallery Section */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            background-color: #f5f5f5;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-image {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+            padding: 1rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        .gallery-overlay h4 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.1rem;
+        }
+
+        .gallery-overlay p {
+            margin: 0;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        /* Animation Classes */
+        .animate-fade-up {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .animate-fade-left {
+            animation: fadeInLeft 0.8s ease forwards;
+        }
+
+        .animate-fade-right {
+            animation: fadeInRight 0.8s ease forwards;
+        }
+
+        .animate-slide-down {
+            animation: slideDown 0.6s ease forwards;
+        }
+
+        .animate-delay-1 {
+            animation-delay: 0.2s;
+            opacity: 0;
+        }
+
+        .animate-delay-2 {
+            animation-delay: 0.4s;
+            opacity: 0;
+        }
+
+        .animate-delay-3 {
+            animation-delay: 0.6s;
+            opacity: 0;
+        }
+
+        /* Hover Animations */
+        .btn {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .section-title {
+            position: relative;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: var(--accent-color);
+            transition: width 0.6s ease;
+        }
+
+        .section:hover .section-title::before {
+            width: 100px;
+        }
+
+        /* Card Animations */
+        .announcement-card, .service-card, .prayer-points, .food-for-thought, .contact-info, .contact-form {
+            transform: translateY(20px);
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .announcement-card:nth-child(1) { animation-delay: 0.1s; }
+        .announcement-card:nth-child(2) { animation-delay: 0.2s; }
+        .announcement-card:nth-child(3) { animation-delay: 0.3s; }
+
+        .gallery-item {
+            transform: translateY(20px);
+            opacity: 0;
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .gallery-item:nth-child(1) { animation-delay: 0.1s; }
+        .gallery-item:nth-child(2) { animation-delay: 0.2s; }
+        .gallery-item:nth-child(3) { animation-delay: 0.3s; }
+        .gallery-item:nth-child(4) { animation-delay: 0.4s; }
+        .gallery-item:nth-child(5) { animation-delay: 0.5s; }
+        .gallery-item:nth-child(6) { animation-delay: 0.6s; }
+        .gallery-item:nth-child(7) { animation-delay: 0.7s; }
+        .gallery-item:nth-child(8) { animation-delay: 0.8s; }
+        .gallery-item:nth-child(9) { animation-delay: 0.9s; }
+        .gallery-item:nth-child(10) { animation-delay: 1.0s; }
+        .gallery-item:nth-child(11) { animation-delay: 1.1s; }
+        .gallery-item:nth-child(12) { animation-delay: 1.2s; }
+
+        /* Header Animation */
+        .header {
+            transform: translateY(-100%);
+            animation: slideDown 0.8s ease forwards;
+        }
+
+        /* Hero Animation */
+        .hero-content h2 {
+            transform: translateY(30px);
+            opacity: 0;
+            animation: fadeInUp 1s ease 0.5s forwards;
+        }
+
+        .hero-subtitle {
+            transform: translateY(30px);
+            opacity: 0;
+            animation: fadeInUp 1s ease 0.6s forwards;
+        }
+
+        .hero-content p {
+            transform: translateY(30px);
+            opacity: 0;
+            animation: fadeInUp 1s ease 0.8s forwards;
+        }
+
+        .hero-content .btn {
+            transform: translateY(30px);
+            opacity: 0;
+            animation: fadeInUp 1s ease 1s forwards;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content .btn::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .hero-content .btn:hover::after {
+            width: 300px;
+            height: 300px;
+        }
+
+        .hero-content .btn {
+            animation: fadeInUp 1s ease 0.9s forwards;
+        }
+
+        /* Service Card Animation */
+        .service-card {
+            transform: scale(0.95);
+            opacity: 0;
+            animation: fadeInUp 0.8s ease 0.3s forwards;
+        }
+
+        /* Leader Card Animation */
+        .leader-card {
+            transform: translateY(30px);
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Reduce motion for users who prefer it */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Church Logo" style="height: 60px; margin-right: 15px;">
+                <div>
+                    <h1>The African Church Salem Parish Of Christ Abekoko<span></span></h1>
+                    <p>Stay Updated • Stay Blessed</p>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#announcements">Announcements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Welcome to Our Church</h2>
+                <h3 class="hero-subtitle">(One Big Family)</h3>
+                <p>Join us for worship, fellowship, and spiritual growth</p>
+                <a href="#services" class="btn">Order Of Service</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Service Info -->
+    <section class="current-service">
+        <div class="container">
+            <div class="service-card">
+                <h3>This Sunday's Service</h3>
+                <div class="service-details">
+                    <p><strong>Date:</strong> 27th July, 2025</p>
+                    <p><strong>Collect:</strong> 6th Sunday After Trinity</p>
+                    <p><strong>Liturgical Colour:</strong> <span class="red">Red</span></p>
+                    <p><strong>Theme:</strong> Minister's Appreciation Day</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Announcements Section -->
+    <section class="section announcements" id="announcements">
+        <div class="container">
+            <h2 class="section-title">Announcements</h2>
+            <div class="announcements-grid">
+                <div class="announcement-card">
+                    <h3>Weekly/Monthly Services</h3>
+                    <ul>
+                        <li>Gethsemane (ONA-ABAYO) - 7am Wed</li>
+                        <li>Bible Study - 5pm Tuesday</li>
+                        <li>Expectant Women/Pregnant Mothers - Every Tuesday 5:30pm</li>
+                        <li>Youth Special Prayer - After service</li>
+                        <li>Choir Rehearsal - After service & Thursday, Friday 5pm</li>
+                        <li>O TO GE - Every Thursday @ Cathedral Salem, Elvite Metta</li>
+                        <li>Night Vigil - Last Friday of the Month</li>
+                    </ul>
+                </div>
+                <div class="announcement-card">
+                    <h3>Upcoming Events</h3>
+                    <ul>
+                        <li>Holy Communion - First Sunday of the Month</li>
+                        <li>Family Harvest - First Sunday of August</li>
+                        <li>Confirmation Classes - Ongoing</li>
+                    </ul>
+                </div>
+                <div class="announcement-card">
+                    <h3>Church Needs</h3>
+                    <ul>
+                        <li>Iron, Cement and Blocks for building</li>
+                        <li>Church Bus</li>
+                        <li>Chairs</li>
+                        <li>Air Conditioners</li>
+                        <li>2 Pairs of New Loudspeakers</li>
+                        <li>Choir Robes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Flyers -->
+    <section class="section flyers">
+        <div class="container">
+            <h2 class="section-title">Church Events</h2>
+            <div class="flyers-content">
+                <div class="flyer-card">
+                    <img src="images/flyer1.jpg" alt="Church Event Flyer 1" class="flyer-image">
+                    <div class="flyer-overlay">
+                        <h3>Church Event</h3>
+                        <p>Join us for this special church event</p>
+                        <a href="#contact" class="btn">Contact Us</a>
+                    </div>
+                </div>
+                <div class="flyer-card">
+                    <img src="images/flyer2.jpg" alt="Church Event Flyer 2" class="flyer-image">
+                    <div class="flyer-overlay">
+                        <h3>Special Service</h3>
+                        <p>Join us for this special service</p>
+                        <a href="#contact" class="btn">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <h2 class="section-title">Order Of Service</h2>
+            <div class="services-grid">
+                <div class="service-schedule">
+                    <div class="service-time">
+                        <div class="service-header">
+                            <img src="images/churchpic.png" alt="Church Service" class="service-icon">
+                            <h3>Regular Sunday Service</h3>
+                        </div>
+                        <ol>
+                            <li>Processional Hymn ACHB</li>
+                            <li>Opening Hymn ACHB</li>
+                            <li>Praise & Worship</li>
+                            <li>Opening Prayer</li>
+                            <li>Psalm</li>
+                            <li>Lesson: New Testament</li>
+                            <li>Hymn Before Prayer ACHB</li>
+                            <li>Intercessory Prayer</li>
+                            <li>Hymn Before Sermon ACHB</li>
+                            <li>Sermon</li>
+                            <li>Tithe/Church Maintenance Collection</li>
+                            <li>Thanksgiving</li>
+                            <li>Peace Greetings/Announcements</li>
+                            <li>Closing Hymn ACHB</li>
+                            <li>Benediction/Watchword</li>
+                            <li>Withdrawal Hymn ACHB</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="service-schedule communion-service">
+                    <div class="service-time">
+                        <div class="service-header">
+                            <img src="images/Communion.jpg" alt="Holy Communion" class="service-icon communion-icon">
+                            <h3>First Sunday - Holy Communion</h3>
+                        </div>
+                        <ol>
+                            <li>Processional Hymn ACHB</li>
+                            <li>Opening Hymn ACHB</li>
+                            <li>Ante Communion
+                                <ul>
+                                    <li>Old Testament</li>
+                                    <li>Epistles</li>
+                                    <li>Gradual Hymn ACHB</li>
+                                    <li>Gospel</li>
+                                </ul>
+                            </li>
+                            <li>Hymn Before Sermon ACHB</li>
+                            <li>Sermon</li>
+                            <li>Nicene Creed</li>
+                            <li>Communion Proper</li>
+                            <li>God First/Tithe/Church Maintenance Collection</li>
+                            <li>Thanksgiving</li>
+                            <li>Peace Greetings/Announcements</li>
+                            <li>Closing Hymn ACHB</li>
+                            <li>Benediction/Watchword</li>
+                            <li>Withdrawal Hymn ACHB</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prayer Section -->
+    <section class="section prayer">
+        <div class="container">
+            <div class="prayer-content">
+                <div class="prayer-points">
+                    <h3>Prayer Points for the Week</h3>
+                    <ul id="daily-prayers">
+                        <li>Loading prayer points...</li>
+                    </ul>
+                </div>
+                <div class="food-for-thought">
+                    <h3>Food for Thought</h3>
+                    <p id="daily-thought">
+                        Loading inspirational thought...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Church Gallery Section -->
+    <section class="section gallery">
+        <div class="container">
+            <h2 class="section-title">Church Activities & Programs</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/1.jpg" alt="Gethsemane Activity" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Gethsemane (ONA-ABAYO)</h4>
+                        <p>Wednesday 7am prayer and worship service</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/2.jpg" alt="Gethsemane Activity" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Gethsemane (ONA-ABAYO)</h4>
+                        <p>Early morning prayer and spiritual fellowship</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/3.jpg" alt="Gethsemane Activity" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Gethsemane (ONA-ABAYO)</h4>
+                        <p>Community gathering for prayer and worship</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/4.jpg" alt="Gethsemane Activity" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Gethsemane (ONA-ABAYO)</h4>
+                        <p>Dedicated time for intercession and praise</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/5.jpg" alt="Gethsemane Activity" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Gethsemane (ONA-ABAYO)</h4>
+                        <p>Spiritual growth through prayer and fellowship</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/6.jpg" alt="Gethsemane Activity" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Gethsemane (ONA-ABAYO)</h4>
+                        <p>Wednesday morning spiritual gathering</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/7.jpg" alt="Church Activity" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Community Outreach</h4>
+                        <p>Serving our local community</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/8.jpg" alt="Palm Sunday Celebration" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Palm Sunday</h4>
+                        <p>Celebrating Jesus' triumphant entry into Jerusalem</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/9.jpg" alt="Palm Sunday Celebration" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Palm Sunday</h4>
+                        <p>Joyful worship and palm branch procession</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/10.jpg" alt="Church Activity" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Special Service</h4>
+                        <p>Memorable church service and ministry</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/11.jpg" alt="Palm Sunday Celebration" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Palm Sunday</h4>
+                        <p>Holy Week celebration and worship service</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/12.jpg" alt="Church Activity" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h4>Church Life</h4>
+                        <p>Daily life and activities in our church</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="section leadership">
+        <div class="container">
+            <h2 class="section-title">Our Leadership</h2>
+            <div class="leadership-content">
+                <div class="leader-card">
+                    <img src="images/vicar.jpg" alt="Church Vicar" class="leader-image">
+                    <h3>Rev'd Canon Olufemi Oyelola</h3>
+                    <p>Vicar in Charge</p>
+                    <h4>For Prayer & Counselling Contact</h4>
+                    <p class="contact-details">
+                        <b>Rev'd Canon Olufemi Oyelola:</b>
+                        <br>
+                        <a href="tel:+2349062759260">+234 906 275 9260</a>
+                        <br>
+                        <a href="tel:+2347030698300">+234 703 069 8300</a>
+                        <br><br>
+                        <a href="https://wa.me/+2349062725926" target="_blank" style="background-color: #25D366; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-weight: 500;">
+                            <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i>
+                            Contact on WhatsApp
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact & Giving</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Church Location</h3>
+                    <p><strong>Address:</strong> 43, Arigbanla Street, Abekoko Bus-stop, Orile Agege, Lagos, Nigeria</p>
+                    <p><strong>Church:</strong> Salem African Church of Christ</p>
+                    <h3>Church Account Details</h3>
+                    <div class="account-details">
+                        <div class="account-item">
+                            <span class="account-label">Bank:</span>
+                            <span class="account-value">Zenith Bank</span>
+                        </div>
+                        <div class="account-item">
+                            <span class="account-label">Account Name:</span>
+                            <span class="account-value">The African Church Salem Parish Of Christ Abekoko</span>
+                        </div>
+                        <div class="account-item">
+                            <span class="account-label">Account Number:</span>
+                            <div class="account-number">
+                                <span class="account-value large-text">1010270199</span>
+                                <button class="copy-btn" onclick="copyAccountNumber()" title="Copy Account Number">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message for prayer or counseling</h3>
+                    <form id="contactForm" autocomplete="off">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="text" name="address" placeholder="Address" required>
+                        <input type="number" name="phone" placeholder="Phone no.">
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" placeholder="Your message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>The African Church Salem Parish Of Christ Abekoko</h3>
+                    <p>A place of worship, fellowship, and spiritual growth.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#announcements">Announcements</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="church-social-links">
+                        <div class="social-link">
+                            <a href="https://www.facebook.com/salem.parish.abekoko" target="_blank" title="Follow Salem Church Abekoko on Facebook" style="display: flex; align-items: center; gap: 0.6rem; padding: 0.6rem 1rem; background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px; text-decoration: none; color: #495057; transition: all 0.2s ease; margin-bottom: 0.5rem;">
+                                <i class="fab fa-facebook-f" style="font-size: 1.1rem; color: #1877f2; width: 20px; text-align: center;"></i>
+                                <span style="font-weight: 500; font-size: 0.9rem;">Church Facebook Page</span>
+                            </a>
+                        </div>
+                        <div class="social-link">
+                            <a href="https://www.facebook.com/oyelola.olufemi1" target="_blank" title="Follow Rev'd Canon Olufemi Oyelola (Pastor) on Facebook" style="display: flex; align-items: center; gap: 0.6rem; padding: 0.6rem 1rem; background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px; text-decoration: none; color: #495057; transition: all 0.2s ease; margin-bottom: 0.5rem;">
+                                <i class="fab fa-facebook-f" style="font-size: 1.1rem; color: #1877f2; width: 20px; text-align: center;"></i>
+                                <span style="font-weight: 500; font-size: 0.9rem;">Pastor's Facebook Page</span>
+                            </a>
+                        </div>
+                        <div class="social-link">
+                            <a href="https://www.instagram.com/rev_olufemi_oyelola?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" title="Follow Rev'd Canon Olufemi Oyelola on Instagram" style="display: flex; align-items: center; gap: 0.6rem; padding: 0.6rem 1rem; background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px; text-decoration: none; color: #495057; transition: all 0.2s ease; margin-bottom: 0.5rem;">
+                                <i class="fab fa-instagram" style="font-size: 1.1rem; color: #e4405f; width: 20px; text-align: center;"></i>
+                                <span style="font-weight: 500; font-size: 0.9rem;">Pastor's Instagram</span>
+                            </a>
+                        </div>
+                        <div class="social-link">
+                            <a href="https://www.youtube.com/@femioyelola8118" target="_blank" title="Visit our YouTube Channel" style="display: flex; align-items: center; gap: 0.6rem; padding: 0.6rem 1rem; background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px; text-decoration: none; color: #495057; transition: all 0.2s ease;">
+                                <i class="fab fa-youtube" style="font-size: 1.1rem; color: #ff0000; width: 20px; text-align: center;"></i>
+                                <span style="font-weight: 500; font-size: 0.9rem;">YouTube Channel</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span class="current-year">2025</span> Salem African Church of Christ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        // Enhanced Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const body = document.body;
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                navLinks.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+                
+                // Prevent body scroll when menu is open
+                if (navLinks.classList.contains('active')) {
+                    body.style.overflow = 'hidden';
+                } else {
+                    body.style.overflow = '';
+                }
+            });
+
+            // Close mobile menu when clicking a link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                    body.style.overflow = '';
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                    navLinks.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                    body.style.overflow = '';
+                }
+            });
+
+            // Close menu on escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                    body.style.overflow = '';
+                }
+            });
+
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 767) {
+                    navLinks.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                    body.style.overflow = '';
+                }
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Sticky header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        // Current year for footer
+        document.querySelector('.current-year').textContent = new Date().getFullYear();
+        
+
+
+        // Custom Notification System
+        function showNotification(type, title, message, duration = 5000) {
+            // Remove existing notification if any
+            const existingNotification = document.querySelector('.notification');
+            if (existingNotification) {
+                existingNotification.remove();
+            }
+
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            
+            // Set notification content
+            notification.innerHTML = `
+                <button class="notification-close" onclick="closeNotification(this)">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="notification-header">
+                    <div class="notification-icon">
+                        <i class="fas ${type === 'success' ? 'fa-check' : 'fa-exclamation-triangle'}"></i>
+                    </div>
+                    <div class="notification-content">
+                        <h4>${title}</h4>
+                        <p>${message}</p>
+                    </div>
+                </div>
+            `;
+
+            // Add to page
+            document.body.appendChild(notification);
+
+            // Show notification with animation
+            setTimeout(() => {
+                notification.classList.add('show');
+            }, 100);
+
+            // Auto-hide after duration
+            setTimeout(() => {
+                closeNotification(notification);
+            }, duration);
+        }
+
+        function closeNotification(element) {
+            const notification = element.classList ? element : element.closest('.notification');
+            notification.classList.remove('show');
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.parentNode.removeChild(notification);
+                }
+            }, 400);
+        }
+
+
+
+        // Copy Account Number Function
+        function copyAccountNumber() {
+            const accountNumber = '1010270199';
+            
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(accountNumber).then(() => {
+                    showCopySuccess();
+                }).catch(err => {
+                    fallbackCopyTextToClipboard(accountNumber);
+                });
+            } else {
+                fallbackCopyTextToClipboard(accountNumber);
+            }
+        }
+
+        function fallbackCopyTextToClipboard(text) {
+            const textArea = document.createElement('textarea');
+            textArea.value = text;
+            textArea.style.position = 'fixed';
+            textArea.style.top = '0';
+            textArea.style.left = '0';
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            
+            try {
+                const successful = document.execCommand('copy');
+                if (successful) showCopySuccess();
+            } catch (err) {
+                showNotification(
+                    'error',
+                    'Copy Failed',
+                    'Could not copy automatically. Account Number: 1010270199',
+                    4000
+                );
+            }
+            
+            document.body.removeChild(textArea);
+        }
+
+        function showCopySuccess() {
+            const copyBtn = document.querySelector('.copy-btn');
+            const originalHTML = copyBtn.innerHTML;
+            copyBtn.innerHTML = '<i class="fas fa-check"></i>';
+            copyBtn.style.background = '#4CAF50';
+            
+            setTimeout(() => {
+                copyBtn.innerHTML = originalHTML;
+                copyBtn.style.background = '';
+            }, 2000);
+            
+            showNotification(
+                'success',
+                'Account Number Copied!',
+                'Account number 1010270199 has been copied to your clipboard.',
+                3000
+            );
+        }
+
+
+
+
+
+
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const btn = form.querySelector('button[type="submit"]');
+            btn.disabled = true;
+            btn.textContent = "Sending...";
+            
+            console.log('Form submitted - sending email...');
+            
+            // Generate a contact number value
+            const contactNumber = Math.random() * 100000 | 0;
+
+            // Clean and validate form data
+            const formData = {
+                name: form.name.value.trim(),
+                email: form.email.value.trim(),
+                address: form.address.value.trim(),
+                phone: form.phone.value.trim(),
+                message: form.message.value.trim()
+            };
+            
+            // Validate required fields
+            if (!formData.name || !formData.email || !formData.message) {
+                showNotification(
+                    'error',
+                    'Missing Information',
+                    'Please fill in all required fields (Name, Email, and Message).',
+                    4000
+                );
+                btn.disabled = false;
+                btn.textContent = "Send Message";
+                return;
+            }
+            
+            // These parameters match your EmailJS template exactly
+            const templateParams = {
+                name: formData.name,
+                email: formData.email,
+                address: formData.address || 'Not provided',
+                phone: formData.phone || 'Not provided',
+                message: formData.message,
+                reply_to: formData.email,
+                to_email: 'michaeldosunmu22@gmail.com',
+                cc_email: 'oye80femii@gmail.com',
+                bcc_email: 'pastor@salemchurch.com,secretary@salemchurch.com,treasurer@salemchurch.com'
+            };
+            
+            console.log('Sending email to:', templateParams.to_email, 'and CC:', templateParams.cc_email);
+            
+            // Check if EmailJS is loaded
+            if (typeof emailjs === 'undefined') {
+                console.error('EmailJS is not loaded!');
+                showNotification(
+                    'error',
+                    'Configuration Error',
+                    'Email service is not properly loaded. Please refresh the page and try again.',
+                    6000
+                );
+                btn.disabled = false;
+                btn.textContent = "Send Message";
+                return;
+            }
+            
+            emailjs.send('service_qr5y3or', 'template_nu6l6nf', templateParams)
+                .then(function(response) {
+                    console.log('Email sent successfully!', response.status);
+                    showNotification(
+                        'success',
+                        'Message Sent Successfully!',
+                        'Thank you for reaching out to Salem Church. We will get back to you soon.',
+                        6000
+                    );
+                    form.reset();
+                }, function(error) {
+                    console.log('EmailJS FAILED...', error);
+                    console.log('Error details:', error.text || error.message);
+                    console.log('Full error object:', error);
+                    
+                    // Determine error message based on error type
+                    let errorMessage = 'There was an error sending your message. Please try again.';
+                    let errorTitle = 'Message Failed to Send';
+                    
+                    if (error.status === 400) {
+                        errorTitle = 'Invalid Form Data';
+                        errorMessage = 'Please check that all fields are filled correctly and try again.';
+                    } else if (error.status === 401) {
+                        errorTitle = 'Authentication Error';
+                        errorMessage = 'There was a configuration issue. Please contact the church directly.';
+                    } else if (error.status === 403) {
+                        errorTitle = 'Service Unavailable';
+                        errorMessage = 'Email service is temporarily unavailable. Please try again later.';
+                    } else if (error.status === 429) {
+                        errorTitle = 'Too Many Requests';
+                        errorMessage = 'Please wait a moment before sending another message.';
+                    } else if (error.text && error.text.includes('template')) {
+                        errorTitle = 'Template Error';
+                        errorMessage = 'There was an issue with the email template. Please contact the church directly.';
+                    }
+                    
+                    showNotification(
+                        'error',
+                        errorTitle,
+                        errorMessage,
+                        6000
+                    );
+                })
+                .finally(function() {
+                    btn.disabled = false;
+                    btn.textContent = "Send Message";
+                });
+        });
+        
+        // Daily Prayer Points and Food for Thought System
+        (function() {
+            console.log('Initializing daily content system...');
+            
+            const dailyPrayers = [
+                [
+                    "The mighty hand of God will uphold you in the name of Jesus Christ",
+                    "You and I will not mourn over our children in Jesus name",
+                    "May God's favor locate you and your family this week"
+                ],
+                [
+                    "Every mountain standing against your progress shall be moved in Jesus name",
+                    "The Lord will make a way where there seems to be no way for you",
+                    "Divine protection shall surround you and your loved ones"
+                ],
+                [
+                    "God will open doors that no man can shut for you this week",
+                    "Your latter days shall be greater than your former days",
+                    "The Lord will perfect everything that concerns you"
+                ],
+                [
+                    "Every evil plan against your life shall backfire in Jesus name",
+                    "God will turn your trials into testimonies",
+                    "The blessing of the Lord shall make you rich and add no sorrow"
+                ],
+                [
+                    "The Lord will grant you wisdom to make the right decisions",
+                    "Your family shall be a source of joy and not sorrow",
+                    "God will establish the work of your hands"
+                ],
+                [
+                    "Every curse spoken against your life is broken in Jesus name",
+                    "The Lord will satisfy you with long life and show you His salvation",
+                    "Your children shall be mighty in the land"
+                ],
+                [
+                    "God will restore everything the enemy has stolen from you",
+                    "The Lord will make you the head and not the tail",
+                    "Divine health and healing shall be your portion"
+                ]
+            ];
+            
+            const foodForThought = [
+                "Don't give the best of yourself to those who don't see the best in you.",
+                "Faith is not knowing what the future holds, but knowing who holds the future.",
+                "God's delays are not God's denials. Trust His perfect timing.",
+                "When you can't see God's hand, trust His heart.",
+                "Prayer is the key that unlocks heaven's storehouse of blessings.",
+                "Your current situation is not your final destination.",
+                "God uses ordinary people to do extraordinary things.",
+                "Worry ends where faith begins.",
+                "God's love for you is not based on your performance.",
+                "Every setback is a setup for a comeback when God is involved.",
+                "The same God who brought you this far will take you further.",
+                "Your breakthrough is closer than you think.",
+                "God specializes in turning messes into messages.",
+                "Trust God even when you don't understand His ways.",
+                "Your testimony is someone else's hope.",
+                "God's grace is sufficient for every challenge you face.",
+                "What seems impossible to man is possible with God.",
+                "God's plans for you are good, even when life seems hard.",
+                "Your current chapter is not your whole story.",
+                "God is preparing you for something greater.",
+                "Every trial is a stepping stone to your triumph.",
+                "God's timing is perfect, even when it doesn't feel like it.",
+                "Your faith today determines your future tomorrow.",
+                "God sees your tears and He's preparing your breakthrough.",
+                "What God has joined together, no weapon can separate.",
+                "Your obedience today unlocks tomorrow's blessings.",
+                "God's love never fails, even when everything else does.",
+                "Your current struggle is developing your future strength.",
+                "God is working behind the scenes on your behalf.",
+                "Every closed door is redirecting you to the right path.",
+                "Your faithfulness in small things prepares you for greater things."
+            ];
+            
+            function getDayOfYear() {
+                const now = new Date();
+                const start = new Date(now.getFullYear(), 0, 0);
+                const diff = now - start;
+                const oneDay = 1000 * 60 * 60 * 24;
+                return Math.floor(diff / oneDay);
+            }
+            
+            function loadDailyContent() {
+                try {
+                    console.log('Loading daily content...');
+                    const dayOfYear = getDayOfYear();
+                    console.log('Day of year:', dayOfYear);
+                    
+                    // Get prayer points for the day
+                    const prayerIndex = dayOfYear % dailyPrayers.length;
+                    const todaysPrayers = dailyPrayers[prayerIndex];
+                    console.log('Prayer index:', prayerIndex);
+                    
+                    // Get food for thought for the day
+                    const thoughtIndex = dayOfYear % foodForThought.length;
+                    const todaysThought = foodForThought[thoughtIndex];
+                    console.log('Thought index:', thoughtIndex);
+                    
+                    // Update prayer points
+                    const prayersList = document.getElementById('daily-prayers');
+                    if (prayersList) {
+                        console.log('Found prayers list element, updating...');
+                        prayersList.innerHTML = '';
+                        todaysPrayers.forEach(prayer => {
+                            const li = document.createElement('li');
+                            li.textContent = prayer;
+                            prayersList.appendChild(li);
+                        });
+                        console.log('Prayer points loaded successfully');
+                    } else {
+                        console.error('Could not find daily-prayers element');
+                    }
+                    
+                    // Update food for thought
+                    const thoughtElement = document.getElementById('daily-thought');
+                    if (thoughtElement) {
+                        console.log('Found thought element, updating...');
+                        thoughtElement.textContent = `"${todaysThought}"`;
+                        console.log('Food for thought loaded successfully');
+                    } else {
+                        console.error('Could not find daily-thought element');
+                    }
+                } catch (error) {
+                    console.error('Error loading daily content:', error);
+                }
+            }
+            
+            // Load content when DOM is ready
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', loadDailyContent);
+                console.log('Added DOMContentLoaded listener');
+            } else {
+                console.log('DOM already loaded, loading content immediately');
+                loadDailyContent();
+            }
+            
+            // Backup loader
+            setTimeout(function() {
+                console.log('Backup loader executing...');
+                loadDailyContent();
+            }, 2000);
+            
+        })();
+        
+        // Facebook Links Hover Effects
+        document.addEventListener('DOMContentLoaded', function() {
+            const facebookLinks = document.querySelectorAll('.facebook-link-item a');
+            
+            facebookLinks.forEach((link, index) => {
+                link.addEventListener('mouseenter', function() {
+                    if (index === 0) {
+                        // Church Facebook - Blue hover
+                        this.style.background = 'linear-gradient(135deg, #166fe5 0%, #1976d2 100%)';
+                        this.style.transform = 'translateY(-3px)';
+                        this.style.boxShadow = '0 6px 20px rgba(24, 119, 242, 0.4)';
+                    } else {
+                        // Pastor Facebook - Purple hover
+                        this.style.background = 'linear-gradient(135deg, #7b1fa2 0%, #9c27b0 100%)';
+                        this.style.transform = 'translateY(-3px)';
+                        this.style.boxShadow = '0 6px 20px rgba(142, 36, 170, 0.4)';
+                    }
+                });
+                
+                link.addEventListener('mouseleave', function() {
+                    if (index === 0) {
+                        // Church Facebook - Original blue
+                        this.style.background = 'linear-gradient(135deg, #1877f2 0%, #42a5f5 100%)';
+                    } else {
+                        // Pastor Facebook - Original purple
+                        this.style.background = 'linear-gradient(135deg, #8e24aa 0%, #ab47bc 100%)';
+                    }
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

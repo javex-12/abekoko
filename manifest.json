@@ -1,0 +1,59 @@
+{
+  "name": "Salem African Church of Christ Abekoko",
+  "short_name": "Salem Church",
+  "description": "Salem African Church of Christ Abekoko Parish - Stay Updated, Stay Blessed",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#166a3a",
+  "theme_color": "#166a3a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./images/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "./images/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "./images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./images/church-icon.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./images/church-icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzE2NmEzYSIvPgogICAgPGcgZmlsbD0id2hpdGUiPgogICAgICAgIDwhLS0gQ2h1cmNoIGJ1aWxkaW5nIC0tPgogICAgICAgIDxyZWN0IHg9IjE1MCIgeT0iMjAwIiB3aWR0aD0iMjEyIiBoZWlnaHQ9IjI1MCIvPgogICAgICAgIDwhLS0gQ2h1cmNoIHJvb2YgLS0+CiAgICAgICAgPHBvbHlnb24gcG9pbnRzPSIxNTAsMjAwIDI1NiwxMjAgMzYyLDIwMCIvPgogICAgICAgIDwhLS0gQ3Jvc3MgLS0+CiAgICAgICAgPHJlY3QgeD0iMjQwIiB5PSI4MCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjgwIi8+CiAgICAgICAgPHJlY3QgeD0iMjIwIiB5PSIxMDAiIHdpZHRoPSI3MiIgaGVpZ2h0PSIzMiIvPgogICAgICAgIDwhLS0gRG9vciAtLT4KICAgICAgICA8cmVjdCB4PSIyMjAiIHk9IjM1MCIgd2lkdGg9IjcyIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzE2NmEzYSIvPgogICAgICAgIDwhLS0gV2luZG93cyAtLT4KICAgICAgICA8cmVjdCB4PSIxODAiIHk9IjI1MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjMTY2YTNhIi8+CiAgICAgICAgPHJlY3QgeD0iMjkyIiB5PSIyNTAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI2MCIgZmlsbD0iIzE2NmEzYSIvPgogICAgICAgIDwhLS0gQmVsbCB0b3dlciAtLT4KICAgICAgICA8cmVjdCB4PSIyMzAiIHk9IjE1MCIgd2lkdGg9IjUyIiBoZWlnaHQ9IjUwIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iMjU2IiBjeT0iMTc1IiByPSI4IiBmaWxsPSIjMTY2YTNhIi8+CiAgICA8L2c+Cjwvc3ZnPg==",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["lifestyle", "social"],
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "./",
+  "prefer_related_applications": false
+}
