@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting to Admin...</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+    <h2>🔄 Redirecting to Admin Panel...</h2>
+    <p>Please wait while we redirect you to the church admin dashboard.</p>
+    <p>If you're not redirected automatically, <a href="/admin/">click here</a>.</p>
+  </div>
+
+  <script>
+    // Check if this is a Netlify Identity callback
+    if (window.location.hash.includes('access_token') || 
+        window.location.hash.includes('confirmation_token') ||
+        window.location.hash.includes('recovery_token')) {
+      
+      console.log('Netlify Identity callback detected, redirecting to admin...');
+      
+      // Wait a moment for identity to process, then redirect
+      setTimeout(() => {
+        window.location.href = '/admin/';
+      }, 2000);
+      
+    } else {
+      // No identity callback, redirect immediately
+      window.location.href = '/admin/';
+    }
+
+    // Initialize Netlify Identity
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (user) {
+          console.log('User logged in, redirecting to admin...');
+          window.location.href = '/admin/';
+        }
+      });
+      
+      window.netlifyIdentity.on("login", () => {
+        console.log('Login successful, redirecting to admin...');
+        window.location.href = '/admin/';
+      });
+    }
+  </script>
+</body>
+</html>
