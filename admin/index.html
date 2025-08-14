@@ -12,6 +12,35 @@
   </script>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   <script>
+    // Enhanced Netlify Identity integration with better redirect handling
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        console.log("Identity initialized, user:", user);
+        if (!user) {
+          console.log("No user found, setting up login handler");
+          window.netlifyIdentity.on("login", () => {
+            console.log("User logged in, staying on admin page");
+            // Don't redirect, just reload the current page
+            window.location.reload();
+          });
+        } else {
+          console.log("User already logged in:", user.email);
+        }
+      });
+      
+      // Handle logout
+      window.netlifyIdentity.on("logout", () => {
+        console.log("User logged out");
+        window.location.reload();
+      });
+      
+      // Prevent unwanted redirects
+      window.netlifyIdentity.on("close", () => {
+        console.log("Identity widget closed");
+        // Stay on current page
+      });
+    }
+
     CMS.init({
       config: {
         backend: {
@@ -99,17 +128,6 @@
         ]
       }
     });
-
-    // Netlify Identity integration
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
   </script>
 </body>
 </html>
