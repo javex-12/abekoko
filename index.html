@@ -2731,8 +2731,9 @@ emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
                 emailjs.init({
                     publicKey: EMAILJS_PUBLIC_KEY,
                 });
-                console.log('EmailJS initialized successfully with specific templates');
-                console.log('Available templates:', EMAILJS_TEMPLATES);
+                console.log('EmailJS initialized successfully');
+                console.log('Service ID:', EMAILJS_SERVICE_ID);
+                console.log('Template ID:', EMAILJS_TEMPLATE_ID);
             } else {
                 console.error('EmailJS library not loaded');
             }
