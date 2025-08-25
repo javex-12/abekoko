@@ -253,6 +253,74 @@
             }
         }
     </style>
+    
+    <!-- FINAL DEBUG OVERRIDE - LOADS LAST -->
+    <link rel="stylesheet" href="FINAL_DEBUG_OVERRIDE.css">
+    
+    <!-- ABSOLUTE FINAL INLINE DEBUG -->
+    <style>
+        @media (max-width: 768px) {
+            #menuToggle {
+                display: flex !important;
+                position: fixed !important;
+                top: 5px !important;
+                right: 5px !important;
+                width: 100px !important;
+                height: 100px !important;
+                background: #FF0000 !important;
+                border: 10px solid #FFFF00 !important;
+                border-radius: 20px !important;
+                z-index: 9999999 !important;
+                cursor: pointer !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+                box-shadow: 0 0 50px #FF0000 !important;
+                animation: debugPulse 1s infinite !important;
+            }
+            
+            #navLinks {
+                position: fixed !important;
+                top: 0 !important;
+                left: -100vw !important;
+                width: 100vw !important;
+                height: 100vh !important;
+                background: #FF0000 !important;
+                border: 20px solid #FFFF00 !important;
+                z-index: 9999998 !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                justify-content: center !important;
+                transition: left 0.5s ease !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+            }
+            
+            #navLinks.active {
+                left: 0 !important;
+            }
+            
+            #navLinks a {
+                background: #00FF00 !important;
+                color: #000000 !important;
+                border: 5px solid #0000FF !important;
+                padding: 20px !important;
+                margin: 10px !important;
+                font-size: 20px !important;
+                font-weight: bold !important;
+                border-radius: 15px !important;
+                width: 80% !important;
+                text-align: center !important;
+                display: block !important;
+            }
+        }
+        
+        @keyframes debugPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+    </style>
 
     <!-- EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
