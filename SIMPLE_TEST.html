@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CSS Test</title>
+    <style>
+        body {
+            background: red !important;
+            color: white !important;
+            font-size: 30px !important;
+            padding: 20px !important;
+        }
+        
+        .test-box {
+            background: blue !important;
+            color: yellow !important;
+            padding: 20px !important;
+            margin: 20px !important;
+            border: 5px solid green !important;
+            font-size: 40px !important;
+            text-align: center !important;
+        }
+        
+        #big-button {
+            background: purple !important;
+            color: white !important;
+            padding: 30px !important;
+            font-size: 50px !important;
+            border: 10px solid orange !important;
+            border-radius: 20px !important;
+            cursor: pointer !important;
+            margin: 20px !important;
+            display: block !important;
+            width: 300px !important;
+            height: 200px !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS TEST PAGE</h1>
+    <p>If you can see this page with colors, CSS is working.</p>
+    
+    <div class="test-box">
+        BLUE BOX WITH YELLOW TEXT
+    </div>
+    
+    <button id="big-button" onclick="alert('Button works!')">
+        CLICK ME
+    </button>
+    
+    <div style="background: pink; padding: 20px; margin: 20px; font-size: 25px;">
+        INLINE STYLE TEST - SHOULD BE PINK
+    </div>
+    
+    <script>
+        console.log('JavaScript is working');
+        alert('JavaScript loaded successfully!');
+        
+        document.body.style.border = '20px solid cyan';
+        
+        setTimeout(function() {
+            alert('If you see this alert, JavaScript is working fine!');
+        }, 1000);
+    </script>
+</body>
+</html>
