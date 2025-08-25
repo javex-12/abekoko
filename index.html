@@ -1,320 +1,291 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=\"en\">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset=\"UTF-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no\">
+    <meta name=\"mobile-web-app-capable\" content=\"yes\">
+    <meta name=\"apple-mobile-web-app-capable\" content=\"yes\">
+    <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"default\">
+    
     <title>Salem African Church of Christ – Abekoko Parish, Agege Lagos</title>
     
-    <!-- MINIMAL CSS - ONLY WHAT WORKS -->
+    <!-- REMOVED SECURITY HEADERS THAT BLOCK CSS -->
+    
+    <!-- SEO Meta Tags -->
+    <meta name=\"description\" content=\"Salem African Church of Christ, Abekoko Parish, Agege Lagos – Join us for worship, praise, and community fellowship. Sunday Service 10:00 AM. Stay Updated, Stay Blessed.\">
+    <meta name=\"keywords\" content=\"Salem African Church, Abekoko Parish, Agege, Lagos, African Church of Christ, Worship, Christian Fellowship, Church Service, Lagos Church, Sunday Service, Bible Study, Prayer, Gethsemane, Rev Canon Olufemi Oyelola, Orile Agege, Nigerian Church, Christian Community\">
+    <meta name=\"author\" content=\"Salem African Church of Christ\">
+    <meta name=\"language\" content=\"English\">
+    <meta name=\"revisit-after\" content=\"7 days\">
+    <meta name=\"distribution\" content=\"global\">
+
+    <!-- Open Graph (Facebook/WhatsApp) -->
+    <meta property=\"og:title\" content=\"Salem African Church of Christ – Abekoko Parish, Agege Lagos\">
+    <meta property=\"og:description\" content=\"Join Salem African Church of Christ in Agege, Lagos for uplifting worship, Bible teachings, and community fellowship.\">
+    <meta property=\"og:image\" content=\"https://abekokoparish.netlify.app/assets/images/gallery/logo.jpg\">
+    <meta property=\"og:url\" content=\"https://abekokoparish.netlify.app\">
+    <meta property=\"og:type\" content=\"website\">
+    <meta property=\"og:locale\" content=\"en_NG\">
+    <meta property=\"og:site_name\" content=\"Salem African Church of Christ\">
+
+    <!-- Twitter Card -->
+    <meta name=\"twitter:card\" content=\"summary_large_image\">
+    <meta name=\"twitter:title\" content=\"Salem African Church of Christ – Abekoko Parish, Agege Lagos\">
+    <meta name=\"twitter:description\" content=\"Worship with us at Salem African Church of Christ, Abekoko Parish in Agege Lagos. Stay updated and stay blessed.\">
+    <meta name=\"twitter:image\" content=\"https://abekokoparish.netlify.app/assets/images/gallery/logo.jpg\">
+    <meta name=\"twitter:site\" content=\"@SalemChurchAbekoko\">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\">
+    <meta name=\"googlebot\" content=\"index, follow\">
+    <link rel=\"canonical\" href=\"https://abekokoparish.netlify.app/\">
+    <meta name=\"geo.region\" content=\"NG-LA\">
+    <meta name=\"geo.placename\" content=\"Agege, Lagos\">
+    <meta name=\"geo.position\" content=\"6.6018;3.3515\">
+    <meta name=\"ICBM\" content=\"6.6018, 3.3515\">
+
+    <!-- Favicon -->
+    <link rel=\"icon\" type=\"image/jpeg\" href=\"assets/images/gallery/logo.jpg\">
+
+    <!-- PWA Meta Tags -->
+    <meta name=\"theme-color\" content=\"#c41e3a\">
+    <meta name=\"apple-mobile-web-app-capable\" content=\"yes\">
+    <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"default\">
+    <meta name=\"apple-mobile-web-app-title\" content=\"Salem Church\">
+    <link rel=\"apple-touch-icon\" href=\"assets/images/gallery/logo.jpg\">
+
+    <!-- PWA Manifest -->
+    <link rel=\"manifest\" href=\"manifest.json\">
+
+    <!-- Fonts & Icons -->
+    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\">
+    <link href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap\" rel=\"stylesheet\">
+
+    <!-- ONLY MAIN STYLESHEET - REMOVE CONFLICTING CSS -->
+    <link rel=\"stylesheet\" href=\"assets/css/main.css?v=2025\">
+    
+    <!-- WORKING MOBILE NAVIGATION CSS -->
     <style>
-        /* RESET */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* HEADER */
-        .header {
-            background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            padding: 10px 0;
-        }
-        
-        .header .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            min-height: 60px;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            text-decoration: none;
-            color: inherit;
-        }
-        
-        .logo img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-        }
-        
-        .logo-text h1 {
-            font-size: 18px;
-            color: #c41e3a;
-            margin: 0;
-        }
-        
-        .logo-text p {
-            font-size: 12px;
-            color: #666;
-            margin: 0;
-        }
-        
-        /* DESKTOP NAVIGATION */
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 20px;
-        }
-        
-        .nav-links a {
-            color: #333;
-            text-decoration: none;
-            padding: 8px 16px;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .nav-links a:hover {
-            background: #c41e3a;
-            color: white;
-        }
-        
-        /* MOBILE HAMBURGER BUTTON */
-        .menu-toggle {
-            display: none;
-            width: 50px;
-            height: 50px;
-            background: #c41e3a;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 4px;
-        }
-        
-        .menu-toggle span {
-            width: 25px;
-            height: 3px;
-            background: white;
-            border-radius: 2px;
-            transition: all 0.3s ease;
-        }
-        
-        /* MOBILE STYLES */
+        /* MOBILE NAVIGATION THAT WORKS */
         @media (max-width: 768px) {
             .menu-toggle {
-                display: flex;
+                display: flex !important;
+                width: 50px !important;
+                height: 50px !important;
+                background: #c41e3a !important;
+                border: none !important;
+                border-radius: 10px !important;
+                cursor: pointer !important;
+                flex-direction: column !important;
+                justify-content: center !important;
+                align-items: center !important;
+                gap: 4px !important;
+                position: relative !important;
+                z-index: 1001 !important;
+            }
+            
+            .menu-toggle span,
+            .hamburger span {
+                width: 25px !important;
+                height: 3px !important;
+                background: white !important;
+                border-radius: 2px !important;
+                transition: all 0.3s ease !important;
+                display: block !important;
             }
             
             .nav-links {
-                position: fixed;
-                top: 80px;
-                left: -100%;
-                width: 100%;
-                height: calc(100vh - 80px);
-                background: white;
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-start;
-                padding: 30px 20px;
-                transition: left 0.3s ease;
-                box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-                gap: 15px;
+                position: fixed !important;
+                top: 80px !important;
+                left: -100% !important;
+                width: 100% !important;
+                height: calc(100vh - 80px) !important;
+                background: white !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                justify-content: flex-start !important;
+                padding: 30px 20px !important;
+                transition: left 0.3s ease !important;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.1) !important;
+                gap: 15px !important;
+                z-index: 1000 !important;
+                overflow-y: auto !important;
             }
             
             .nav-links.active {
-                left: 0;
+                left: 0 !important;
             }
             
             .nav-links a {
-                width: 90%;
-                max-width: 300px;
-                padding: 15px 20px;
-                background: white;
-                border: 2px solid #c41e3a;
-                border-radius: 12px;
-                color: #333;
-                text-align: center;
-                font-weight: 600;
-                min-height: 50px;
-                justify-content: center;
+                width: 90% !important;
+                max-width: 300px !important;
+                padding: 15px 20px !important;
+                background: white !important;
+                border: 2px solid #c41e3a !important;
+                border-radius: 12px !important;
+                color: #333 !important;
+                text-align: center !important;
+                font-weight: 600 !important;
+                min-height: 50px !important;
+                justify-content: center !important;
+                display: flex !important;
+                align-items: center !important;
+                gap: 8px !important;
+                text-decoration: none !important;
+                transition: all 0.3s ease !important;
             }
             
-            .nav-links a:hover {
-                background: #c41e3a;
-                color: white;
-            }
-            
-            .logo-text h1 {
-                font-size: 14px;
-            }
-            
-            .logo-text p {
-                font-size: 10px;
+            .nav-links a:hover,
+            .nav-links a:active {
+                background: #c41e3a !important;
+                color: white !important;
             }
         }
         
-        /* MAIN CONTENT */
-        .main-content {
-            margin-top: 80px;
-            padding-top: 20px;
-        }
-        
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('assets/images/gallery/churchpic.png') center/cover;
-            height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
-        
-        .hero-content h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: white;
-        }
-        
-        .hero-subtitle {
-            font-size: 1.5rem;
-            color: #ffd700;
-            margin-bottom: 1rem;
-        }
-        
-        .section {
-            padding: 60px 0;
-        }
-        
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            color: #c41e3a;
-            margin-bottom: 2rem;
-        }
-        
-        .grid {
-            display: grid;
-            gap: 30px;
-        }
-        
-        .grid-3 {
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        }
-        
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border: 1px solid #eee;
-        }
-        
-        .card h3 {
-            color: #c41e3a;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 12px 24px;
-            background: #c41e3a;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-        
-        .btn:hover {
-            background: #a01729;
-            transform: translateY(-2px);
-        }
-        
-        .footer {
-            background: #333;
-            color: white;
-            padding: 40px 0 20px 0;
-            text-align: center;
-        }
-        
-        /* MOBILE RESPONSIVE */
-        @media (max-width: 768px) {
-            .hero-content h2 {
-                font-size: 1.8rem;
-            }
-            
-            .hero-subtitle {
-                font-size: 1.2rem;
-            }
-            
-            .section {
-                padding: 40px 0;
-            }
-            
-            .section-title {
-                font-size: 1.5rem;
-            }
-            
-            .grid-3 {
-                grid-template-columns: 1fr;
-            }
-            
-            .card {
-                padding: 20px;
+        @media (min-width: 769px) {
+            .menu-toggle {
+                display: none !important;
             }
         }
     </style>
+
+    <!-- EmailJS -->
+    <script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js\"></script>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type=\"application/ld+json\">
+    {
+        \"@context\": \"https://schema.org\",
+        \"@type\": \"Church\",
+        \"name\": \"Salem African Church of Christ\",
+        \"alternateName\": \"Salem African Church Abekoko Parish\",
+        \"description\": \"Salem African Church of Christ, Abekoko Parish is a vibrant Christian community in Agege, Lagos offering worship services, Bible study, prayer meetings, and community fellowship.\",
+        \"url\": \"https://abekokoparish.netlify.app\",
+        \"logo\": \"https://abekokoparish.netlify.app/assets/images/gallery/logo.jpg\",
+        \"image\": \"https://abekokoparish.netlify.app/assets/images/gallery/churchpic.png\",
+        \"telephone\": [\"+234 906 275 9260\", \"+234 703 069 8300\"],
+        \"email\": \"contact@salemchurchabekoko.org\",
+        \"address\": {
+            \"@type\": \"PostalAddress\",
+            \"streetAddress\": \"43, Arigbanla Street, Abekoko Bus-stop\",
+            \"addressLocality\": \"Orile Agege\",
+            \"addressRegion\": \"Lagos\",
+            \"addressCountry\": \"Nigeria\",
+            \"postalCode\": \"100001\"
+        },
+        \"geo\": {
+            \"@type\": \"GeoCoordinates\",
+            \"latitude\": 6.6018,
+            \"longitude\": 3.3515
+        },
+        \"openingHours\": [
+            \"Su 10:00-12:00\",
+            \"Tu 17:00-19:00\",
+            \"We 07:00-08:00\",
+            \"Th 17:00-19:00\",
+            \"Fr 17:00-19:00\"
+        ],
+        \"founder\": {
+            \"@type\": \"Person\",
+            \"name\": \"Rev'd Canon Olufemi Oyelola\",
+            \"jobTitle\": \"Vicar in Charge\"
+        },
+        \"sameAs\": [
+            \"https://www.facebook.com/salem.parish.abekoko\",
+            \"https://www.facebook.com/oyelola.olufemi1\",
+            \"https://www.instagram.com/rev_olufemi_oyelola\",
+            \"https://www.youtube.com/@femioyelola8118\"
+        ],
+        \"event\": [
+            {
+                \"@type\": \"Event\",
+                \"name\": \"Sunday Worship Service\",
+                \"description\": \"Weekly Sunday worship service with praise, worship, Bible teaching, and fellowship\",
+                \"startDate\": \"2025-01-01T10:00:00+01:00\",
+                \"endDate\": \"2025-01-01T12:00:00+01:00\",
+                \"eventSchedule\": {
+                    \"@type\": \"Schedule\",
+                    \"repeatFrequency\": \"P1W\",
+                    \"byDay\": \"Sunday\"
+                },
+                \"location\": {
+                    \"@type\": \"Place\",
+                    \"name\": \"Salem African Church of Christ\",
+                    \"address\": \"43, Arigbanla Street, Abekoko Bus-stop, Orile Agege, Lagos, Nigeria\"
+                }
+            },
+            {
+                \"@type\": \"Event\",
+                \"name\": \"Bible Study\",
+                \"description\": \"Weekly Bible study and discussion session\",
+                \"startDate\": \"2025-01-01T17:00:00+01:00\",
+                \"endDate\": \"2025-01-01T19:00:00+01:00\",
+                \"eventSchedule\": {
+                    \"@type\": \"Schedule\",
+                    \"repeatFrequency\": \"P1W\",
+                    \"byDay\": \"Tuesday\"
+                },
+                \"location\": {
+                    \"@type\": \"Place\",
+                    \"name\": \"Salem African Church of Christ\",
+                    \"address\": \"43, Arigbanla Street, Abekoko Bus-stop, Orile Agege, Lagos, Nigeria\"
+                }
+            }
+        ],
+        \"potentialAction\": {
+            \"@type\": \"ReserveAction\",
+            \"target\": {
+                \"@type\": \"EntryPoint\",
+                \"urlTemplate\": \"https://abekokoparish.netlify.app/pages/contact.html\",
+                \"actionPlatform\": [
+                    \"http://schema.org/DesktopWebPlatform\",
+                    \"http://schema.org/MobileWebPlatform\"
+                ]
+            },
+            \"result\": {
+                \"@type\": \"Reservation\",
+                \"name\": \"Church Service Attendance\"
+            }
+        }
+    }
+    </script>
 </head>
 
 <body>
+    <!-- Page Loader -->
+    <div id=\"pageLoader\" style=\"position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); z-index: 9999; display: flex; align-items: center; justify-content: center; transition: opacity 0.5s ease;\">
+        <div style=\"text-align: center; color: white;\">
+            <img src=\"assets/images/gallery/logo.jpg\" alt=\"Salem Church\" style=\"width: 80px; height: 80px; margin-bottom: 20px; animation: pulse 1.5s ease-in-out infinite;\">
+            <h2 style=\"margin: 0; font-size: 1.5rem; animation: fadeInUp 1s ease-out;\">Salem African Church</h2>
+            <p style=\"margin: 10px 0 0 0; opacity: 0.9; animation: fadeInUp 1s ease-out 0.3s both;\">Stay Updated • Stay Blessed</p>
+            <div style=\"width: 50px; height: 3px; background: var(--accent-color); margin: 20px auto; border-radius: 2px; animation: shimmer 1.5s ease-in-out infinite;\"></div>
+        </div>
+    </div>
     <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <img src="assets/images/gallery/logo.jpg" alt="Salem Church Logo">
-                <div class="logo-text">
+    <header class=\"header\" id=\"header\">
+        <div class=\"container\">
+            <a href=\"index.html\" class=\"logo\">
+                <img src=\"assets/images/gallery/logo.jpg\" alt=\"Salem Church Logo\">
+                <div class=\"logo-text\">
                     <h1>Salem African Church of Christ Abekoko</h1>
                     <p>Stay Updated • Stay Blessed</p>
                 </div>
             </a>
             
-            <nav>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html">🏠 Home</a></li>
-                    <li><a href="pages/about.html">ℹ️ About</a></li>
-                    <li><a href="pages/leadership.html">👥 Leadership</a></li>
-                    <li><a href="pages/services.html">⛪ Services</a></li>
-                    <li><a href="pages/events.html">📅 Events</a></li>
-                    <li><a href="pages/prayer.html">🙏 Prayer</a></li>
-                    <li><a href="pages/get-involved.html">🤝 Get Involved</a></li>
-                    <li><a href="pages/contact.html">📞 Contact</a></li>
+            <nav class=\"navbar\">
+                <ul class=\"nav-links\" id=\"navLinks\">
+                    <li><a href=\"index.html\" class=\"active\"><i class=\"fas fa-home\"></i> Home</a></li>
+                    <li><a href=\"pages/about.html\"><i class=\"fas fa-info-circle\"></i> About</a></li>
+                    <li><a href=\"pages/leadership.html\"><i class=\"fas fa-users\"></i> Leadership</a></li>
+                    <li><a href=\"pages/services.html\"><i class=\"fas fa-church\"></i> Services</a></li>
+                    <li><a href=\"pages/events.html\"><i class=\"fas fa-calendar-alt\"></i> Events</a></li>
+                    <li><a href=\"pages/prayer.html\"><i class=\"fas fa-praying-hands\"></i> Prayer</a></li>
+                    <li><a href=\"pages/get-involved.html\"><i class=\"fas fa-hands-helping\"></i> Get Involved</a></li>
+                    <li><a href=\"pages/contact.html\"><i class=\"fas fa-phone\"></i> Contact</a></li>
                 </ul>
             </nav>
             
-            <button class="menu-toggle" id="menuToggle">
+            <button class=\"menu-toggle\" id=\"menuToggle\" aria-label=\"Toggle navigation menu\">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -323,86 +294,332 @@
     </header>
 
     <!-- Main Content -->
-    <main class="main-content">
+    <main class=\"main-content page-transition\">
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
+        <section class=\"hero\" style=\"height: 60vh; background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('assets/images/gallery/churchpic.png') center/cover;\">
+            <div class=\"container\">
+                <div class=\"hero-content\">
                     <h2>Welcome to Our Church Family</h2>
-                    <h3 class="hero-subtitle">(One Big Family)</h3>
+                    <h3 class=\"hero-subtitle\">(One Big Family)</h3>
                     <p>Join us for worship, fellowship, and spiritual growth in the heart of Agege, Lagos</p>
-                    <div style="margin-top: 2rem;">
-                        <a href="pages/services.html" class="btn">📅 Service Times</a>
-                        <a href="pages/prayer.html" class="btn" style="margin-left: 1rem;">🙏 Prayer Request</a>
+                    <div style=\"display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;\">
+                        <a href=\"pages/services.html\" class=\"btn\">
+                            <i class=\"fas fa-calendar-alt\"></i>
+                            Service Times
+                        </a>
+                        <a href=\"pages/prayer.html\" class=\"btn btn-secondary\">
+                            <i class=\"fas fa-praying-hands\"></i>
+                            Prayer Request
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Announcements -->
-        <section class="section">
-            <div class="container">
-                <h2 class="section-title">Latest Announcements</h2>
-                <div class="grid grid-3">
-                    <div class="card">
-                        <h3>📅 Weekly Services</h3>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="margin-bottom: 0.5rem;">⏰ <strong>Gethsemane (ONA-ABAYO)</strong> - Wednesday 7am</li>
-                            <li style="margin-bottom: 0.5rem;">📖 <strong>Bible Study</strong> - Tuesday 5pm</li>
-                            <li style="margin-bottom: 0.5rem;">🎵 <strong>Choir Rehearsal</strong> - Thursday & Friday 5pm</li>
-                        </ul>
-                        <a href="pages/services.html" class="btn" style="margin-top: 1rem;">➡️ View All Services</a>
-                    </div>
-                    
-                    <div class="card">
-                        <h3>📅 Monthly Events</h3>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="margin-bottom: 0.5rem;">⭐ <strong>O TO GE</strong> - Every Thursday @ Cathedral Salem</li>
-                            <li style="margin-bottom: 0.5rem;">🌙 <strong>Night Vigil</strong> - Last Friday of Month</li>
-                            <li style="margin-bottom: 0.5rem;">🍞 <strong>Holy Communion</strong> - First Sunday</li>
-                        </ul>
-                        <a href="pages/events.html" class="btn" style="margin-top: 1rem;">➡️ View All Events</a>
-                    </div>
-                    
-                    <div class="card">
-                        <h3>🤝 Church Needs</h3>
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="margin-bottom: 0.5rem;">🔨 Iron, Cement and Blocks</li>
-                            <li style="margin-bottom: 0.5rem;">🚌 Church Bus</li>
-                            <li style="margin-bottom: 0.5rem;">🪑 Chairs & Air Conditioners</li>
-                        </ul>
-                        <a href="pages/get-involved.html" class="btn" style="margin-top: 1rem;">❤️ How to Help</a>
+        <!-- Current Service Info -->
+        <section class=\"section\" style=\"background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: var(--white); padding: 2rem 0;\">
+            <div class=\"container\">
+                <div class=\"card\" style=\"max-width: 900px; margin: 0 auto; text-align: center; background: var(--white); color: var(--dark-color); padding: 2rem; border-radius: 1rem; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);\">
+                    <h3 style=\"color: var(--primary-color); margin-bottom: 2rem; font-size: 1.8rem;\"><i class=\"fas fa-calendar-check\"></i> This Sunday's Service</h3>
+                    <div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;\">
+                        <div style=\"padding: 1rem; background: rgba(196, 30, 58, 0.05); border-radius: 0.8rem; border-left: 4px solid var(--primary-color);\">
+                            <div style=\"font-weight: 700; color: var(--primary-color); margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase;\">Date</div>
+                            <div style=\"color: var(--dark-color); font-size: 1.1rem; font-weight: 600;\">24th August, 2025</div>
+                        </div>
+                        <div style=\"padding: 1rem; background: rgba(196, 30, 58, 0.05); border-radius: 0.8rem; border-left: 4px solid var(--primary-color);\">
+                            <div style=\"font-weight: 700; color: var(--primary-color); margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase;\">Collect</div>
+                            <div style=\"color: var(--dark-color); font-size: 1.1rem; font-weight: 600;\">10th Sunday After Trinity</div>
+                        </div>
+                        <div style=\"padding: 1rem; background: rgba(196, 30, 58, 0.05); border-radius: 0.8rem; border-left: 4px solid var(--primary-color);\">
+                            <div style=\"font-weight: 700; color: var(--primary-color); margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase;\">Liturgical Colour</div>
+                            <div style=\"color: var(--success-color); font-size: 1.1rem; font-weight: bold;\">Green</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact -->
-        <section class="section" style="background: #f8f8f8;">
-            <div class="container">
-                <h2 class="section-title">Get in Touch</h2>
-                <div style="text-align: center; max-width: 600px; margin: 0 auto;">
-                    <p style="margin-bottom: 1rem;">📍 43, Arigbanla Street, Abekoko Bus-stop, Orile Agege, Lagos</p>
-                    <p style="margin-bottom: 1rem;">📞 +234 906 275 9260 | +234 703 069 8300</p>
-                    <p style="margin-bottom: 2rem;">⏰ Sunday Service: 10:00 AM</p>
-                    <a href="https://wa.me/+2349062725926" class="btn" style="background: #25D366;">💬 WhatsApp Us</a>
-                    <a href="pages/contact.html" class="btn" style="margin-left: 1rem;">📧 Contact Form</a>
+        <!-- Quick Announcements -->
+        <section class=\"section\">
+            <div class=\"container\">
+                <h2 class=\"section-title\">Latest Announcements</h2>
+                <div class=\"grid grid-3\">
+                    <div class=\"card\">
+                        <h3><i class=\"fas fa-calendar-week\"></i> Weekly Services</h3>
+                        <ul style=\"list-style: none; padding: 0;\">
+                            <li style=\"margin-bottom: 0.5rem;\"><i class=\"fas fa-clock\" style=\"color: var(--accent-color); margin-right: 0.5rem;\"></i> <strong>Gethsemane (ONA-ABAYO)</strong> - Wednesday 7am</li>
+                            <li style=\"margin-bottom: 0.5rem;\"><i class=\"fas fa-book\" style=\"color: var(--accent-color); margin-right: 0.5rem;\"></i> <strong>Bible Study</strong> - Tuesday 5pm</li>
+                            <li style=\"margin-bottom: 0.5rem;\"><i class=\"fas fa-music\" style=\"color: var(--accent-color); margin-right: 0.5rem;\"></i> <strong>Choir Rehearsal</strong> - Thursday & Friday 5pm</li>
+                        </ul>
+                        <a href=\"pages/services.html\" class=\"btn\" style=\"margin-top: 1rem;\">
+                            <i class=\"fas fa-arrow-right\"></i> View All Services
+                        </a>
+                    </div>
+                    
+                    <div class=\"card\">
+                        <h3><i class=\"fas fa-calendar-alt\"></i> Monthly Events</h3>
+                        <ul style=\"list-style: none; padding: 0;\">
+                            <li style=\"margin-bottom: 0.5rem;\"><i class=\"fas fa-star\" style=\"color: var(--accent-color); margin-right: 0.5rem;\"></i> <strong>O TO GE</strong> - Every Thursday @ Cathedral Salem</li>
+                            <li style=\"margin-bottom: 0.5rem;\"><i class=\"fas fa-moon\" style=\"color: var(--accent-color); margin-right: 0.5rem;\"></i> <strong>Night Vigil</strong> - Last Friday of Month</li>
+                            <li style=\"margin-bottom: 0.5rem;\"><i class=\"fas fa-bread-slice\" style=\"color: var(--accent-color); margin-right: 0.5rem;\"></i> <strong>Holy Communion</strong> - First Sunday</li>
+                        </ul>
+                        <a href=\"pages/events.html\" class=\"btn\" style=\"margin-top: 1rem;\">
+                            <i class=\"fas fa-arrow-right\"></i> View All Events
+                        </a>
+                    </div>
+                    
+                    <div class=\"card\">
+                        <h3><i class=\"fas fa-hands-helping\"></i> Church Needs</h3>
+                        <ul style=\"list-style: none; padding: 0;\">
+                            <li style=\"margin-bottom: 0.5rem;\"><i class=\"fas fa-hammer\" style=\"color: var(--accent-color); margin-right: 0.5rem;\"></i> Iron, Cement and Blocks</li>
+                            <li style=\"margin-bottom: 0.5rem;\"><i class=\"fas fa-bus\" style=\"color: var(--accent-color); margin-right: 0.5rem;\"></i> Church Bus</li>
+                            <li style=\"margin-bottom: 0.5rem;\"><i class=\"fas fa-chair\" style=\"color: var(--accent-color); margin-right: 0.5rem;\"></i> Chairs & Air Conditioners</li>
+                        </ul>
+                        <a href=\"pages/get-involved.html\" class=\"btn\" style=\"margin-top: 1rem;\">
+                            <i class=\"fas fa-heart\"></i> How to Help
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Preview -->
+        <section class=\"section\" style=\"background-color: #fafafa;\">
+            <div class=\"container\">
+                <h2 class=\"section-title\">Meet Our Leadership</h2>
+                <div class=\"grid grid-3\">
+                    <!-- People's Warden - Left -->
+                    <div class=\"leader-card\" style=\"border: 2px solid var(--primary-color); position: relative;\">
+                        <div style=\"position: absolute; top: -8px; left: 50%; transform: translateX(-50%); background: var(--primary-color); color: var(--white); padding: 0.2rem 0.8rem; border-radius: 0.8rem; font-size: 0.7rem; font-weight: 600; box-shadow: 0 2px 8px rgba(196, 30, 58, 0.3);\">PEOPLE'S WARDEN</div>
+                        <img src=\"assets/images/leaders/Bro. olawale rotimi.jpg\" alt=\"Bro. Olawale Rotimi\" class=\"leader-image\">
+                        <div class=\"leader-name\">Bro. Olawale Rotimi</div>
+                        <div class=\"leader-role\">The People's Warden</div>
+                        <p class=\"leader-bio\">Dedicated to serving the congregation and ensuring the spiritual welfare of our church family.</p>
+                    </div>
+                    
+                    <!-- Vicar in Charge - Center -->
+                    <div class=\"leader-card\" style=\"border: 4px solid var(--accent-color); position: relative; background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(196, 30, 58, 0.02)); transform: scale(1.05); z-index: 10; box-shadow: 0 15px 35px rgba(255, 215, 0, 0.3);\">
+                        <div style=\"position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, var(--accent-color), #e6c200); color: var(--dark-color); padding: 0.4rem 1.2rem; border-radius: 1.2rem; font-size: 0.85rem; font-weight: 700; box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5); text-transform: uppercase; letter-spacing: 0.5px;\">✨ VICAR IN CHARGE ✨</div>
+                        <img src=\"assets/images/leaders/vicar.jpg\" alt=\"Rev'd Canon Olufemi Oyelola\" class=\"leader-image\">
+                        <div class=\"leader-name\" style=\"color: var(--accent-color); font-size: 1.3rem;\">Rev'd Canon Olufemi Oyelola</div>
+                        <div class=\"leader-role\" style=\"color: var(--primary-color); font-size: 1.1rem; font-weight: 700;\">Vicar in Charge</div>
+                        <p class=\"leader-bio\" style=\"font-weight: 500;\">Our spiritual leader providing pastoral care and guidance to our church family with wisdom and love.</p>
+                        <div style=\"margin-top: 1rem; text-align: center; position: relative; z-index: 100;\">
+                            <p style=\"margin: 0 0 1rem 0; font-size: 0.95rem; font-weight: 700; color: var(--primary-color);\">📞 For Prayer & Counselling:</p>
+                            <a href=\"https://wa.me/+2349062725926\" style=\"background: #25D366; color: white; padding: 12px 24px; font-size: 16px; font-weight: 600; border-radius: 8px; text-decoration: none; position: relative; z-index: 101; pointer-events: auto; display: inline-block; transition: background-color 0.3s ease; box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3);\" onmouseover=\"this.style.backgroundColor='#128c7e'\" onmouseout=\"this.style.backgroundColor='#25D366'\">
+                                <i class=\"fab fa-whatsapp\" style=\"margin-right: 8px;\"></i>WhatsApp: +234 906 272 5926
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Pastor's Warden - Right -->
+                    <div class=\"leader-card\" style=\"border: 2px solid var(--primary-color); position: relative;\">
+                        <div style=\"position: absolute; top: -8px; left: 50%; transform: translateX(-50%); background: var(--primary-color); color: var(--white); padding: 0.2rem 0.8rem; border-radius: 0.8rem; font-size: 0.7rem; font-weight: 600; box-shadow: 0 2px 8px rgba(196, 30, 58, 0.3);\">PASTOR'S WARDEN</div>
+                        <img src=\"assets/images/leaders/Bro. Seun Igbinyade.jpg\" alt=\"Bro. Seun Igbinyade\" class=\"leader-image\">
+                        <div class=\"leader-name\">Bro. Seun Igbinyade</div>
+                        <div class=\"leader-role\">Pastor's Warden</div>
+                        <p class=\"leader-bio\">Supporting pastoral duties and coordinating church activities with dedication and organizational skills.</p>
+                    </div>
+                </div>
+                
+                <div style=\"text-align: center; margin-top: 2rem;\">
+                    <a href=\"pages/leadership.html\" class=\"btn\">
+                        <i class=\"fas fa-users\"></i>
+                        Meet All Our Leaders
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prayer Points -->
+        <section class=\"section\">
+            <div class=\"container\">
+                <div class=\"grid grid-2\">
+                    <div class=\"card\">
+                        <h3><i class=\"fas fa-praying-hands\"></i> Prayer Points for the Week</h3>
+                        <ul style=\"list-style: none; padding: 0;\" id=\"daily-prayers\">
+                            <li style=\"margin-bottom: 1rem; padding: 1rem; background: #f8f9fa; border-left: 4px solid var(--primary-color); border-radius: 0.5rem;\">
+                                <strong>Monday:</strong> Pray for wisdom and guidance for our church leadership
+                            </li>
+                            <li style=\"margin-bottom: 1rem; padding: 1rem; background: #f8f9fa; border-left: 4px solid var(--primary-color); border-radius: 0.5rem;\">
+                                <strong>Tuesday:</strong> Intercede for the sick and those in need of healing
+                            </li>
+                            <li style=\"margin-bottom: 1rem; padding: 1rem; background: #f8f9fa; border-left: 4px solid var(--primary-color); border-radius: 0.5rem;\">
+                                <strong>Wednesday:</strong> Pray for unity and love within our church family
+                            </li>
+                        </ul>
+                        <a href=\"pages/prayer.html\" class=\"btn\">
+                            <i class=\"fas fa-arrow-right\"></i> View All Prayer Points
+                        </a>
+                    </div>
+                    
+                    <div class=\"card\">
+                        <h3><i class=\"fas fa-lightbulb\"></i> Food for Thought</h3>
+                        <blockquote style=\"font-style: italic; font-size: 1.1rem; line-height: 1.8; border-left: 4px solid var(--accent-color); padding-left: 1rem; margin: 1.5rem 0;\">
+                            \"This is the day the Lord has made; let us rejoice and be glad in it.\"
+                            <footer style=\"margin-top: 1rem; font-weight: 600; color: var(--primary-color);\">- Psalm 118:24</footer>
+                        </blockquote>
+                        <p>Every day is a gift from God. Let us approach each day with gratitude, joy, and expectation of His goodness in our lives.</p>
+                        <a href=\"pages/prayer.html\" class=\"btn\">
+                            <i class=\"fas fa-heart\"></i> Submit Prayer Request
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Contact -->
+        <section class=\"section\" style=\"background: linear-gradient(135deg, var(--dark-color), #2c2c2c); color: var(--white);\">
+            <div class=\"container\">
+                <div class=\"grid grid-2\">
+                    <div>
+                        <h2 style=\"color: var(--accent-color); margin-bottom: 1.5rem;\">Get in Touch</h2>
+                        <div style=\"display: flex; flex-direction: column; gap: 1rem;\">
+                            <div style=\"display: flex; align-items: center; gap: 1rem;\">
+                                <i class=\"fas fa-map-marker-alt\" style=\"color: var(--accent-color); font-size: 1.2rem; width: 20px;\"></i>
+                                <span>43, Arigbanla Street, Abekoko Bus-stop, Orile Agege, Lagos</span>
+                            </div>
+                            <div style=\"display: flex; align-items: center; gap: 1rem;\">
+                                <i class=\"fas fa-phone\" style=\"color: var(--accent-color); font-size: 1.2rem; width: 20px;\"></i>
+                                <span>+234 906 275 9260 | +234 703 069 8300</span>
+                            </div>
+                            <div style=\"display: flex; align-items: center; gap: 1rem;\">
+                                <i class=\"fab fa-whatsapp\" style=\"color: var(--accent-color); font-size: 1.2rem; width: 20px;\"></i>
+                                <a href=\"https://wa.me/+2349062725926\" style=\"color: var(--white); text-decoration: none;\">WhatsApp: +234 906 272 5926</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 style=\"color: var(--accent-color); margin-bottom: 1.5rem;\">Service Times</h3>
+                        <div style=\"display: flex; flex-direction: column; gap: 0.8rem;\">
+                            <div style=\"display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);\">
+                                <span><i class=\"fas fa-clock\" style=\"color: var(--accent-color); margin-right: 0.5rem;\"></i>Sunday Service</span>
+                                <span style=\"font-weight: 600;\">10:00 AM</span>
+                            </div>
+                            <div style=\"display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);\">
+                                <span><i class=\"fas fa-clock\" style=\"color: var(--accent-color); margin-right: 0.5rem;\"></i>Bible Study</span>
+                                <span style=\"font-weight: 600;\">Tuesday 5:00 PM</span>
+                            </div>
+                            <div style=\"display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0;\">
+                                <span><i class=\"fas fa-clock\" style=\"color: var(--accent-color); margin-right: 0.5rem;\"></i>Gethsemane</span>
+                                <span style=\"font-weight: 600;\">Wednesday 7:00 AM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style=\"text-align: center; margin-top: 2rem;\">
+                    <a href=\"pages/contact.html\" class=\"btn\">
+                        <i class=\"fas fa-envelope\"></i>
+                        Contact Us
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Salem African Church of Christ, Abekoko Parish. All rights reserved.</p>
-            <p>Built with ❤️ for the glory of God</p>
+    <footer class=\"footer\">
+        <div class=\"container\">
+            <div class=\"footer-content\">
+                <div>
+                    <h3>Salem African Church of Christ</h3>
+                    <p>Abekoko Parish, Agege Lagos</p>
+                    <p>Building a community of faith, hope, and love in the heart of Lagos.</p>
+                    <p style=\"margin-top: 1rem; font-style: italic; color: var(--accent-color);\">\"Stay Updated • Stay Blessed\"</p>
+                </div>
+                
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class=\"footer-links\">
+                        <li><a href=\"pages/about.html\"><i class=\"fas fa-info-circle\"></i> About Us</a></li>
+                        <li><a href=\"pages/leadership.html\"><i class=\"fas fa-users\"></i> Leadership</a></li>
+                        <li><a href=\"pages/services.html\"><i class=\"fas fa-church\"></i> Services</a></li>
+                        <li><a href=\"pages/events.html\"><i class=\"fas fa-calendar-alt\"></i> Events</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Get Involved</h3>
+                    <ul class=\"footer-links\">
+                        <li><a href=\"pages/prayer.html\"><i class=\"fas fa-praying-hands\"></i> Prayer Requests</a></li>
+                        <li><a href=\"pages/get-involved.html\"><i class=\"fas fa-hands-helping\"></i> Volunteer</a></li>
+                        <li><a href=\"pages/get-involved.html#birthday\"><i class=\"fas fa-birthday-cake\"></i> Birthday Registration</a></li>
+                        <li><a href=\"pages/contact.html\"><i class=\"fas fa-comment-alt\"></i> Feedback</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Contact Info</h3>
+                    <div style=\"display: flex; flex-direction: column; gap: 0.5rem;\">
+                        <p><i class=\"fas fa-map-marker-alt\" style=\"color: var(--accent-color); margin-right: 0.5rem;\"></i> 43, Arigbanla Street, Abekoko Bus-stop, Orile Agege, Lagos</p>
+                        <p><i class=\"fas fa-phone\" style=\"color: var(--accent-color); margin-right: 0.5rem;\"></i> +234 906 275 9260</p>
+                        <p><i class=\"fas fa-phone\" style=\"color: var(--accent-color); margin-right: 0.5rem;\"></i> +234 703 069 8300</p>
+                        <a href=\"https://wa.me/+2349062725926\" style=\"color: var(--white); text-decoration: none;\">
+                            <i class=\"fab fa-whatsapp\" style=\"color: var(--accent-color); margin-right: 0.5rem;\"></i> WhatsApp Chat
+                        </a>
+                    </div>
+                    <h3 style=\"margin-top: 1.5rem;\">Follow Us</h3>
+                    <div style=\"display: flex; flex-direction: column; gap: 0.5rem;\">
+                        <a href=\"https://www.facebook.com/salem.parish.abekoko\" target=\"_blank\" style=\"color: var(--white); text-decoration: none;\">
+                            <i class=\"fab fa-facebook-f\" style=\"color: var(--accent-color); margin-right: 0.5rem;\"></i> Church Facebook
+                        </a>
+                        <a href=\"https://www.facebook.com/oyelola.olufemi1\" target=\"_blank\" style=\"color: var(--white); text-decoration: none;\">
+                            <i class=\"fab fa-facebook-f\" style=\"color: var(--accent-color); margin-right: 0.5rem;\"></i> Pastor's Facebook
+                        </a>
+                        <a href=\"https://www.instagram.com/rev_olufemi_oyelola\" target=\"_blank\" style=\"color: var(--white); text-decoration: none;\">
+                            <i class=\"fab fa-instagram\" style=\"color: var(--accent-color); margin-right: 0.5rem;\"></i> Pastor's Instagram
+                        </a>
+                        <a href=\"https://www.youtube.com/@femioyelola8118\" target=\"_blank\" style=\"color: var(--white); text-decoration: none;\">
+                            <i class=\"fab fa-youtube\" style=\"color: var(--accent-color); margin-right: 0.5rem;\"></i> YouTube Channel
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class=\"footer-bottom\">
+                <p>&copy; 2025 Salem African Church of Christ, Abekoko Parish. All rights reserved.</p>
+                <p>Built with ❤️ for the glory of God</p>
+            </div>
         </div>
     </footer>
 
+    <!-- Quick Action Buttons -->
+    <div class=\"quick-actions\">
+        <a href=\"https://wa.me/+2349062725926\" class=\"quick-action-btn whatsapp\" title=\"WhatsApp Us\">
+            <i class=\"fab fa-whatsapp\"></i>
+        </a>
+        <a href=\"pages/prayer.html\" class=\"quick-action-btn\" title=\"Prayer Request\">
+            <i class=\"fas fa-praying-hands\"></i>
+        </a>
+        <a href=\"pages/contact.html\" class=\"quick-action-btn\" title=\"Contact Us\">
+            <i class=\"fas fa-phone\"></i>
+        </a>
+    </div>
+
     <!-- SIMPLE WORKING JAVASCRIPT -->
     <script>
-        console.log('🟢 Simple JavaScript loading...');
+        console.log('🟢 Church website loading...');
+        
+        // Page Loader
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('pageLoader');
+            if (loader) {
+                loader.style.opacity = '0';
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 300);
+            }
+        });
+        
+        // Fallback - hide loader after 1 second
+        setTimeout(() => {
+            const loader = document.getElementById('pageLoader');
+            if (loader) {
+                loader.style.display = 'none';
+            }
+        }, 1000);
         
         // Mobile menu toggle
         const menuToggle = document.getElementById('menuToggle');
@@ -442,6 +659,16 @@
         } else {
             console.log('❌ Menu elements not found');
         }
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
     </script>
 </body>
-</html>
+</html>"
