@@ -297,7 +297,7 @@
                 </ul>
             </nav>
             
-            <button class=\"menu-toggle\" id=\"menuToggle\" aria-label=\"Toggle navigation menu\">
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -633,15 +633,60 @@
             }
         }, 1000);
         
-        // SUPER SIMPLE MOBILE MENU
-        const menuBtn = document.getElementById('menuToggle');
-        const navMenu = document.getElementById('navLinks');
+        // SUPER SIMPLE MOBILE MENU - WAIT FOR ELEMENTS
+        function initMobileMenu() {
+            const menuBtn = document.getElementById('menuToggle');
+            const navMenu = document.getElementById('navLinks');
+            
+            console.log('🔴 Searching for menu elements...');
+            console.log('🔴 Menu button found:', !!menuBtn);
+            console.log('🔴 Nav menu found:', !!navMenu);
+            
+            if (menuBtn) {
+                console.log('🔴 Menu button element:', menuBtn);
+                console.log('🔴 Menu button classes:', menuBtn.className);
+            }
+            
+            if (navMenu) {
+                console.log('🔴 Nav menu element:', navMenu);
+                console.log('🔴 Nav menu classes:', navMenu.className);
+            }
+            
+            return { menuBtn, navMenu };
+        }
         
-        console.log('🔴 Menu button found:', !!menuBtn);
-        console.log('🔴 Nav menu found:', !!navMenu);
+        // Try to get elements immediately
+        let { menuBtn, navMenu } = initMobileMenu();
         
-        if (menuBtn && navMenu) {
-            console.log('✅ All menu elements found');
+        // If elements not found, try again after delays
+        if (!menuBtn || !navMenu) {
+            console.log('⚠️ Elements not found immediately, trying again...');
+            
+            setTimeout(() => {
+                console.log('🔴 Retry 1: Searching for elements...');
+                const result = initMobileMenu();
+                menuBtn = result.menuBtn;
+                navMenu = result.navMenu;
+                
+                if (menuBtn && navMenu) {
+                    setupMobileMenu(menuBtn, navMenu);
+                }
+            }, 1000);
+            
+            setTimeout(() => {
+                console.log('🔴 Retry 2: Searching for elements...');
+                const result = initMobileMenu();
+                menuBtn = result.menuBtn;
+                navMenu = result.navMenu;
+                
+                if (menuBtn && navMenu) {
+                    setupMobileMenu(menuBtn, navMenu);
+                }
+            }, 2000);
+        }
+        
+        function setupMobileMenu(menuBtn, navMenu) {
+            console.log('✅ Setting up mobile menu with found elements');
             
             // Open menu function
             function openMenu() {
@@ -696,9 +741,13 @@
             
             console.log('🎉 SUPER SIMPLE MOBILE NAVIGATION READY!');
             console.log('🔴 Look for 60px red button with gold border in top-right corner');
+        }
+        
+        // Setup menu if elements found immediately
+        if (menuBtn && navMenu) {
+            setupMobileMenu(menuBtn, navMenu);
         } else {
-            console.log('❌ Menu elements not found');
-            alert('ERROR: Menu elements not found!');
+            console.log('❌ Menu elements not found initially, will retry...');
         }
 
         // Header scroll effect
