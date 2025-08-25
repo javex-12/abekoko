@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salem African Church - Mobile Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+        }
+        
+        /* HEADER */
+        .header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 15px;
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        
+        .logo-text h1 {
+            font-size: 16px;
+            color: #c41e3a;
+            margin: 0;
+        }
+        
+        .logo-text p {
+            font-size: 12px;
+            color: #666;
+            margin: 0;
+        }
+        
+        /* DESKTOP NAVIGATION */
+        .desktop-nav {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        
+        .desktop-nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .desktop-nav a:hover {
+            background: #c41e3a;
+            color: white;
+        }
+        
+        /* MOBILE HAMBURGER BUTTON */
+        .mobile-menu-btn {
+            display: none;
+            width: 60px;
+            height: 60px;
+            background: #c41e3a;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            position: relative;
+            z-index: 1002;
+        }
+        
+        .mobile-menu-btn span {
+            width: 30px;
+            height: 4px;
+            background: white;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        /* MOBILE NAVIGATION MENU */
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100vh;
+            background: white;
+            z-index: 1001;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: left 0.3s ease;
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .mobile-nav.active {
+            left: 0;
+        }
+        
+        .mobile-nav a {
+            width: 90%;
+            max-width: 300px;
+            padding: 20px;
+            background: #f8f8f8;
+            border: 3px solid #c41e3a;
+            border-radius: 15px;
+            color: #333;
+            text-decoration: none;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-nav a:hover,
+        .mobile-nav a:active {
+            background: #c41e3a;
+            color: white;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: #c41e3a;
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        /* MAIN CONTENT */
+        .main-content {
+            margin-top: 90px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('assets/images/gallery/churchpic.png') center/cover;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .hero-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            background: #c41e3a;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #a01729;
+            transform: translateY(-2px);
+        }
+        
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 768px) {
+            .desktop-nav {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: flex;
+            }
+            
+            .logo-text h1 {
+                font-size: 14px;
+            }
+            
+            .logo-text p {
+                font-size: 10px;
+            }
+            
+            .hero-content h2 {
+                font-size: 1.5rem;
+            }
+            
+            .hero-content p {
+                font-size: 1rem;
+            }
+        }
+        
+        /* STATUS INDICATOR */
+        .status {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: #333;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            font-family: monospace;
+            font-size: 14px;
+            z-index: 2000;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="assets/images/gallery/logo.jpg" alt="Salem Church Logo">
+                <div class="logo-text">
+                    <h1>Salem African Church of Christ</h1>
+                    <p>Stay Updated • Stay Blessed</p>
+                </div>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <a href="index.html">🏠 Home</a>
+                <a href="pages/about.html">ℹ️ About</a>
+                <a href="pages/leadership.html">👥 Leadership</a>
+                <a href="pages/services.html">⛪ Services</a>
+                <a href="pages/contact.html">📞 Contact</a>
+            </nav>
+            
+            <!-- Mobile Hamburger Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="close-btn" id="closeBtn">✕</button>
+        <a href="index.html">🏠 Home</a>
+        <a href="pages/about.html">ℹ️ About</a>
+        <a href="pages/leadership.html">👥 Leadership</a>
+        <a href="pages/services.html">⛪ Services</a>
+        <a href="pages/events.html">📅 Events</a>
+        <a href="pages/prayer.html">🙏 Prayer</a>
+        <a href="pages/get-involved.html">🤝 Get Involved</a>
+        <a href="pages/contact.html">📞 Contact</a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Our Church Family</h2>
+                <p>Join us for worship, fellowship, and spiritual growth</p>
+                <a href="pages/services.html" class="btn">📅 Service Times</a>
+                <a href="pages/contact.html" class="btn">📞 Contact Us</a>
+            </div>
+        </section>
+
+        <!-- Quick Info -->
+        <div style="background: #f8f8f8; padding: 30px; border-radius: 15px; margin: 30px 0;">
+            <h3 style="color: #c41e3a; margin-bottom: 20px;">📍 Church Information</h3>
+            <p><strong>Address:</strong> 43, Arigbanla Street, Abekoko Bus-stop, Orile Agege, Lagos</p>
+            <p><strong>Phone:</strong> +234 906 275 9260 | +234 703 069 8300</p>
+            <p><strong>Sunday Service:</strong> 10:00 AM</p>
+            <p><strong>Bible Study:</strong> Tuesday 5:00 PM</p>
+            <a href="https://wa.me/+2349062725926" class="btn" style="background: #25D366; margin-top: 20px;">💬 WhatsApp Us</a>
+        </div>
+    </main>
+
+    <!-- Status Display -->
+    <div class="status" id="status">
+        📱 Mobile Navigation Status: Loading...
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        console.log('🔴 SUPER SIMPLE MOBILE NAVIGATION LOADING...');
+        
+        // Update status
+        function updateStatus(message) {
+            const status = document.getElementById('status');
+            if (status) {
+                status.innerHTML = '📱 ' + message;
+            }
+            console.log('📱 STATUS: ' + message);
+        }
+        
+        // Get elements
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileNav = document.getElementById('mobileNav');
+        const closeBtn = document.getElementById('closeBtn');
+        
+        updateStatus('Elements found: Button=' + !!mobileMenuBtn + ', Nav=' + !!mobileNav + ', Close=' + !!closeBtn);
+        
+        if (!mobileMenuBtn || !mobileNav || !closeBtn) {
+            updateStatus('ERROR: Menu elements not found!');
+            alert('ERROR: Menu elements not found!');
+        } else {
+            updateStatus('All menu elements found successfully');
+            
+            // Open menu function
+            function openMenu() {
+                console.log('🔴 Opening menu');
+                mobileNav.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                updateStatus('Menu opened - you should see full-screen navigation');
+            }
+            
+            // Close menu function
+            function closeMenu() {
+                console.log('🔴 Closing menu');
+                mobileNav.classList.remove('active');
+                document.body.style.overflow = '';
+                updateStatus('Menu closed');
+            }
+            
+            // Add event listeners
+            mobileMenuBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                updateStatus('Hamburger button clicked!');
+                openMenu();
+            });
+            
+            mobileMenuBtn.addEventListener('touchend', function(e) {
+                e.preventDefault();
+                updateStatus('Hamburger button touched!');
+                openMenu();
+            });
+            
+            closeBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                updateStatus('Close button clicked!');
+                closeMenu();
+            });
+            
+            closeBtn.addEventListener('touchend', function(e) {
+                e.preventDefault();
+                updateStatus('Close button touched!');
+                closeMenu();
+            });
+            
+            // Close menu when clicking navigation links
+            mobileNav.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    updateStatus('Navigation link clicked, closing menu');
+                    closeMenu();
+                }
+            });
+            
+            // Close menu when clicking outside
+            mobileNav.addEventListener('click', function(e) {
+                if (e.target === mobileNav) {
+                    updateStatus('Clicked outside menu, closing');
+                    closeMenu();
+                }
+            });
+            
+            updateStatus('Ready! Tap the red hamburger button in top-right corner');
+        }
+        
+        // Device info
+        setTimeout(function() {
+            const info = {
+                userAgent: navigator.userAgent.substring(0, 50),
+                screenWidth: window.screen.width,
+                screenHeight: window.screen.height,
+                windowWidth: window.innerWidth,
+                windowHeight: window.innerHeight
+            };
+            
+            updateStatus('Device: ' + info.screenWidth + 'x' + info.screenHeight + ', Ready to test!');
+            console.log('📱 Device info:', info);
+        }, 2000);
+    </script>
+</body>
+</html>
