@@ -536,6 +536,49 @@
         </a>
     </div>
 
+    <!-- EMERGENCY MOBILE FIX -->
+    <script src="SIMPLE_MOBILE_FIX.js"></script>
+    
+    <!-- INLINE EMERGENCY FIX -->
+    <script>
+        console.log('🚨 INLINE EMERGENCY MOBILE FIX STARTING...');
+        
+        function applyEmergencyFix() {
+            const menuBtn = document.getElementById('menuToggle');
+            const navMenu = document.getElementById('navLinks');
+            
+            if (menuBtn && navMenu) {
+                console.log('✅ Found menu elements, applying fix...');
+                
+                menuBtn.onclick = function() {
+                    console.log('📱 MENU CLICKED!');
+                    navMenu.classList.toggle('active');
+                    console.log('Menu active:', navMenu.classList.contains('active'));
+                };
+                
+                menuBtn.ontouchend = function(e) {
+                    e.preventDefault();
+                    console.log('📱 MENU TOUCHED!');
+                    navMenu.classList.toggle('active');
+                };
+                
+                console.log('🎉 Emergency fix applied!');
+            } else {
+                console.log('❌ Menu elements not found');
+            }
+        }
+        
+        // Apply fix when page loads
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', applyEmergencyFix);
+        } else {
+            applyEmergencyFix();
+        }
+        
+        // Also try after a delay
+        setTimeout(applyEmergencyFix, 1000);
+    </script>
+    
     <!-- Cache Buster Script -->
     <script src="cache-buster.js"></script>
     
