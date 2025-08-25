@@ -2,518 +2,446 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    <!-- Cache Control Meta Tags -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
     <title>Salem African Church of Christ – Abekoko Parish, Agege Lagos</title>
     
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://api.emailjs.com; frame-ancestors 'none';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Salem African Church of Christ, Abekoko Parish, Agege Lagos – Join us for worship, praise, and community fellowship. Sunday Service 10:00 AM. Stay Updated, Stay Blessed.">
+    <meta name="keywords" content="Salem African Church, Abekoko Parish, Agege, Lagos, African Church of Christ, Worship, Christian Fellowship, Church Service, Lagos Church, Sunday Service, Bible Study, Prayer, Gethsemane, Rev Canon Olufemi Oyelola, Orile Agege, Nigerian Church, Christian Community">
+    <meta name="author" content="Salem African Church of Christ">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="distribution" content="global">
+
+    <!-- Open Graph (Facebook/WhatsApp) -->
+    <meta property="og:title" content="Salem African Church of Christ – Abekoko Parish, Agege Lagos">
+    <meta property="og:description" content="Join Salem African Church of Christ in Agege, Lagos for uplifting worship, Bible teachings, and community fellowship.">
+    <meta property="og:image" content="https://abekokoparish.netlify.app/assets/images/gallery/logo.jpg">
+    <meta property="og:url" content="https://abekokoparish.netlify.app">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_NG">
+    <meta property="og:site_name" content="Salem African Church of Christ">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Salem African Church of Christ – Abekoko Parish, Agege Lagos">
+    <meta name="twitter:description" content="Worship with us at Salem African Church of Christ, Abekoko Parish in Agege Lagos. Stay updated and stay blessed.">
+    <meta name="twitter:image" content="https://abekokoparish.netlify.app/assets/images/gallery/logo.jpg">
+    <meta name="twitter:site" content="@SalemChurchAbekoko">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://abekokoparish.netlify.app/">
+    <meta name="geo.region" content="NG-LA">
+    <meta name="geo.placename" content="Agege, Lagos">
+    <meta name="geo.position" content="6.6018;3.3515">
+    <meta name="ICBM" content="6.6018, 3.3515">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/images/gallery/logo.jpg">
+
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#c41e3a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Salem Church">
+    <link rel="apple-touch-icon" href="assets/images/gallery/logo.jpg">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+
     <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- INLINE CSS - GUARANTEED TO WORK -->
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.css?v=2025">
+    
+    <!-- Mobile Touch Fixes -->
+    <link rel="stylesheet" href="mobile-touch-fixes.css?v=2025">
+    
+    <!-- Mobile Navigation Fixes -->
+    <link rel="stylesheet" href="mobile-navigation-fix.css?v=2025">
+    
+    <!-- Cache Fix CSS -->
+    <link rel="stylesheet" href="cache-fix.css?v=2025">
+    
+    <!-- EMERGENCY CSS FIX -->
+    <link rel="stylesheet" href="EMERGENCY_CSS_FIX.css">
+    
+    <!-- MOBILE DEVICE SPECIFIC FIX -->
+    <link rel="stylesheet" href="MOBILE_DEVICE_FIX.css">
+    
+    <!-- MOBILE RESPONSIVE FIX -->
+    <link rel="stylesheet" href="MOBILE_RESPONSIVE_FIX.css">
+    
+    <!-- DEBUG MOBILE NAVIGATION -->
+    <link rel="stylesheet" href="DEBUG_MOBILE_NAVIGATION.css">
+    
+    <!-- CRITICAL MOBILE RESPONSIVE CSS -->
     <style>
-        /* CSS VARIABLES */
-        :root {
-            --primary-color: #c41e3a;
-            --secondary-color: #8b1538;
-            --accent-color: #ffd700;
-            --dark-color: #1a1a1a;
-            --white: #ffffff;
+        /* FORCE MOBILE RESPONSIVENESS */
+        html, body {
+            max-width: 100vw !important;
+            overflow-x: hidden !important;
+            margin: 0 !important;
+            padding: 0 !important;
         }
         
-        /* RESET */
         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            color: var(--dark-color);
-            line-height: 1.6;
-            background: var(--white);
+            box-sizing: border-box !important;
+            max-width: 100% !important;
         }
         
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+            width: 100% !important;
+            max-width: 100% !important;
+            padding: 0 15px !important;
+            margin: 0 auto !important;
         }
         
-        /* HEADER */
-        .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: var(--white);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            z-index: 1000;
-            padding: 10px 0;
-        }
-        
-        .header .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            min-height: 60px;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            text-decoration: none;
-            color: inherit;
-            flex: 1;
-            max-width: 70%;
-        }
-        
-        .logo img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        
-        .logo-text h1 {
-            font-size: 18px;
-            color: var(--primary-color);
-            margin: 0;
-            line-height: 1.1;
-        }
-        
-        .logo-text p {
-            font-size: 12px;
-            color: #666;
-            margin: 0;
-        }
-        
-        /* DESKTOP NAVIGATION */
-        .navbar {
-            display: block;
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 20px;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .nav-links a {
-            color: var(--dark-color);
-            text-decoration: none;
-            padding: 8px 16px;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-weight: 500;
-        }
-        
-        .nav-links a:hover,
-        .nav-links a.active {
-            background: var(--primary-color);
-            color: var(--white);
-        }
-        
-        /* MOBILE HAMBURGER BUTTON */
-        .menu-toggle {
-            display: none;
-            width: 60px;
-            height: 60px;
-            background: var(--primary-color);
-            border: 3px solid var(--accent-color);
-            border-radius: 10px;
-            cursor: pointer;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 5px;
-            position: relative;
-            z-index: 1002;
-            box-shadow: 0 4px 15px rgba(196, 30, 58, 0.5);
-        }
-        
-        .menu-toggle span {
-            width: 30px;
-            height: 4px;
-            background: white;
-            border-radius: 2px;
-            display: block;
-            transition: all 0.3s ease;
-        }
-        
-        /* MAIN CONTENT */
-        .main-content {
-            margin-top: 80px;
-            padding-top: 20px;
-        }
-        
-        /* HERO SECTION */
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('assets/images/gallery/churchpic.png') center/cover;
-            height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            text-align: center;
-        }
-        
-        .hero-content h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--white);
-        }
-        
-        .hero-subtitle {
-            font-size: 1.5rem;
-            color: var(--accent-color);
-            margin-bottom: 1rem;
-            font-style: italic;
-        }
-        
-        .hero-content p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-        
-        /* SECTIONS */
-        .section {
-            padding: 60px 0;
-        }
-        
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            color: var(--primary-color);
-            margin-bottom: 2rem;
-        }
-        
-        .grid {
-            display: grid;
-            gap: 30px;
-        }
-        
-        .grid-2 {
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        }
-        
-        .grid-3 {
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        }
-        
-        /* CARDS */
-        .card {
-            background: var(--white);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border: 1px solid #eee;
-            transition: all 0.3s ease;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-        }
-        
-        .card h3 {
-            color: var(--primary-color);
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        /* BUTTONS */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 12px 24px;
-            background: var(--primary-color);
-            color: var(--white);
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-        }
-        
-        .btn:hover {
-            background: var(--secondary-color);
-            transform: translateY(-2px);
-        }
-        
-        .btn-secondary {
-            background: var(--accent-color);
-            color: var(--dark-color);
-        }
-        
-        /* LEADERSHIP CARDS */
-        .leader-card {
-            background: var(--white);
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            position: relative;
-        }
-        
-        .leader-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-        }
-        
-        .leader-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 0 auto 20px;
-            border: 4px solid var(--primary-color);
-        }
-        
-        .leader-name {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-        
-        .leader-role {
-            font-size: 1.1rem;
-            color: var(--accent-color);
-            font-weight: 600;
-            margin-bottom: 15px;
-            font-style: italic;
-        }
-        
-        .leader-bio {
-            color: var(--dark-color);
-            line-height: 1.6;
-        }
-        
-        /* FOOTER */
-        .footer {
-            background: var(--dark-color);
-            color: var(--white);
-            padding: 40px 0 20px 0;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-bottom: 30px;
-        }
-        
-        .footer h3 {
-            color: var(--accent-color);
-            margin-bottom: 20px;
-        }
-        
-        .footer-links {
-            list-style: none;
-        }
-        
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-links a {
-            color: var(--white);
-            text-decoration: none;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .footer-links a:hover {
-            color: var(--accent-color);
-        }
-        
-        .footer-bottom {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-        }
-        
-        /* QUICK ACTIONS */
-        .quick-actions {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            z-index: 999;
-        }
-        
-        .quick-action-btn {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background: var(--primary-color);
-            color: var(--white);
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            text-decoration: none;
-        }
-        
-        .quick-action-btn:hover {
-            transform: scale(1.1);
-        }
-        
-        .quick-action-btn.whatsapp {
-            background: #25d366;
-        }
-        
-        /* MOBILE STYLES */
         @media (max-width: 768px) {
-            .navbar {
-                display: none;
+            /* MOBILE HEADER */
+            .header {
+                position: fixed !important;
+                top: 0 !important;
+                left: 0 !important;
+                right: 0 !important;
+                width: 100% !important;
+                z-index: 1000 !important;
+                background: white !important;
+                padding: 10px 0 !important;
             }
             
-            .menu-toggle {
-                display: flex;
+            .header .container {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: space-between !important;
+                padding: 0 15px !important;
+                min-height: 60px !important;
             }
             
-            .nav-links {
-                position: fixed;
-                top: 0;
-                left: -100%;
-                width: 100%;
-                height: 100vh;
-                background: white;
-                border: 5px solid var(--primary-color);
-                z-index: 1001;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                transition: left 0.3s ease;
-                gap: 20px;
-                padding: 20px;
-                list-style: none;
+            /* MOBILE LOGO */
+            .logo {
+                flex: 1 !important;
+                max-width: 70% !important;
+                overflow: hidden !important;
             }
             
-            .nav-links.active {
-                left: 0;
-            }
-            
-            .nav-links li {
-                width: 90%;
-                max-width: 300px;
-                margin: 0;
-                padding: 0;
-                list-style: none;
-            }
-            
-            .nav-links a {
-                width: 100%;
-                padding: 20px;
-                background: #f8f8f8;
-                border: 3px solid var(--primary-color);
-                border-radius: 15px;
-                color: var(--dark-color);
-                text-decoration: none;
-                text-align: center;
-                font-size: 18px;
-                font-weight: bold;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 10px;
-                transition: all 0.3s ease;
-                min-height: 60px;
-            }
-            
-            .nav-links a:hover,
-            .nav-links a:active {
-                background: var(--primary-color);
-                color: white;
-                transform: scale(1.05);
+            .logo img {
+                width: 35px !important;
+                height: 35px !important;
             }
             
             .logo-text h1 {
-                font-size: 14px;
+                font-size: 14px !important;
+                white-space: nowrap !important;
+                overflow: hidden !important;
+                text-overflow: ellipsis !important;
             }
             
             .logo-text p {
-                font-size: 10px;
+                font-size: 10px !important;
+                white-space: nowrap !important;
+                overflow: hidden !important;
+                text-overflow: ellipsis !important;
             }
             
+            /* MOBILE HAMBURGER */
+            .menu-toggle {
+                display: flex !important;
+                width: 40px !important;
+                height: 40px !important;
+                background: #c41e3a !important;
+                border-radius: 8px !important;
+                flex-shrink: 0 !important;
+            }
+            
+            /* MOBILE NAVIGATION */
+            #navLinks {
+                position: fixed !important;
+                top: 70px !important;
+                left: -100% !important;
+                width: 100% !important;
+                height: calc(100vh - 70px) !important;
+                background: white !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                padding: 30px 20px !important;
+                transition: left 0.3s ease !important;
+                z-index: 999 !important;
+                overflow-y: auto !important;
+            }
+            
+            #navLinks.active {
+                left: 0 !important;
+            }
+            
+            #navLinks a {
+                width: 90% !important;
+                max-width: 300px !important;
+                padding: 15px 20px !important;
+                margin: 5px 0 !important;
+                background: white !important;
+                border: 2px solid #c41e3a !important;
+                border-radius: 12px !important;
+                color: #333 !important;
+                text-align: center !important;
+                font-size: 16px !important;
+                min-height: 50px !important;
+            }
+            
+            /* MOBILE MAIN CONTENT */
+            .main-content {
+                margin-top: 70px !important;
+                width: 100% !important;
+            }
+            
+            /* MOBILE HERO */
             .hero {
-                height: 50vh;
+                height: 50vh !important;
+                min-height: 300px !important;
+                padding: 20px 15px !important;
             }
             
             .hero-content h2 {
-                font-size: 1.8rem;
+                font-size: 24px !important;
+                line-height: 1.2 !important;
             }
             
-            .hero-subtitle {
-                font-size: 1.2rem;
-            }
-            
-            .hero-content p {
-                font-size: 1rem;
-            }
-            
+            /* MOBILE SECTIONS */
             .section {
-                padding: 40px 0;
+                padding: 30px 0 !important;
             }
             
             .section-title {
-                font-size: 1.5rem;
+                font-size: 22px !important;
+                padding: 0 15px !important;
             }
             
+            /* MOBILE GRID */
+            .grid,
             .grid-2,
-            .grid-3 {
-                grid-template-columns: 1fr;
+            .grid-3,
+            .grid-4 {
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
             }
             
+            /* MOBILE CARDS */
             .card {
-                padding: 20px;
-            }
-            
-            .leader-image {
-                width: 150px;
-                height: 150px;
-            }
-            
-            .leader-name {
-                font-size: 1.1rem;
-            }
-            
-            .leader-role {
-                font-size: 0.9rem;
-            }
-            
-            .leader-bio {
-                font-size: 0.85rem;
+                padding: 20px !important;
+                margin: 0 0 20px 0 !important;
             }
         }
     </style>
+    
+    <!-- FINAL DEBUG OVERRIDE - LOADS LAST -->
+    <link rel="stylesheet" href="FINAL_DEBUG_OVERRIDE.css">
+    
+    <!-- CLEAN MOBILE NAVIGATION - BASED ON WORKING TEST -->
+    <link rel="stylesheet" href="CLEAN_MOBILE_NAV.css">
+    
+    <!-- ABSOLUTE FINAL INLINE DEBUG -->
+    <style>
+        @media (max-width: 768px) {
+            #menuToggle {
+                display: flex !important;
+                position: fixed !important;
+                top: 5px !important;
+                right: 5px !important;
+                width: 100px !important;
+                height: 100px !important;
+                background: #FF0000 !important;
+                border: 10px solid #FFFF00 !important;
+                border-radius: 20px !important;
+                z-index: 9999999 !important;
+                cursor: pointer !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+                box-shadow: 0 0 50px #FF0000 !important;
+                animation: debugPulse 1s infinite !important;
+            }
+            
+            #navLinks {
+                position: fixed !important;
+                top: 0 !important;
+                left: -100vw !important;
+                width: 100vw !important;
+                height: 100vh !important;
+                background: #FF0000 !important;
+                border: 20px solid #FFFF00 !important;
+                z-index: 9999998 !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                justify-content: center !important;
+                transition: left 0.5s ease !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+            }
+            
+            #navLinks.active {
+                left: 0 !important;
+            }
+            
+            #navLinks a {
+                background: #00FF00 !important;
+                color: #000000 !important;
+                border: 5px solid #0000FF !important;
+                padding: 20px !important;
+                margin: 10px !important;
+                font-size: 20px !important;
+                font-weight: bold !important;
+                border-radius: 15px !important;
+                width: 80% !important;
+                text-align: center !important;
+                display: block !important;
+            }
+        }
+        
+        @keyframes debugPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+    </style>
+    
+    <!-- FORCE WORKING MOBILE - ABSOLUTE FINAL -->
+    <link rel="stylesheet" href="FORCE_WORKING_MOBILE.css">
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Church",
+        "name": "Salem African Church of Christ",
+        "alternateName": "Salem African Church Abekoko Parish",
+        "description": "Salem African Church of Christ, Abekoko Parish is a vibrant Christian community in Agege, Lagos offering worship services, Bible study, prayer meetings, and community fellowship.",
+        "url": "https://abekokoparish.netlify.app",
+        "logo": "https://abekokoparish.netlify.app/assets/images/gallery/logo.jpg",
+        "image": "https://abekokoparish.netlify.app/assets/images/gallery/churchpic.png",
+        "telephone": ["+234 906 275 9260", "+234 703 069 8300"],
+        "email": "contact@salemchurchabekoko.org",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "43, Arigbanla Street, Abekoko Bus-stop",
+            "addressLocality": "Orile Agege",
+            "addressRegion": "Lagos",
+            "addressCountry": "Nigeria",
+            "postalCode": "100001"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 6.6018,
+            "longitude": 3.3515
+        },
+        "openingHours": [
+            "Su 10:00-12:00",
+            "Tu 17:00-19:00",
+            "We 07:00-08:00",
+            "Th 17:00-19:00",
+            "Fr 17:00-19:00"
+        ],
+        "founder": {
+            "@type": "Person",
+            "name": "Rev'd Canon Olufemi Oyelola",
+            "jobTitle": "Vicar in Charge"
+        },
+        "sameAs": [
+            "https://www.facebook.com/salem.parish.abekoko",
+            "https://www.facebook.com/oyelola.olufemi1",
+            "https://www.instagram.com/rev_olufemi_oyelola",
+            "https://www.youtube.com/@femioyelola8118"
+        ],
+        "event": [
+            {
+                "@type": "Event",
+                "name": "Sunday Worship Service",
+                "description": "Weekly Sunday worship service with praise, worship, Bible teaching, and fellowship",
+                "startDate": "2025-01-01T10:00:00+01:00",
+                "endDate": "2025-01-01T12:00:00+01:00",
+                "eventSchedule": {
+                    "@type": "Schedule",
+                    "repeatFrequency": "P1W",
+                    "byDay": "Sunday"
+                },
+                "location": {
+                    "@type": "Place",
+                    "name": "Salem African Church of Christ",
+                    "address": "43, Arigbanla Street, Abekoko Bus-stop, Orile Agege, Lagos, Nigeria"
+                }
+            },
+            {
+                "@type": "Event",
+                "name": "Bible Study",
+                "description": "Weekly Bible study and discussion session",
+                "startDate": "2025-01-01T17:00:00+01:00",
+                "endDate": "2025-01-01T19:00:00+01:00",
+                "eventSchedule": {
+                    "@type": "Schedule",
+                    "repeatFrequency": "P1W",
+                    "byDay": "Tuesday"
+                },
+                "location": {
+                    "@type": "Place",
+                    "name": "Salem African Church of Christ",
+                    "address": "43, Arigbanla Street, Abekoko Bus-stop, Orile Agege, Lagos, Nigeria"
+                }
+            }
+        ],
+        "potentialAction": {
+            "@type": "ReserveAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://abekokoparish.netlify.app/pages/contact.html",
+                "actionPlatform": [
+                    "http://schema.org/DesktopWebPlatform",
+                    "http://schema.org/MobileWebPlatform"
+                ]
+            },
+            "result": {
+                "@type": "Reservation",
+                "name": "Church Service Attendance"
+            }
+        }
+    }
+    </script>
 </head>
 
 <body>
+    <!-- Page Loader -->
+    <div id="pageLoader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); z-index: 9999; display: flex; align-items: center; justify-content: center; transition: opacity 0.5s ease;">
+        <div style="text-align: center; color: white;">
+            <img src="assets/images/gallery/logo.jpg" alt="Salem Church" style="width: 80px; height: 80px; margin-bottom: 20px; animation: pulse 1.5s ease-in-out infinite;">
+            <h2 style="margin: 0; font-size: 1.5rem; animation: fadeInUp 1s ease-out;">Salem African Church</h2>
+            <p style="margin: 10px 0 0 0; opacity: 0.9; animation: fadeInUp 1s ease-out 0.3s both;">Stay Updated • Stay Blessed</p>
+            <div style="width: 50px; height: 3px; background: var(--accent-color); margin: 20px auto; border-radius: 2px; animation: shimmer 1.5s ease-in-out infinite;"></div>
+        </div>
+    </div>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <a href="index.html" class="logo">
                 <img src="assets/images/gallery/logo.jpg" alt="Salem Church Logo">
@@ -536,18 +464,20 @@
                 </ul>
             </nav>
             
-            <button class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </button>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="main-content">
+    <main class="main-content page-transition">
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero" style="height: 60vh; background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('assets/images/gallery/churchpic.png') center/cover;">
             <div class="container">
                 <div class="hero-content">
                     <h2>Welcome to Our Church Family</h2>
@@ -583,8 +513,13 @@
                         </div>
                         <div style="padding: 1rem; background: rgba(196, 30, 58, 0.05); border-radius: 0.8rem; border-left: 4px solid var(--primary-color);">
                             <div style="font-weight: 700; color: var(--primary-color); margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase;">Liturgical Colour</div>
-                            <div style="color: #28a745; font-size: 1.1rem; font-weight: bold;">Green</div>
+                            <div style="color: var(--success-color); font-size: 1.1rem; font-weight: bold;">Green</div>
                         </div>
+                        <!-- Theme section removed temporarily - can be easily added back -->
+                        <!-- <div style="padding: 1rem; background: rgba(196, 30, 58, 0.05); border-radius: 0.8rem; border-left: 4px solid var(--primary-color);">
+                            <div style="font-weight: 700; color: var(--primary-color); margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase;">Theme</div>
+                            <div style="color: var(--dark-color); font-size: 1.1rem; font-weight: 600;">Theme will go here</div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -639,33 +574,33 @@
             <div class="container">
                 <h2 class="section-title">Meet Our Leadership</h2>
                 <div class="grid grid-3">
-                    <!-- People's Warden -->
-                    <div class="leader-card" style="border: 2px solid var(--primary-color);">
-                        <div style="background: var(--primary-color); color: var(--white); padding: 0.2rem 0.8rem; border-radius: 0.8rem; font-size: 0.7rem; font-weight: 600; margin-bottom: 1rem; display: inline-block;">PEOPLE'S WARDEN</div>
+                    <!-- People's Warden - Left -->
+                    <div class="leader-card" style="border: 2px solid var(--primary-color); position: relative;">
+                        <div style="position: absolute; top: -8px; left: 50%; transform: translateX(-50%); background: var(--primary-color); color: var(--white); padding: 0.2rem 0.8rem; border-radius: 0.8rem; font-size: 0.7rem; font-weight: 600; box-shadow: 0 2px 8px rgba(196, 30, 58, 0.3);">PEOPLE'S WARDEN</div>
                         <img src="assets/images/leaders/Bro. olawale rotimi.jpg" alt="Bro. Olawale Rotimi" class="leader-image">
                         <div class="leader-name">Bro. Olawale Rotimi</div>
                         <div class="leader-role">The People's Warden</div>
                         <p class="leader-bio">Dedicated to serving the congregation and ensuring the spiritual welfare of our church family.</p>
                     </div>
                     
-                    <!-- Vicar in Charge -->
-                    <div class="leader-card" style="border: 4px solid var(--accent-color); transform: scale(1.05); box-shadow: 0 15px 35px rgba(255, 215, 0, 0.3);">
-                        <div style="background: linear-gradient(135deg, var(--accent-color), #e6c200); color: var(--dark-color); padding: 0.4rem 1.2rem; border-radius: 1.2rem; font-size: 0.85rem; font-weight: 700; margin-bottom: 1rem; display: inline-block;">✨ VICAR IN CHARGE ✨</div>
+                    <!-- Vicar in Charge - Center -->
+                    <div class="leader-card" style="border: 4px solid var(--accent-color); position: relative; background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(196, 30, 58, 0.02)); transform: scale(1.05); z-index: 10; box-shadow: 0 15px 35px rgba(255, 215, 0, 0.3);">
+                        <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, var(--accent-color), #e6c200); color: var(--dark-color); padding: 0.4rem 1.2rem; border-radius: 1.2rem; font-size: 0.85rem; font-weight: 700; box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5); text-transform: uppercase; letter-spacing: 0.5px;">✨ VICAR IN CHARGE ✨</div>
                         <img src="assets/images/leaders/vicar.jpg" alt="Rev'd Canon Olufemi Oyelola" class="leader-image">
                         <div class="leader-name" style="color: var(--accent-color); font-size: 1.3rem;">Rev'd Canon Olufemi Oyelola</div>
                         <div class="leader-role" style="color: var(--primary-color); font-size: 1.1rem; font-weight: 700;">Vicar in Charge</div>
                         <p class="leader-bio" style="font-weight: 500;">Our spiritual leader providing pastoral care and guidance to our church family with wisdom and love.</p>
-                        <div style="margin-top: 1rem; text-align: center;">
+                        <div style="margin-top: 1rem; text-align: center; position: relative; z-index: 100;">
                             <p style="margin: 0 0 1rem 0; font-size: 0.95rem; font-weight: 700; color: var(--primary-color);">📞 For Prayer & Counselling:</p>
-                            <a href="https://wa.me/+2349062725926" style="background: #25D366; color: white; padding: 12px 24px; font-size: 16px; font-weight: 600; border-radius: 8px; text-decoration: none; display: inline-block; transition: background-color 0.3s ease;">
+                            <a href="https://wa.me/+2349062725926" style="background: #25D366; color: white; padding: 12px 24px; font-size: 16px; font-weight: 600; border-radius: 8px; text-decoration: none; position: relative; z-index: 101; pointer-events: auto; display: inline-block; transition: background-color 0.3s ease; box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3);" onmouseover="this.style.backgroundColor='#128c7e'" onmouseout="this.style.backgroundColor='#25D366'">
                                 <i class="fab fa-whatsapp" style="margin-right: 8px;"></i>WhatsApp: +234 906 272 5926
                             </a>
                         </div>
                     </div>
                     
-                    <!-- Pastor's Warden -->
-                    <div class="leader-card" style="border: 2px solid var(--primary-color);">
-                        <div style="background: var(--primary-color); color: var(--white); padding: 0.2rem 0.8rem; border-radius: 0.8rem; font-size: 0.7rem; font-weight: 600; margin-bottom: 1rem; display: inline-block;">PASTOR'S WARDEN</div>
+                    <!-- Pastor's Warden - Right -->
+                    <div class="leader-card" style="border: 2px solid var(--primary-color); position: relative;">
+                        <div style="position: absolute; top: -8px; left: 50%; transform: translateX(-50%); background: var(--primary-color); color: var(--white); padding: 0.2rem 0.8rem; border-radius: 0.8rem; font-size: 0.7rem; font-weight: 600; box-shadow: 0 2px 8px rgba(196, 30, 58, 0.3);">PASTOR'S WARDEN</div>
                         <img src="assets/images/leaders/Bro. Seun Igbinyade.jpg" alt="Bro. Seun Igbinyade" class="leader-image">
                         <div class="leader-name">Bro. Seun Igbinyade</div>
                         <div class="leader-role">Pastor's Warden</div>
@@ -678,6 +613,43 @@
                         <i class="fas fa-users"></i>
                         Meet All Our Leaders
                     </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prayer Points -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h3><i class="fas fa-praying-hands"></i> Prayer Points for the Week</h3>
+                        <ul style="list-style: none; padding: 0;" id="daily-prayers">
+                            <li style="margin-bottom: 1rem; padding: 1rem; background: #f8f9fa; border-left: 4px solid var(--primary-color); border-radius: 0.5rem;">
+                                <strong>Monday:</strong> Pray for wisdom and guidance for our church leadership
+                            </li>
+                            <li style="margin-bottom: 1rem; padding: 1rem; background: #f8f9fa; border-left: 4px solid var(--primary-color); border-radius: 0.5rem;">
+                                <strong>Tuesday:</strong> Intercede for the sick and those in need of healing
+                            </li>
+                            <li style="margin-bottom: 1rem; padding: 1rem; background: #f8f9fa; border-left: 4px solid var(--primary-color); border-radius: 0.5rem;">
+                                <strong>Wednesday:</strong> Pray for unity and love within our church family
+                            </li>
+                        </ul>
+                        <a href="pages/prayer.html" class="btn">
+                            <i class="fas fa-arrow-right"></i> View All Prayer Points
+                        </a>
+                    </div>
+                    
+                    <div class="card">
+                        <h3><i class="fas fa-lightbulb"></i> Food for Thought</h3>
+                        <blockquote style="font-style: italic; font-size: 1.1rem; line-height: 1.8; border-left: 4px solid var(--accent-color); padding-left: 1rem; margin: 1.5rem 0;">
+                            "This is the day the Lord has made; let us rejoice and be glad in it."
+                            <footer style="margin-top: 1rem; font-weight: 600; color: var(--primary-color);">- Psalm 118:24</footer>
+                        </blockquote>
+                        <p>Every day is a gift from God. Let us approach each day with gratitude, joy, and expectation of His goodness in our lives.</p>
+                        <a href="pages/prayer.html" class="btn">
+                            <i class="fas fa-heart"></i> Submit Prayer Request
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -755,12 +727,38 @@
                 </div>
                 
                 <div>
+                    <h3>Get Involved</h3>
+                    <ul class="footer-links">
+                        <li><a href="pages/prayer.html"><i class="fas fa-praying-hands"></i> Prayer Requests</a></li>
+                        <li><a href="pages/get-involved.html"><i class="fas fa-hands-helping"></i> Volunteer</a></li>
+                        <li><a href="pages/get-involved.html#birthday"><i class="fas fa-birthday-cake"></i> Birthday Registration</a></li>
+                        <li><a href="pages/contact.html"><i class="fas fa-comment-alt"></i> Feedback</a></li>
+                    </ul>
+                </div>
+                
+                <div>
                     <h3>Contact Info</h3>
                     <div style="display: flex; flex-direction: column; gap: 0.5rem;">
                         <p><i class="fas fa-map-marker-alt" style="color: var(--accent-color); margin-right: 0.5rem;"></i> 43, Arigbanla Street, Abekoko Bus-stop, Orile Agege, Lagos</p>
                         <p><i class="fas fa-phone" style="color: var(--accent-color); margin-right: 0.5rem;"></i> +234 906 275 9260</p>
+                        <p><i class="fas fa-phone" style="color: var(--accent-color); margin-right: 0.5rem;"></i> +234 703 069 8300</p>
                         <a href="https://wa.me/+2349062725926" style="color: var(--white); text-decoration: none;">
                             <i class="fab fa-whatsapp" style="color: var(--accent-color); margin-right: 0.5rem;"></i> WhatsApp Chat
+                        </a>
+                    </div>
+                    <h3 style="margin-top: 1.5rem;">Follow Us</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <a href="https://www.facebook.com/salem.parish.abekoko" target="_blank" style="color: var(--white); text-decoration: none;">
+                            <i class="fab fa-facebook-f" style="color: var(--accent-color); margin-right: 0.5rem;"></i> Church Facebook
+                        </a>
+                        <a href="https://www.facebook.com/oyelola.olufemi1" target="_blank" style="color: var(--white); text-decoration: none;">
+                            <i class="fab fa-facebook-f" style="color: var(--accent-color); margin-right: 0.5rem;"></i> Pastor's Facebook
+                        </a>
+                        <a href="https://www.instagram.com/rev_olufemi_oyelola" target="_blank" style="color: var(--white); text-decoration: none;">
+                            <i class="fab fa-instagram" style="color: var(--accent-color); margin-right: 0.5rem;"></i> Pastor's Instagram
+                        </a>
+                        <a href="https://www.youtube.com/@femioyelola8118" target="_blank" style="color: var(--white); text-decoration: none;">
+                            <i class="fab fa-youtube" style="color: var(--accent-color); margin-right: 0.5rem;"></i> YouTube Channel
                         </a>
                     </div>
                 </div>
@@ -786,90 +784,199 @@
         </a>
     </div>
 
-    <!-- BULLETPROOF SIMPLE JAVASCRIPT -->
+    <!-- FORCE WORKING MOBILE - LOADS FIRST -->
+    <script src="FORCE_WORKING_MOBILE.js"></script>
+    
+    <!-- CLEAN MOBILE NAVIGATION - BASED ON WORKING TEST -->
+    <script src="CLEAN_MOBILE_NAV.js"></script>
+    
+    <!-- DEBUG MOBILE NAVIGATION -->
+    <script src="DEBUG_MOBILE_NAVIGATION.js"></script>
+    
+    <!-- MOBILE DEVICE SPECIFIC FIX -->
+    <script src="MOBILE_DEVICE_FIX.js"></script>
+    
+    <!-- EMERGENCY MOBILE FIX -->
+    <script src="SIMPLE_MOBILE_FIX.js"></script>
+    
+    <!-- INLINE EMERGENCY FIX -->
     <script>
-        console.log('🔴 BULLETPROOF MOBILE NAVIGATION LOADING...');
+        console.log('🚨 INLINE EMERGENCY MOBILE FIX STARTING...');
         
-        // Simple toggle function - no complex logic
-        function toggleMobileMenu() {
-            console.log('🔴 Toggle function called');
+        function applyEmergencyFix() {
+            const menuBtn = document.getElementById('menuToggle');
+            const navMenu = document.getElementById('navLinks');
             
-            try {
-                const navMenu = document.getElementById('navLinks');
+            if (menuBtn && navMenu) {
+                console.log('✅ Found menu elements, applying fix...');
                 
-                if (!navMenu) {
-                    console.log('❌ Nav menu not found');
-                    return;
-                }
+                menuBtn.onclick = function() {
+                    console.log('📱 MENU CLICKED!');
+                    navMenu.classList.toggle('active');
+                    
+                    // Lock/unlock body scroll
+                    if (navMenu.classList.contains('active')) {
+                        document.body.style.overflow = 'hidden';
+                        document.body.classList.add('menu-open');
+                        console.log('✅ Menu opened, body scroll locked');
+                    } else {
+                        document.body.style.overflow = '';
+                        document.body.classList.remove('menu-open');
+                        console.log('❌ Menu closed, body scroll unlocked');
+                    }
+                    
+                    console.log('Menu active:', navMenu.classList.contains('active'));
+                };
                 
-                const isActive = navMenu.classList.contains('active');
-                console.log('🔴 Menu currently active:', isActive);
+                menuBtn.ontouchend = function(e) {
+                    e.preventDefault();
+                    console.log('📱 MENU TOUCHED!');
+                    navMenu.classList.toggle('active');
+                };
                 
-                if (isActive) {
-                    // Close menu
-                    navMenu.classList.remove('active');
-                    document.body.style.overflow = '';
-                    console.log('❌ Menu closed');
-                } else {
-                    // Open menu
-                    navMenu.classList.add('active');
-                    document.body.style.overflow = 'hidden';
-                    console.log('✅ Menu opened');
-                }
-            } catch (error) {
-                console.log('❌ Error in toggle function:', error);
+                console.log('🎉 Emergency fix applied!');
+            } else {
+                console.log('❌ Menu elements not found');
             }
         }
         
-        // Setup menu when page loads
-        function setupMenu() {
-            console.log('🔴 Setting up menu...');
-            
-            try {
-                const menuBtn = document.getElementById('menuToggle');
-                const navMenu = document.getElementById('navLinks');
-                
-                console.log('🔴 Menu button found:', !!menuBtn);
-                console.log('🔴 Nav menu found:', !!navMenu);
-                
-                if (menuBtn && navMenu) {
-                    // Remove any existing listeners
-                    menuBtn.onclick = null;
-                    menuBtn.ontouchend = null;
-                    
-                    // Add simple click handler
-                    menuBtn.onclick = function(e) {
-                        e.preventDefault();
-                        console.log('🔴 Button clicked!');
-                        toggleMobileMenu();
-                    };
-                    
-                    // Close menu when clicking links
-                    navMenu.onclick = function(e) {
-                        if (e.target.tagName === 'A') {
-                            console.log('🔴 Link clicked, closing menu');
-                            navMenu.classList.remove('active');
-                            document.body.style.overflow = '';
-                        }
-                    };
-                    
-                    console.log('✅ Menu setup complete!');
-                } else {
-                    console.log('❌ Menu elements not found');
-                }
-            } catch (error) {
-                console.log('❌ Error in setup:', error);
-            }
-        }
-        
-        // Wait for page to load
+        // Apply fix when page loads
         if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', setupMenu);
+            document.addEventListener('DOMContentLoaded', applyEmergencyFix);
         } else {
-            setupMenu();
+            applyEmergencyFix();
         }
         
-        console.log('🔴 Script loaded successfully');
+        // Also try after a delay
+        setTimeout(applyEmergencyFix, 1000);
+    </script>
+    
+    <!-- Cache Buster Script -->
+    <script src="cache-buster.js"></script>
+    
+    <!-- Mobile Navigation Fix Script -->
+    <script src="mobile-navigation-fix.js"></script>
+    
+    <!-- Simple Mobile Menu Script -->
+    <script src="mobile-menu-simple.js"></script>
+    
+    <!-- JavaScript -->
+    <script>
+        // Page Loader - Simple and reliable
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('pageLoader');
+            if (loader) {
+                loader.style.opacity = '0';
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 300);
+            }
+        });
+        
+        // Fallback - hide loader after 1 second regardless
+        setTimeout(() => {
+            const loader = document.getElementById('pageLoader');
+            if (loader) {
+                loader.style.display = 'none';
+            }
+        }, 1000);
+        
+        // Simple button ripple effect
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    let ripple = document.createElement('span');
+                    ripple.style.cssText = `
+                        position: absolute;
+                        border-radius: 50%;
+                        background: rgba(255, 255, 255, 0.6);
+                        transform: scale(0);
+                        animation: ripple-animation 0.6s linear;
+                        pointer-events: none;
+                        left: ${e.clientX - e.target.offsetLeft}px;
+                        top: ${e.clientY - e.target.offsetTop}px;
+                        width: 20px;
+                        height: 20px;
+                    `;
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+        });
+        
+        // Add minimal CSS
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple-animation {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+        
+        // ENHANCED Mobile menu toggle with touch support
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        if (menuToggle && navLinks) {
+            function toggleMenu(e) {
+                if (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                }
+                console.log('Mobile menu toggle clicked');
+                menuToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                
+                if (navLinks.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            }
+            
+            // Add both click and touch events
+            menuToggle.addEventListener('click', toggleMenu);
+            menuToggle.addEventListener('touchend', toggleMenu);
+
+            // Close mobile menu when clicking on a link
+            navLinks.addEventListener('click', (e) => {
+                if (e.target.tagName === 'A') {
+                    menuToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
     </script>
 </body>
 </html>
