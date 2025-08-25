@@ -26,6 +26,9 @@
     
     <!-- Mobile Navigation Fixes -->
     <link rel="stylesheet" href="../mobile-navigation-fix.css">
+    
+    <!-- Cache Fix CSS -->
+    <link rel="stylesheet" href="../cache-fix.css">
 </head>
 
 <body>
@@ -395,24 +398,46 @@
         </a>
     </div>
 
+    <!-- Mobile Navigation Scripts -->
+    <script src="../mobile-navigation-fix.js"></script>
+    <script src="../mobile-menu-simple.js"></script>
+    
     <!-- JavaScript -->
     <script>
-        // Mobile menu toggle
+        // ENHANCED Mobile menu toggle with touch support
         const menuToggle = document.getElementById('menuToggle');
         const navLinks = document.getElementById('navLinks');
 
-        menuToggle.addEventListener('click', () => {
-            menuToggle.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking on a link
-        navLinks.addEventListener('click', (e) => {
-            if (e.target.tagName === 'A') {
-                menuToggle.classList.remove('active');
-                navLinks.classList.remove('active');
+        if (menuToggle && navLinks) {
+            function toggleMenu(e) {
+                if (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                }
+                console.log('Mobile menu toggle clicked');
+                menuToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                
+                if (navLinks.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
             }
-        });
+            
+            // Add both click and touch events
+            menuToggle.addEventListener('click', toggleMenu);
+            menuToggle.addEventListener('touchend', toggleMenu);
+
+            // Close mobile menu when clicking on a link
+            navLinks.addEventListener('click', (e) => {
+                if (e.target.tagName === 'A') {
+                    menuToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        }
 
         // Header scroll effect
         window.addEventListener('scroll', () => {
