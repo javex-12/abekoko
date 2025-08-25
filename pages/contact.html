@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Salem African Church of Christ</title>
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://api.emailjs.com; frame-ancestors 'none';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Contact Salem African Church of Christ, Abekoko Parish. Get in touch with us for inquiries, support, or to visit our church in Agege, Lagos.">
+    <meta name="keywords" content="Contact Salem African Church, Church Address, Phone Number, Email, Abekoko Parish, Agege Lagos">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="../assets/images/gallery/logo.jpg">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../assets/images/gallery/logo.jpg" alt="Salem Church Logo">
+                <div class="logo-text">
+                    <h1>Salem African Church of Christ Abekoko</h1>
+                    <p>Stay Updated • Stay Blessed</p>
+                </div>
+            </a>
+            
+            <nav class="navbar">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="leadership.html"><i class="fas fa-users"></i> Leadership</a></li>
+                    <li><a href="services.html"><i class="fas fa-church"></i> Services</a></li>
+                    <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+                    <li><a href="prayer.html"><i class="fas fa-praying-hands"></i> Prayer</a></li>
+                    <li><a href="get-involved.html"><i class="fas fa-hands-helping"></i> Get Involved</a></li>
+                    <li><a href="contact.html" class="active"><i class="fas fa-phone"></i> Contact</a></li>
+                </ul>
+            </nav>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content page-spacing">
+        <!-- Hero Section -->
+        <section class="hero" style="height: 40vh; background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../assets/images/gallery/churchpic.png') center/cover;">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Contact Us</h2>
+                    <p>We'd love to hear from you. Get in touch with our church family</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <h3><i class="fas fa-map-marker-alt"></i> Visit Us</h3>
+                        <div style="text-align: center; margin: 1.5rem 0;">
+                            <i class="fas fa-church" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                        </div>
+                        <div style="text-align: center;">
+                            <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem;">43, Arigbanla Street</p>
+                            <p style="margin-bottom: 0.5rem;">Abekoko Bus-stop</p>
+                            <p style="margin-bottom: 0.5rem;">Orile Agege, Lagos</p>
+                            <p style="margin-bottom: 1.5rem; color: #666;">Nigeria</p>
+                        </div>
+                        <div style="background: rgba(196, 30, 58, 0.1); padding: 1rem; border-radius: 0.5rem; text-align: center;">
+                            <p style="margin: 0; font-size: 0.9rem;"><strong>Landmark:</strong> Near Abekoko Bus-stop</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h3><i class="fas fa-phone"></i> Call Us</h3>
+                        <div style="text-align: center; margin: 1.5rem 0;">
+                            <i class="fas fa-phone-alt" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="margin-bottom: 1rem;">
+                                <a href="tel:+2349062759260" style="color: var(--primary-color); text-decoration: none; font-size: 1.1rem; font-weight: 600;">
+                                    +234 906 275 9260
+                                </a>
+                            </div>
+                            <div style="margin-bottom: 1.5rem;">
+                                <a href="tel:+2347030698300" style="color: var(--primary-color); text-decoration: none; font-size: 1.1rem; font-weight: 600;">
+                                    +234 703 069 8300
+                                </a>
+                            </div>
+                        </div>
+                        <div style="background: rgba(196, 30, 58, 0.1); padding: 1rem; border-radius: 0.5rem; text-align: center;">
+                            <p style="margin: 0; font-size: 0.9rem;"><strong>Available:</strong> Monday - Sunday</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h3><i class="fab fa-whatsapp"></i> WhatsApp</h3>
+                        <div style="text-align: center; margin: 1.5rem 0;">
+                            <i class="fab fa-whatsapp" style="font-size: 3rem; color: #25d366; margin-bottom: 1rem;"></i>
+                        </div>
+                        <div style="text-align: center;">
+                            <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">Chat with us instantly on WhatsApp for quick responses</p>
+                            <a href="https://wa.me/+2349062759260" class="btn" style="background: #25d366; margin-bottom: 1rem;">
+                                <i class="fab fa-whatsapp"></i>
+                                Start WhatsApp Chat
+                            </a>
+                        </div>
+                        <div style="background: rgba(37, 211, 102, 0.1); padding: 1rem; border-radius: 0.5rem; text-align: center;">
+                            <p style="margin: 0; font-size: 0.9rem;"><strong>Response Time:</strong> Usually within 1 hour</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form & Church Hours -->
+        <section class="section" style="background-color: #fafafa;">
+            <div class="container">
+                <div class="grid grid-2">
+                    <!-- Contact Form -->
+                    <div class="card">
+                        <h3><i class="fas fa-envelope"></i> Send Us a Message</h3>
+                        <p style="margin-bottom: 1.5rem;">Have a question or need assistance? Send us a message and we'll get back to you as soon as possible.</p>
+                        
+                        <form class="form" id="contactForm">
+                            <!-- Honeypot field for bot detection -->
+                            <div style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;">
+                                <label for="website">Website (leave blank):</label>
+                                <input type="text" name="website" id="website" tabindex="-1" autocomplete="off">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="contact_name">Your Name *</label>
+                                <input type="text" name="contact_name" id="contact_name" placeholder="Enter your full name" class="form-input" required autocomplete="off" maxlength="100">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="contact_email">Email Address *</label>
+                                <input type="email" name="contact_email" id="contact_email" placeholder="Enter your email address" class="form-input" required autocomplete="off" maxlength="100">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="contact_phone">Phone Number</label>
+                                <input type="tel" name="contact_phone" id="contact_phone" placeholder="Enter your phone number" class="form-input" autocomplete="off" maxlength="20">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="contact_subject">Subject *</label>
+                                <select name="contact_subject" id="contact_subject" class="form-select" required>
+                                    <option value="">Select Subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="visit">Planning to Visit</option>
+                                    <option value="membership">Church Membership</option>
+                                    <option value="volunteer">Volunteer Opportunities</option>
+                                    <option value="prayer">Prayer Request</option>
+                                    <option value="event">Event Information</option>
+                                    <option value="donation">Donations & Giving</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="contact_message">Your Message *</label>
+                                <textarea name="contact_message" id="contact_message" placeholder="Please share your message or inquiry..." class="form-textarea" required maxlength="2000"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="contact_response">Preferred Response Method</label>
+                                <select name="contact_response" id="contact_response" class="form-select">
+                                    <option value="email">Email</option>
+                                    <option value="phone">Phone Call</option>
+                                    <option value="whatsapp">WhatsApp</option>
+                                    <option value="any">Any Method</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="btn">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Church Hours & Additional Info -->
+                    <div class="card">
+                        <h3><i class="fas fa-clock"></i> Service Times & Hours</h3>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Regular Services</h4>
+                            <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.8rem; background: rgba(196, 30, 58, 0.05); border-radius: 0.5rem; border-left: 4px solid var(--primary-color);">
+                                    <span><i class="fas fa-church" style="color: var(--primary-color); margin-right: 0.5rem;"></i><strong>Sunday Service</strong></span>
+                                    <span style="font-weight: 600;">10:00 AM</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.8rem; background: rgba(196, 30, 58, 0.05); border-radius: 0.5rem; border-left: 4px solid var(--primary-color);">
+                                    <span><i class="fas fa-book" style="color: var(--primary-color); margin-right: 0.5rem;"></i><strong>Bible Study</strong></span>
+                                    <span style="font-weight: 600;">Tuesday 5:00 PM</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.8rem; background: rgba(196, 30, 58, 0.05); border-radius: 0.5rem; border-left: 4px solid var(--primary-color);">
+                                    <span><i class="fas fa-praying-hands" style="color: var(--primary-color); margin-right: 0.5rem;"></i><strong>Gethsemane</strong></span>
+                                    <span style="font-weight: 600;">Wednesday 7:00 AM</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.8rem; background: rgba(196, 30, 58, 0.05); border-radius: 0.5rem; border-left: 4px solid var(--primary-color);">
+                                    <span><i class="fas fa-music" style="color: var(--primary-color); margin-right: 0.5rem;"></i><strong>Choir Rehearsal</strong></span>
+                                    <span style="font-weight: 600;">Thu & Fri 5:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Office Hours</h4>
+                            <div style="background: rgba(255, 215, 0, 0.1); padding: 1rem; border-radius: 0.5rem; border-left: 4px solid var(--accent-color);">
+                                <p style="margin-bottom: 0.5rem;"><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM</p>
+                                <p style="margin-bottom: 0.5rem;"><strong>Saturday:</strong> 10:00 AM - 2:00 PM</p>
+                                <p style="margin: 0;"><strong>Sunday:</strong> 8:00 AM - 12:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Emergency Contact</h4>
+                            <div style="background: rgba(220, 53, 69, 0.1); padding: 1rem; border-radius: 0.5rem; border-left: 4px solid var(--error-color);">
+                                <p style="margin-bottom: 0.5rem;"><strong>24/7 Emergency Prayer Line:</strong></p>
+                                <p style="margin-bottom: 0.5rem;">📞 +234 906 275 9260</p>
+                                <p style="margin: 0;">💬 <a href="https://wa.me/+2349062759260" style="color: var(--primary-color);">WhatsApp Emergency</a></p>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Directions</h4>
+                            <div style="background: rgba(23, 162, 184, 0.1); padding: 1rem; border-radius: 0.5rem; border-left: 4px solid var(--info-color);">
+                                <p style="margin-bottom: 0.8rem;"><strong>By Public Transport:</strong></p>
+                                <ul style="list-style: none; padding: 0; margin-bottom: 1rem;">
+                                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-bus" style="color: var(--info-color); margin-right: 0.5rem;"></i> Take any bus to Abekoko Bus-stop</li>
+                                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-walking" style="color: var(--info-color); margin-right: 0.5rem;"></i> Walk to 43, Arigbanla Street</li>
+                                </ul>
+                                <p style="margin: 0; font-size: 0.9rem; font-style: italic;">Need directions? Call us and we'll guide you!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Church Giving Information -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Church Giving & Donations</h2>
+                <div class="card" style="max-width: 800px; margin: 0 auto;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <i class="fas fa-heart" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                        <h3 style="color: var(--primary-color);">Support God's Work</h3>
+                        <p style="font-size: 1.1rem;">Your generous giving helps us continue God's work in our community and beyond. Every contribution, no matter the size, makes a difference.</p>
+                    </div>
+                    
+                    <div class="grid grid-2" style="gap: 2rem;">
+                        <div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Bank Transfer Details</h4>
+                            <div style="background: rgba(196, 30, 58, 0.05); padding: 1.5rem; border-radius: 0.5rem; border-left: 4px solid var(--primary-color);">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 0.8rem; border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
+                                    <span style="font-weight: 600; color: var(--primary-color);">Bank Name:</span>
+                                    <span style="font-weight: 600;">Zenith Bank</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 0.8rem; border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
+                                    <span style="font-weight: 600; color: var(--primary-color);">Account Name:</span>
+                                    <span style="font-weight: 600;">The African Church Salem Parish Of Christ Abekoko</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                                    <span style="font-weight: 600; color: var(--primary-color);">Account Number:</span>
+                                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                        <span style="font-size: 1.2rem; font-weight: 700; color: var(--primary-color); font-family: 'Courier New', monospace;" id="accountNumber">1010270199</span>
+                                        <button onclick="copyAccountNumber()" class="btn" style="padding: 0.3rem 0.6rem; font-size: 0.8rem;">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Ways to Give</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 1rem; display: flex; align-items: flex-start;">
+                                    <i class="fas fa-church" style="color: var(--accent-color); margin-right: 0.8rem; margin-top: 0.2rem;"></i>
+                                    <span><strong>During Service:</strong> Offering and tithe collection during worship</span>
+                                </li>
+                                <li style="margin-bottom: 1rem; display: flex; align-items: flex-start;">
+                                    <i class="fas fa-university" style="color: var(--accent-color); margin-right: 0.8rem; margin-top: 0.2rem;"></i>
+                                    <span><strong>Bank Transfer:</strong> Direct transfer to church account</span>
+                                </li>
+                                <li style="margin-bottom: 1rem; display: flex; align-items: flex-start;">
+                                    <i class="fas fa-mobile-alt" style="color: var(--accent-color); margin-right: 0.8rem; margin-top: 0.2rem;"></i>
+                                    <span><strong>Mobile Banking:</strong> Use your mobile banking app</span>
+                                </li>
+                                <li style="margin-bottom: 1rem; display: flex; align-items: flex-start;">
+                                    <i class="fas fa-hand-holding-heart" style="color: var(--accent-color); margin-right: 0.8rem; margin-top: 0.2rem;"></i>
+                                    <span><strong>Special Projects:</strong> Contribute to specific church needs</span>
+                                </li>
+                            </ul>
+                            
+                            <div style="background: rgba(255, 215, 0, 0.1); padding: 1rem; border-radius: 0.5rem; margin-top: 1.5rem;">
+                                <p style="margin: 0; font-size: 0.9rem; font-style: italic;">"Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver." - 2 Corinthians 9:7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section" style="background-color: #fafafa;">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h3><i class="fas fa-question-circle"></i> Visiting Our Church</h3>
+                        <div style="margin-bottom: 1.5rem;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">What should I expect on my first visit?</h4>
+                            <p style="font-size: 0.9rem;">You can expect a warm welcome, uplifting worship, and practical Bible teaching. Our services last about 2 hours and include praise, worship, prayer, and a sermon.</p>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">What should I wear?</h4>
+                            <p style="font-size: 0.9rem;">Come as you are! We welcome people in both casual and formal attire. What matters most is your heart, not your clothing.</p>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Is parking available?</h4>
+                            <p style="font-size: 0.9rem;">Yes, parking is available around the church premises. Our ushers will help direct you to available spots.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h3><i class="fas fa-users"></i> Church Membership</h3>
+                        <div style="margin-bottom: 1.5rem;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">How do I become a member?</h4>
+                            <p style="font-size: 0.9rem;">Contact us to learn about our membership process. We offer classes to help you understand our beliefs and get connected with our church family.</p>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Are children welcome?</h4>
+                            <p style="font-size: 0.9rem;">Absolutely! Children are always welcome in our services. We have programs specifically designed for different age groups.</p>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">How can I get involved?</h4>
+                            <p style="font-size: 0.9rem;">There are many ways to get involved! Visit our <a href="get-involved.html" style="color: var(--primary-color);">Get Involved</a> page to learn about volunteer opportunities and ministries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Contact -->
+        <section class="section" style="background: linear-gradient(135deg, var(--error-color), #c82333); color: var(--white);">
+            <div class="container">
+                <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center; background: rgba(255, 255, 255, 0.95); color: var(--dark-color);">
+                    <h3 style="color: var(--error-color);"><i class="fas fa-exclamation-triangle"></i> Emergency Contact</h3>
+                    <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">
+                        If you have an urgent prayer need or emergency situation, don't hesitate to contact us immediately.
+                    </p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="tel:+2349062759260" class="btn" style="background: var(--error-color);">
+                            <i class="fas fa-phone"></i>
+                            Emergency Call
+                        </a>
+                        <a href="https://wa.me/+2349062759260" class="btn" style="background: #25d366;">
+                            <i class="fab fa-whatsapp"></i>
+                            Emergency WhatsApp
+                        </a>
+                    </div>
+                    <p style="margin-top: 1.5rem; font-size: 0.9rem; color: #666;">
+                        <i class="fas fa-clock" style="margin-right: 0.5rem;"></i>
+                        Available 24/7 for emergency prayer and pastoral care
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>Salem African Church of Christ</h3>
+                    <p>Abekoko Parish, Agege Lagos</p>
+                    <p>Building a community of faith, hope, and love in the heart of Lagos.</p>
+                    <p style="margin-top: 1rem; font-style: italic; color: var(--accent-color);">"Stay Updated • Stay Blessed"</p>
+                </div>
+                
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="leadership.html"><i class="fas fa-users"></i> Leadership</a></li>
+                        <li><a href="services.html"><i class="fas fa-church"></i> Services</a></li>
+                        <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Get Involved</h3>
+                    <ul class="footer-links">
+                        <li><a href="prayer.html"><i class="fas fa-praying-hands"></i> Prayer Requests</a></li>
+                        <li><a href="get-involved.html"><i class="fas fa-hands-helping"></i> Volunteer</a></li>
+                        <li><a href="get-involved.html#birthday"><i class="fas fa-birthday-cake"></i> Birthday Registration</a></li>
+                        <li><a href="contact.html"><i class="fas fa-comment-alt"></i> Feedback</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Contact Info</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <p><i class="fas fa-map-marker-alt" style="color: var(--accent-color); margin-right: 0.5rem;"></i> 43, Arigbanla Street, Abekoko Bus-stop, Orile Agege, Lagos</p>
+                        <p><i class="fas fa-phone" style="color: var(--accent-color); margin-right: 0.5rem;"></i> +234 906 275 9260</p>
+                        <p><i class="fas fa-phone" style="color: var(--accent-color); margin-right: 0.5rem;"></i> +234 703 069 8300</p>
+                        <a href="https://wa.me/+2349062759260" style="color: var(--white); text-decoration: none;">
+                            <i class="fab fa-whatsapp" style="color: var(--accent-color); margin-right: 0.5rem;"></i> WhatsApp Chat
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Salem African Church of Christ, Abekoko Parish. All rights reserved.</p>
+                <p>Built with ❤️ for the glory of God</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quick Action Buttons -->
+    <div class="quick-actions">
+        <a href="https://wa.me/+2349062759260" class="quick-action-btn whatsapp" title="WhatsApp Us">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="prayer.html" class="quick-action-btn" title="Prayer Request">
+            <i class="fas fa-praying-hands"></i>
+        </a>
+        <a href="contact.html" class="quick-action-btn" title="Contact Us">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification">
+        <div class="notification-header">
+            <div class="notification-icon">
+                <i class="fas fa-check"></i>
+            </div>
+            <div class="notification-content">
+                <h4 id="notification-title">Success!</h4>
+                <p id="notification-message">Your message has been sent successfully.</p>
+            </div>
+            <button class="notification-close" onclick="hideNotification()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Initialize EmailJS
+        emailjs.init({
+            publicKey: "Tk_a5VuZRTEMNh4SL",
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        navLinks.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Copy account number function
+        function copyAccountNumber() {
+            const accountNumber = '1010270199';
+            navigator.clipboard.writeText(accountNumber).then(() => {
+                showNotification('Copied!', 'Account number 1010270199 copied to clipboard', 'success');
+            }).catch(() => {
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = accountNumber;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                showNotification('Copied!', 'Account number 1010270199 copied to clipboard', 'success');
+            });
+        }
+
+        // Notification functions
+        function showNotification(title, message, type = 'success') {
+            const notification = document.getElementById('notification');
+            const notificationTitle = document.getElementById('notification-title');
+            const notificationMessage = document.getElementById('notification-message');
+            const icon = notification.querySelector('.notification-icon i');
+            
+            notificationTitle.textContent = title;
+            notificationMessage.textContent = message;
+            
+            // Reset classes
+            notification.className = 'notification';
+            
+            // Add type class
+            notification.classList.add(type);
+            
+            // Update icon
+            if (type === 'success') {
+                icon.className = 'fas fa-check';
+            } else if (type === 'error') {
+                icon.className = 'fas fa-exclamation-triangle';
+            }
+            
+            // Show notification
+            notification.classList.add('show');
+            
+            // Auto hide after 5 seconds
+            setTimeout(() => {
+                hideNotification();
+            }, 5000);
+        }
+
+        function hideNotification() {
+            const notification = document.getElementById('notification');
+            notification.classList.remove('show');
+        }
+
+        // Security: Rate limiting
+        let lastSubmissionTime = 0;
+        const RATE_LIMIT_MS = 30000; // 30 seconds between submissions
+        
+        // Security: Input sanitization
+        function sanitizeInput(input) {
+            if (typeof input !== 'string') return '';
+            return input
+                .replace(/[<>"'&]/g, function(match) {
+                    const map = {
+                        '<': '&lt;',
+                        '>': '&gt;',
+                        '"': '&quot;',
+                        "'": '&#x27;',
+                        '&': '&amp;'
+                    };
+                    return map[match];
+                })
+                .trim()
+                .substring(0, 2000); // Limit length
+        }
+        
+        // Security: Email validation
+        function isValidEmail(email) {
+            const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            return emailRegex.test(email) && email.length <= 100;
+        }
+        
+        // Contact Form
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = this;
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+            
+            // Security: Check honeypot field
+            if (data.website && data.website.trim() !== '') {
+                showNotification('Error!', 'Spam detected. Please try again.', 'error');
+                return;
+            }
+            
+            // Security: Rate limiting
+            const currentTime = Date.now();
+            if (currentTime - lastSubmissionTime < RATE_LIMIT_MS) {
+                const remainingTime = Math.ceil((RATE_LIMIT_MS - (currentTime - lastSubmissionTime)) / 1000);
+                showNotification('Error!', `Please wait ${remainingTime} seconds before submitting again.`, 'error');
+                return;
+            }
+            
+            // Sanitize inputs
+            data.contact_name = sanitizeInput(data.contact_name);
+            data.contact_email = sanitizeInput(data.contact_email);
+            data.contact_phone = sanitizeInput(data.contact_phone);
+            data.contact_message = sanitizeInput(data.contact_message);
+            
+            // Validate required fields
+            if (!data.contact_name || !data.contact_email || !data.contact_subject || !data.contact_message) {
+                showNotification('Error!', 'Please fill in all required fields.', 'error');
+                return;
+            }
+            
+            // Validate email format
+            if (!isValidEmail(data.contact_email)) {
+                showNotification('Error!', 'Please enter a valid email address.', 'error');
+                return;
+            }
+            
+            // Validate message length
+            if (data.contact_message.length < 10) {
+                showNotification('Error!', 'Message must be at least 10 characters long.', 'error');
+                return;
+            }
+            
+            // Validate name (no numbers or special characters)
+            if (!/^[a-zA-Z\s.'-]+$/.test(data.contact_name)) {
+                showNotification('Error!', 'Please enter a valid name.', 'error');
+                return;
+            }
+            
+            // Show loading state
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            // Send email using EmailJS
+            const templateParams = {
+                name: data.contact_name,
+                email: data.contact_email,
+                phone: data.contact_phone || 'Not provided',
+                subject: data.contact_subject,
+                message: data.contact_message,
+                response_method: data.contact_response || 'email',
+                reply_to: data.contact_email,
+                to_email: 'michaeldosunmu22@gmail.com',
+                cc_email: 'oye80femii@gmail.com'
+            };
+            
+            emailjs.send('service_qr5y3or', 'template_nu6l6nf', templateParams)
+                .then(function(response) {
+                    console.log('Email sent successfully!', response.status);
+                    lastSubmissionTime = Date.now(); // Update rate limit timestamp
+                    showNotification('Success!', 'Your message has been sent successfully! We will respond within 24 hours.', 'success');
+                    form.reset();
+                }, function(error) {
+                    console.log('EmailJS FAILED...', error);
+                    showNotification('Error!', 'Failed to send message. Please try again or contact us directly.', 'error');
+                })
+                .finally(function() {
+                    // Reset button state
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                });
+        });
+    </script>
+</body>
+</html>

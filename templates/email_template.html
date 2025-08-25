@@ -11,8 +11,10 @@
             color: #333;
             max-width: 600px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 10px;
             background-color: #f8f9fa;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
         }
         .email-container {
             background-color: #ffffff;
@@ -99,12 +101,99 @@
             margin: 20px 0;
             border: none;
         }
+        
+        /* Mobile Responsive Styles */
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 5px !important;
+            }
+            
+            .email-container {
+                border-radius: 4px !important;
+            }
+            
+            .header {
+                padding: 20px 15px !important;
+            }
+            
+            .header h1 {
+                font-size: 20px !important;
+                margin: 10px 0 5px 0 !important;
+            }
+            
+            .header p {
+                font-size: 12px !important;
+            }
+            
+            .header img {
+                width: 50px !important;
+                height: 50px !important;
+                margin-bottom: 10px !important;
+            }
+            
+            .content {
+                padding: 20px 15px !important;
+            }
+            
+            .field-group {
+                margin-bottom: 15px !important;
+                padding: 12px !important;
+            }
+            
+            .field-label {
+                font-size: 12px !important;
+            }
+            
+            .field-value {
+                font-size: 14px !important;
+                word-break: break-word !important;
+            }
+            
+            .message-content {
+                padding: 15px !important;
+                margin: 15px 0 !important;
+            }
+            
+            .footer {
+                padding: 15px !important;
+                font-size: 11px !important;
+            }
+            
+            .footer p {
+                margin: 3px 0 !important;
+            }
+            
+            .form-type {
+                font-size: 10px !important;
+                padding: 6px 12px !important;
+            }
+            
+            .timestamp {
+                font-size: 11px !important;
+                margin-top: 15px !important;
+            }
+        }
+        
+        @media only screen and (max-width: 480px) {
+            .header h1 {
+                font-size: 18px !important;
+            }
+            
+            .field-value {
+                font-size: 13px !important;
+            }
+            
+            .footer {
+                font-size: 10px !important;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="email-container">
         <!-- Header -->
         <div class="header">
+            <img src="https://abekokoparish.netlify.app/images/logo.jpg" alt="Salem Church Logo" style="width: 60px; height: 60px; margin-bottom: 15px; object-fit: cover;">
             <h1>Salem African Church of Christ</h1>
             <p>Abekoko Parish, Agege Lagos</p>
             <p>Stay Updated • Stay Blessed</p>
@@ -142,6 +231,20 @@
                 <div class="field-value">{{phone}}</div>
             </div>
             {{/phone}}
+
+            {{#subject}}
+            <div class="field-group">
+                <div class="field-label">Subject</div>
+                <div class="field-value">{{subject}}</div>
+            </div>
+            {{/subject}}
+
+            {{#response_method}}
+            <div class="field-group">
+                <div class="field-label">Preferred Response Method</div>
+                <div class="field-value">{{response_method}}</div>
+            </div>
+            {{/response_method}}
 
             {{#address}}
             <div class="field-group">
@@ -221,6 +324,9 @@
         <div class="footer">
             <p><strong>Salem African Church of Christ</strong></p>
             <p>Abekoko Parish, Agege Lagos</p>
+            <p>📍 43, Arigbanla Street, Abekoko Bus-stop, Orile Agege, Lagos</p>
+            <p>📞 +234 906 275 9260 | +234 703 069 8300</p>
+            <p>💬 WhatsApp: +234 906 272 5926</p>
             <p>This message was sent from the church website contact form</p>
             <p>Please respond promptly to serve our church family</p>
         </div>

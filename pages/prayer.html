@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer & Testimonials - Salem African Church of Christ</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Submit prayer requests and share testimonials at Salem African Church of Christ, Abekoko Parish. Join our prayer community.">
+    <meta name="keywords" content="Prayer Requests, Testimonials, Prayer Points, Salem African Church, Abekoko Parish, Spiritual Support">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="../images/logo.jpg">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.jpg" alt="Salem Church Logo">
+                <div class="logo-text">
+                    <h1>Salem African Church of Christ Abekoko</h1>
+                    <p>Stay Updated • Stay Blessed</p>
+                </div>
+            </a>
+            
+            <nav class="navbar">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="leadership.html"><i class="fas fa-users"></i> Leadership</a></li>
+                    <li><a href="services.html"><i class="fas fa-church"></i> Services</a></li>
+                    <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+                    <li><a href="prayer.html" class="active"><i class="fas fa-praying-hands"></i> Prayer</a></li>
+                    <li><a href="get-involved.html"><i class="fas fa-hands-helping"></i> Get Involved</a></li>
+                    <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+                </ul>
+            </nav>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content page-spacing">
+        <!-- Hero Section -->
+        <section class="hero" style="height: 40vh; background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../images/flyer1.jpg') center/cover;">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Prayer & Testimonials</h2>
+                    <p>Come to God in prayer and share His goodness through your testimony</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prayer Points for the Week -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Prayer Points for the Week</h2>
+                <div class="card" style="max-width: 800px; margin: 0 auto;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <h3 style="color: var(--primary-color);"><i class="fas fa-praying-hands"></i> Weekly Prayer Focus</h3>
+                        <p style="font-size: 1.1rem;">Join us in prayer as we seek God's face together as a church family. These prayer points guide our weekly intercession.</p>
+                    </div>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div style="padding: 1.5rem; background: rgba(196, 30, 58, 0.05); border-left: 4px solid var(--primary-color); border-radius: 0.5rem;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 0.8rem;"><i class="fas fa-calendar-day"></i> Monday - Leadership Wisdom</h4>
+                            <p>Pray for wisdom and guidance for our church leadership team. Ask God to grant them discernment in making decisions that will benefit our church family and advance His kingdom.</p>
+                        </div>
+                        
+                        <div style="padding: 1.5rem; background: rgba(196, 30, 58, 0.05); border-left: 4px solid var(--primary-color); border-radius: 0.5rem;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 0.8rem;"><i class="fas fa-calendar-day"></i> Tuesday - Healing & Health</h4>
+                            <p>Intercede for the sick and those in need of healing. Pray for God's healing touch upon our members who are facing health challenges, and for comfort for their families.</p>
+                        </div>
+                        
+                        <div style="padding: 1.5rem; background: rgba(196, 30, 58, 0.05); border-left: 4px solid var(--primary-color); border-radius: 0.5rem;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 0.8rem;"><i class="fas fa-calendar-day"></i> Wednesday - Unity & Love</h4>
+                            <p>Pray for unity and love within our church family. Ask God to help us love one another as Christ loves us, and to maintain the bond of peace in our fellowship.</p>
+                        </div>
+                        
+                        <div style="padding: 1.5rem; background: rgba(196, 30, 58, 0.05); border-left: 4px solid var(--primary-color); border-radius: 0.5rem;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 0.8rem;"><i class="fas fa-calendar-day"></i> Thursday - Financial Breakthrough</h4>
+                            <p>Pray for financial breakthrough for our church members and for the church's building projects. Ask God to provide for every need according to His riches in glory.</p>
+                        </div>
+                        
+                        <div style="padding: 1.5rem; background: rgba(196, 30, 58, 0.05); border-left: 4px solid var(--primary-color); border-radius: 0.5rem;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 0.8rem;"><i class="fas fa-calendar-day"></i> Friday - Evangelism & Outreach</h4>
+                            <p>Pray for our evangelism efforts and community outreach programs. Ask God to open doors for sharing the Gospel and to prepare hearts to receive His love.</p>
+                        </div>
+                        
+                        <div style="padding: 1.5rem; background: rgba(196, 30, 58, 0.05); border-left: 4px solid var(--primary-color); border-radius: 0.5rem;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 0.8rem;"><i class="fas fa-calendar-day"></i> Saturday - Youth & Children</h4>
+                            <p>Pray for our youth and children, that they may grow in the knowledge and fear of the Lord. Ask God to protect them from negative influences and guide their steps.</p>
+                        </div>
+                        
+                        <div style="padding: 1.5rem; background: rgba(255, 215, 0, 0.1); border-left: 4px solid var(--accent-color); border-radius: 0.5rem;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 0.8rem;"><i class="fas fa-calendar-day"></i> Sunday - Thanksgiving & Worship</h4>
+                            <p>Give thanks to God for His faithfulness and goodness. Pray for our worship service, that hearts will be prepared to receive God's Word and that His presence will be manifest among us.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Food for Thought -->
+        <section class="section" style="background-color: #fafafa;">
+            <div class="container">
+                <h2 class="section-title">Food for Thought</h2>
+                <div class="card" style="max-width: 700px; margin: 0 auto; text-align: center;">
+                    <div style="margin-bottom: 2rem;">
+                        <i class="fas fa-lightbulb" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
+                        <h3 style="color: var(--primary-color);">Daily Inspiration</h3>
+                    </div>
+                    
+                    <blockquote style="font-style: italic; font-size: 1.3rem; line-height: 1.8; border-left: 4px solid var(--accent-color); padding-left: 1.5rem; margin: 2rem 0; text-align: left;">
+                        "This is the day the Lord has made; let us rejoice and be glad in it."
+                        <footer style="margin-top: 1rem; font-weight: 600; color: var(--primary-color); text-align: right;">- Psalm 118:24</footer>
+                    </blockquote>
+                    
+                    <div style="text-align: left; font-size: 1.1rem; line-height: 1.8; margin: 2rem 0;">
+                        <p style="margin-bottom: 1.5rem;">
+                            Every day is a gift from God, wrapped in His love and filled with His possibilities. When we wake up each morning, 
+                            we have the choice to see the day as God sees it - as an opportunity for joy, growth, and blessing.
+                        </p>
+                        
+                        <p style="margin-bottom: 1.5rem;">
+                            The psalmist reminds us that this day - today - is not an accident. It's not just another day on the calendar. 
+                            It's a day that the Lord has specifically made for us. He has prepared it with purpose, filled it with potential, 
+                            and given it to us as a gift.
+                        </p>
+                        
+                        <p style="margin-bottom: 1.5rem;">
+                            Let us approach each day with gratitude, joy, and expectation of His goodness. No matter what challenges we may face, 
+                            we can rejoice because we know that God is with us, and He has good plans for our lives.
+                        </p>
+                    </div>
+                    
+                    <div style="background: rgba(196, 30, 58, 0.1); padding: 1.5rem; border-radius: 0.5rem; margin-top: 2rem;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Reflection Questions:</h4>
+                        <ul style="list-style: none; padding: 0; text-align: left;">
+                            <li style="margin-bottom: 0.8rem;"><i class="fas fa-question-circle" style="color: var(--accent-color); margin-right: 0.5rem;"></i> How can I show gratitude for this day that God has made?</li>
+                            <li style="margin-bottom: 0.8rem;"><i class="fas fa-question-circle" style="color: var(--accent-color); margin-right: 0.5rem;"></i> What opportunities for joy can I find today?</li>
+                            <li style="margin-bottom: 0.8rem;"><i class="fas fa-question-circle" style="color: var(--accent-color); margin-right: 0.5rem;"></i> How can I be a blessing to someone else today?</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prayer Request & Testimony Forms -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Submit Prayer Requests & Share Testimonies</h2>
+                <div class="grid grid-2">
+                    <!-- Prayer Request Form -->
+                    <div class="card">
+                        <h3><i class="fas fa-praying-hands"></i> Submit Prayer Request</h3>
+                        <p style="margin-bottom: 1.5rem;">We believe in the power of prayer and would be honored to pray for you. Share your prayer request with our church family.</p>
+                        
+                        <form class="form" id="prayerRequestForm">
+                            <div class="form-group">
+                                <label class="form-label" for="prayer_name">Your Name (Optional)</label>
+                                <input type="text" name="prayer_name" id="prayer_name" placeholder="Enter your name" class="form-input" autocomplete="off">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="prayer_email">Email (Optional)</label>
+                                <input type="email" name="prayer_email" id="prayer_email" placeholder="Enter your email" class="form-input" autocomplete="off">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="prayer_phone">Phone Number (Optional)</label>
+                                <input type="tel" name="prayer_phone" id="prayer_phone" placeholder="Enter your phone number" class="form-input" autocomplete="off">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="prayer_category">Prayer Category *</label>
+                                <select name="prayer_category" id="prayer_category" class="form-select" required>
+                                    <option value="">Select Category</option>
+                                    <option value="healing">Healing & Health</option>
+                                    <option value="family">Family & Relationships</option>
+                                    <option value="financial">Financial Breakthrough</option>
+                                    <option value="spiritual">Spiritual Growth</option>
+                                    <option value="guidance">Guidance & Direction</option>
+                                    <option value="thanksgiving">Thanksgiving</option>
+                                    <option value="protection">Protection & Safety</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="prayer_request">Prayer Request *</label>
+                                <textarea name="prayer_request" id="prayer_request" placeholder="Please share your prayer request..." class="form-textarea" required></textarea>
+                            </div>
+                            
+                            <div style="display: flex; align-items: center; gap: 0.5rem; margin: 1rem 0;">
+                                <input type="checkbox" id="anonymous_prayer" name="anonymous_prayer">
+                                <label for="anonymous_prayer">Submit anonymously</label>
+                            </div>
+                            
+                            <button type="submit" class="btn">
+                                <i class="fas fa-paper-plane"></i>
+                                Submit Prayer Request
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Testimony Form -->
+                    <div class="card">
+                        <h3><i class="fas fa-heart"></i> Share Your Testimony</h3>
+                        <p style="margin-bottom: 1.5rem;">God is good! Share how God has blessed you so that others can be encouraged and give glory to God with you.</p>
+                        
+                        <form class="form" id="testimonyForm">
+                            <div class="form-group">
+                                <label class="form-label" for="testimony_name">Your Name *</label>
+                                <input type="text" name="testimony_name" id="testimony_name" placeholder="Enter your name" class="form-input" required autocomplete="off">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="testimony_email">Email (Optional)</label>
+                                <input type="email" name="testimony_email" id="testimony_email" placeholder="Enter your email" class="form-input" autocomplete="off">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="testimony_category">Testimony Category *</label>
+                                <select name="testimony_category" id="testimony_category" class="form-select" required>
+                                    <option value="">Select Category</option>
+                                    <option value="healing">Divine Healing</option>
+                                    <option value="financial">Financial Miracle</option>
+                                    <option value="family">Family Restoration</option>
+                                    <option value="career">Career Breakthrough</option>
+                                    <option value="spiritual">Spiritual Experience</option>
+                                    <option value="protection">Divine Protection</option>
+                                    <option value="answered_prayer">Answered Prayer</option>
+                                    <option value="other">Other Blessing</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label" for="testimony_text">Your Testimony *</label>
+                                <textarea name="testimony_text" id="testimony_text" placeholder="Share your testimony of God's goodness..." class="form-textarea" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn">
+                                <i class="fas fa-share"></i>
+                                Share Testimony
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prayer Guidelines -->
+        <section class="section" style="background-color: #fafafa;">
+            <div class="container">
+                <h2 class="section-title">Prayer Guidelines & Support</h2>
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h3><i class="fas fa-info-circle"></i> Prayer Request Guidelines</h3>
+                        <div style="text-align: left;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 1rem;">How We Handle Your Requests</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 0.8rem; display: flex; align-items: flex-start;">
+                                    <i class="fas fa-shield-alt" style="color: var(--accent-color); margin-right: 0.8rem; margin-top: 0.2rem;"></i>
+                                    <span><strong>Confidentiality:</strong> All prayer requests are treated with complete confidentiality and respect</span>
+                                </li>
+                                <li style="margin-bottom: 0.8rem; display: flex; align-items: flex-start;">
+                                    <i class="fas fa-users" style="color: var(--accent-color); margin-right: 0.8rem; margin-top: 0.2rem;"></i>
+                                    <span><strong>Prayer Team:</strong> Our dedicated prayer team prays for all submitted requests</span>
+                                </li>
+                                <li style="margin-bottom: 0.8rem; display: flex; align-items: flex-start;">
+                                    <i class="fas fa-clock" style="color: var(--accent-color); margin-right: 0.8rem; margin-top: 0.2rem;"></i>
+                                    <span><strong>Response Time:</strong> We acknowledge receipt within 24 hours when contact info is provided</span>
+                                </li>
+                                <li style="margin-bottom: 0.8rem; display: flex; align-items: flex-start;">
+                                    <i class="fas fa-heart" style="color: var(--accent-color); margin-right: 0.8rem; margin-top: 0.2rem;"></i>
+                                    <span><strong>Follow-up:</strong> We may follow up to see how God has answered your prayers</span>
+                                </li>
+                            </ul>
+                            
+                            <h4 style="color: var(--primary-color); margin: 1.5rem 0 1rem;">Emergency Prayer Needs</h4>
+                            <p style="margin-bottom: 1rem;">For urgent prayer needs, please contact us directly:</p>
+                            <div style="background: rgba(196, 30, 58, 0.1); padding: 1rem; border-radius: 0.5rem;">
+                                <p style="margin-bottom: 0.5rem;"><strong>Phone:</strong> +234 906 275 9260 | +234 703 069 8300</p>
+                                <p style="margin: 0;"><strong>WhatsApp:</strong> <a href="https://wa.me/+2349062759260" target="_blank" style="color: var(--primary-color);">+234 906 275 9260</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h3><i class="fas fa-hands-praying"></i> How to Pray Effectively</h3>
+                        <div style="text-align: left;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Biblical Principles for Prayer</h4>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <h5 style="color: var(--primary-color); margin-bottom: 0.5rem;">1. Pray with Faith</h5>
+                                <p style="font-size: 0.9rem; font-style: italic; margin-bottom: 0.5rem;">"And whatever you ask in prayer, you will receive, if you have faith." - Matthew 21:22</p>
+                                <p style="font-size: 0.9rem;">Believe that God hears and will answer according to His will.</p>
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <h5 style="color: var(--primary-color); margin-bottom: 0.5rem;">2. Pray According to God's Will</h5>
+                                <p style="font-size: 0.9rem; font-style: italic; margin-bottom: 0.5rem;">"And this is the confidence that we have toward him, that if we ask anything according to his will he hears us." - 1 John 5:14</p>
+                                <p style="font-size: 0.9rem;">Align your prayers with God's purposes and desires.</p>
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <h5 style="color: var(--primary-color); margin-bottom: 0.5rem;">3. Pray with Persistence</h5>
+                                <p style="font-size: 0.9rem; font-style: italic; margin-bottom: 0.5rem;">"And he told them a parable to the effect that they ought always to pray and not lose heart." - Luke 18:1</p>
+                                <p style="font-size: 0.9rem;">Don't give up; continue praying until you receive an answer.</p>
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <h5 style="color: var(--primary-color); margin-bottom: 0.5rem;">4. Pray with Thanksgiving</h5>
+                                <p style="font-size: 0.9rem; font-style: italic; margin-bottom: 0.5rem;">"Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God." - Philippians 4:6</p>
+                                <p style="font-size: 0.9rem;">Always include gratitude in your prayers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact for Prayer -->
+        <section class="section" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: var(--white);">
+            <div class="container">
+                <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center; background: rgba(255, 255, 255, 0.95); color: var(--dark-color);">
+                    <h3 style="color: var(--primary-color);"><i class="fas fa-phone-alt"></i> Need Immediate Prayer?</h3>
+                    <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">
+                        If you need immediate prayer support or have an urgent prayer request, don't hesitate to reach out to us directly.
+                    </p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="https://wa.me/+2349062759260" class="btn">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp Prayer Line
+                        </a>
+                        <a href="tel:+2349062759260" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i>
+                            Call Us
+                        </a>
+                    </div>
+                    <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(196, 30, 58, 0.1); border-radius: 0.5rem;">
+                        <p style="margin: 0; font-size: 0.9rem; color: #666;">
+                            <i class="fas fa-clock" style="margin-right: 0.5rem;"></i>
+                            Available for emergency prayer needs 24/7
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>Salem African Church of Christ</h3>
+                    <p>Abekoko Parish, Agege Lagos</p>
+                    <p>Building a community of faith, hope, and love in the heart of Lagos.</p>
+                    <p style="margin-top: 1rem; font-style: italic; color: var(--accent-color);">"Stay Updated • Stay Blessed"</p>
+                </div>
+                
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="leadership.html"><i class="fas fa-users"></i> Leadership</a></li>
+                        <li><a href="services.html"><i class="fas fa-church"></i> Services</a></li>
+                        <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Get Involved</h3>
+                    <ul class="footer-links">
+                        <li><a href="prayer.html"><i class="fas fa-praying-hands"></i> Prayer Requests</a></li>
+                        <li><a href="get-involved.html"><i class="fas fa-hands-helping"></i> Volunteer</a></li>
+                        <li><a href="get-involved.html#birthday"><i class="fas fa-birthday-cake"></i> Birthday Registration</a></li>
+                        <li><a href="contact.html"><i class="fas fa-comment-alt"></i> Feedback</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Contact Info</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <p><i class="fas fa-map-marker-alt" style="color: var(--accent-color); margin-right: 0.5rem;"></i> 43, Arigbanla Street, Abekoko Bus-stop, Orile Agege, Lagos</p>
+                        <p><i class="fas fa-phone" style="color: var(--accent-color); margin-right: 0.5rem;"></i> +234 906 275 9260</p>
+                        <p><i class="fas fa-phone" style="color: var(--accent-color); margin-right: 0.5rem;"></i> +234 703 069 8300</p>
+                        <a href="https://wa.me/+2349062759260" style="color: var(--white); text-decoration: none;">
+                            <i class="fab fa-whatsapp" style="color: var(--accent-color); margin-right: 0.5rem;"></i> WhatsApp Chat
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Salem African Church of Christ, Abekoko Parish. All rights reserved.</p>
+                <p>Built with ❤️ for the glory of God</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quick Action Buttons -->
+    <div class="quick-actions">
+        <a href="https://wa.me/+2349062759260" class="quick-action-btn whatsapp" title="WhatsApp Us">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="prayer.html" class="quick-action-btn" title="Prayer Request">
+            <i class="fas fa-praying-hands"></i>
+        </a>
+        <a href="contact.html" class="quick-action-btn" title="Contact Us">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- Notification -->
+    <div id="notification" class="notification">
+        <div class="notification-header">
+            <div class="notification-icon">
+                <i class="fas fa-check"></i>
+            </div>
+            <div class="notification-content">
+                <h4 id="notification-title">Success!</h4>
+                <p id="notification-message">Your message has been sent successfully.</p>
+            </div>
+            <button class="notification-close" onclick="hideNotification()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Initialize EmailJS
+        emailjs.init({
+            publicKey: "Tk_a5VuZRTEMNh4SL",
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        navLinks.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Notification functions
+        function showNotification(title, message, type = 'success') {
+            const notification = document.getElementById('notification');
+            const notificationTitle = document.getElementById('notification-title');
+            const notificationMessage = document.getElementById('notification-message');
+            const icon = notification.querySelector('.notification-icon i');
+            
+            notificationTitle.textContent = title;
+            notificationMessage.textContent = message;
+            
+            // Reset classes
+            notification.className = 'notification';
+            
+            // Add type class
+            notification.classList.add(type);
+            
+            // Update icon
+            if (type === 'success') {
+                icon.className = 'fas fa-check';
+            } else if (type === 'error') {
+                icon.className = 'fas fa-exclamation-triangle';
+            }
+            
+            // Show notification
+            notification.classList.add('show');
+            
+            // Auto hide after 5 seconds
+            setTimeout(() => {
+                hideNotification();
+            }, 5000);
+        }
+
+        function hideNotification() {
+            const notification = document.getElementById('notification');
+            notification.classList.remove('show');
+        }
+
+        // Prayer Request Form
+        document.getElementById('prayerRequestForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Here you would typically send the data to your server or EmailJS
+            // For now, we'll just show a success message
+            
+            showNotification(
+                'Prayer Request Submitted!', 
+                'Thank you for sharing your prayer request. Our prayer team will be praying for you.',
+                'success'
+            );
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Testimony Form
+        document.getElementById('testimonyForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Here you would typically send the data to your server or EmailJS
+            // For now, we'll just show a success message
+            
+            showNotification(
+                'Testimony Shared!', 
+                'Thank you for sharing your testimony. Your story will encourage others and bring glory to God.',
+                'success'
+            );
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>

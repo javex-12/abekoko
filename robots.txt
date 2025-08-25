@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://abekokoparish.netlify.app/sitemap.xml
+
+# Disallow sensitive areas
+Disallow: /docs/
+Disallow: /templates/
+Disallow: /.git/
+Disallow: /ORGANIZATION_COMPLETE.md
+
+# Allow important pages
+Allow: /pages/
+Allow: /assets/
+
+# Crawl delay (optional)
+Crawl-delay: 1

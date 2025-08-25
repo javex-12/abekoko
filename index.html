@@ -1,1726 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Salem African Church of Christ – Abekoko Parish, Agege Lagos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salem African Church of Christ – Abekoko Parish, Agege Lagos</title>
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://api.emailjs.com; frame-ancestors 'none';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 
-<!-- Basic SEO -->
-<meta name="description" content="Salem African Church of Christ, Abekoko Parish, Agege Lagos – Join us for worship, praise, and community fellowship. Stay Updated, Stay Blessed.">
-<meta name="keywords" content="Salem African Church, Abekoko Parish, Agege, Lagos, African Church of Christ, Worship, Christian Fellowship, Church Service, Lagos Church">
-<meta name="author" content="Salem African Church of Christ">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Salem African Church of Christ, Abekoko Parish, Agege Lagos – Join us for worship, praise, and community fellowship. Sunday Service 10:00 AM. Stay Updated, Stay Blessed.">
+    <meta name="keywords" content="Salem African Church, Abekoko Parish, Agege, Lagos, African Church of Christ, Worship, Christian Fellowship, Church Service, Lagos Church, Sunday Service, Bible Study, Prayer, Gethsemane, Rev Canon Olufemi Oyelola, Orile Agege, Nigerian Church, Christian Community">
+    <meta name="author" content="Salem African Church of Christ">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="distribution" content="global">
 
-<!-- Open Graph (Facebook/WhatsApp) -->
-<meta property="og:title" content="Salem African Church of Christ – Abekoko Parish, Agege Lagos">
-<meta property="og:description" content="Join Salem African Church of Christ in Agege, Lagos for uplifting worship, Bible teachings, and community fellowship.">
-<meta property="og:image" content="https://abekokoparish.netlify.app/images/logo.jpg">
-<meta property="og:url" content="https://abekokoparish.netlify.app">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="en_NG">
+    <!-- Open Graph (Facebook/WhatsApp) -->
+    <meta property="og:title" content="Salem African Church of Christ – Abekoko Parish, Agege Lagos">
+    <meta property="og:description" content="Join Salem African Church of Christ in Agege, Lagos for uplifting worship, Bible teachings, and community fellowship.">
+    <meta property="og:image" content="https://abekokoparish.netlify.app/assets/images/gallery/logo.jpg">
+    <meta property="og:url" content="https://abekokoparish.netlify.app">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_NG">
+    <meta property="og:site_name" content="Salem African Church of Christ">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Salem African Church of Christ – Abekoko Parish, Agege Lagos">
-<meta name="twitter:description" content="Worship with us at Salem African Church of Christ, Abekoko Parish in Agege Lagos. Stay updated and stay blessed.">
-<meta name="twitter:image" content="https://abekokoparish.netlify.app/images/logo.jpg">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Salem African Church of Christ – Abekoko Parish, Agege Lagos">
+    <meta name="twitter:description" content="Worship with us at Salem African Church of Christ, Abekoko Parish in Agege Lagos. Stay updated and stay blessed.">
+    <meta name="twitter:image" content="https://abekokoparish.netlify.app/assets/images/gallery/logo.jpg">
+    <meta name="twitter:site" content="@SalemChurchAbekoko">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://abekokoparish.netlify.app/">
+    <meta name="geo.region" content="NG-LA">
+    <meta name="geo.placename" content="Agege, Lagos">
+    <meta name="geo.position" content="6.6018;3.3515">
+    <meta name="ICBM" content="6.6018, 3.3515">
 
-<!-- Favicon -->
-<link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/images/gallery/logo.jpg">
 
-<!-- PWA Meta Tags -->
-<meta name="theme-color" content="#c41e3a">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Salem Church">
-<link rel="apple-touch-icon" href="images/logo.jpg">
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#c41e3a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Salem Church">
+    <link rel="apple-touch-icon" href="assets/images/gallery/logo.jpg">
 
-<!-- PWA Manifest -->
-<link rel="manifest" href="manifest.json">
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
 
-<!-- Fonts & Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
-<!-- EmailJS -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.css">
 
-<!-- CMS Content Loader -->
-<script src="js/cms-content-loader.js"></script>
-
-    <style>
-        /* Updated CSS styles - Red Color Scheme v5.0 */
-        :root {
-            --primary-color: #c41e3a;
-            --secondary-color: #8b1538;
-            --accent-color: #ffd700;
-            --dark-color: #1a1a1a;
-            --light-color: #f8f8f8;
-            --white: #ffffff;
-            --success-color: #c41e3a;
-            --error-color: #dc3545;
-            --font-primary: 'Poppins', sans-serif;
-            --font-secondary: 'Playfair Display', serif;
-            --transition: all 0.3s ease;
-            --shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: var(--font-primary);
-            color: var(--dark-color);
-            line-height: 1.6;
-            overflow-x: hidden;
-            width: 100%;
-            max-width: 100vw;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-family: var(--font-secondary);
-            margin-bottom: 1rem;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: var(--transition);
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.8rem 1.8rem;
-            background-color: var(--primary-color);
-            color: var(--white);
-            border-radius: 4px;
-            font-weight: 600;
-            transition: var(--transition);
-            border: none;
-            cursor: pointer;
-            min-height: 44px;
-            min-width: 44px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            gap: 0.5rem;
-        }
-
-        .btn:hover {
-            background-color: var(--secondary-color);
-            transform: translateY(-2px);
-        }
-
-        .section {
-            padding: 4rem 0;
-            width: 100%;
-            max-width: 100vw;
-            overflow-x: hidden;
-            box-sizing: border-box;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 2rem;
-            position: relative;
-            padding-bottom: 1rem;
-            font-size: clamp(1.5rem, 4vw, 2.5rem);
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
-            background-color: var(--primary-color);
-        }
-
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 clamp(0.8rem, 3vw, 2rem);
-            box-sizing: border-box;
-        }
-
-        /* Header Styles */
-        .header {
-            background-color: var(--white);
-            box-shadow: var(--shadow);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            padding: 1rem 0;
-        }
-
-        .header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo img {
-            animation: float 3s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0px);
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Church",
+        "name": "Salem African Church of Christ",
+        "alternateName": "Salem African Church Abekoko Parish",
+        "description": "Salem African Church of Christ, Abekoko Parish is a vibrant Christian community in Agege, Lagos offering worship services, Bible study, prayer meetings, and community fellowship.",
+        "url": "https://abekokoparish.netlify.app",
+        "logo": "https://abekokoparish.netlify.app/assets/images/gallery/logo.jpg",
+        "image": "https://abekokoparish.netlify.app/assets/images/gallery/churchpic.png",
+        "telephone": ["+234 906 275 9260", "+234 703 069 8300"],
+        "email": "contact@salemchurchabekoko.org",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "43, Arigbanla Street, Abekoko Bus-stop",
+            "addressLocality": "Orile Agege",
+            "addressRegion": "Lagos",
+            "addressCountry": "Nigeria",
+            "postalCode": "100001"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 6.6018,
+            "longitude": 3.3515
+        },
+        "openingHours": [
+            "Su 10:00-12:00",
+            "Tu 17:00-19:00",
+            "We 07:00-08:00",
+            "Th 17:00-19:00",
+            "Fr 17:00-19:00"
+        ],
+        "founder": {
+            "@type": "Person",
+            "name": "Rev'd Canon Olufemi Oyelola",
+            "jobTitle": "Vicar in Charge"
+        },
+        "sameAs": [
+            "https://www.facebook.com/salem.parish.abekoko",
+            "https://www.facebook.com/oyelola.olufemi1",
+            "https://www.instagram.com/rev_olufemi_oyelola",
+            "https://www.youtube.com/@femioyelola8118"
+        ],
+        "event": [
+            {
+                "@type": "Event",
+                "name": "Sunday Worship Service",
+                "description": "Weekly Sunday worship service with praise, worship, Bible teaching, and fellowship",
+                "startDate": "2025-01-01T10:00:00+01:00",
+                "endDate": "2025-01-01T12:00:00+01:00",
+                "eventSchedule": {
+                    "@type": "Schedule",
+                    "repeatFrequency": "P1W",
+                    "byDay": "Sunday"
+                },
+                "location": {
+                    "@type": "Place",
+                    "name": "Salem African Church of Christ",
+                    "address": "43, Arigbanla Street, Abekoko Bus-stop, Orile Agege, Lagos, Nigeria"
+                }
+            },
+            {
+                "@type": "Event",
+                "name": "Bible Study",
+                "description": "Weekly Bible study and discussion session",
+                "startDate": "2025-01-01T17:00:00+01:00",
+                "endDate": "2025-01-01T19:00:00+01:00",
+                "eventSchedule": {
+                    "@type": "Schedule",
+                    "repeatFrequency": "P1W",
+                    "byDay": "Tuesday"
+                },
+                "location": {
+                    "@type": "Place",
+                    "name": "Salem African Church of Christ",
+                    "address": "43, Arigbanla Street, Abekoko Bus-stop, Orile Agege, Lagos, Nigeria"
+                }
             }
-            50% {
-                transform: translateY(-5px);
+        ],
+        "potentialAction": {
+            "@type": "ReserveAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://abekokoparish.netlify.app/pages/contact.html",
+                "actionPlatform": [
+                    "http://schema.org/DesktopWebPlatform",
+                    "http://schema.org/MobileWebPlatform"
+                ]
+            },
+            "result": {
+                "@type": "Reservation",
+                "name": "Church Service Attendance"
             }
         }
-
-        .logo h1 {
-            font-size: clamp(0.9rem, 2.5vw, 1.5rem);
-            color: var(--primary-color);
-        }
-
-        .logo span {
-            color: var(--dark-color);
-        }
-
-        .logo p {
-            font-size: clamp(0.6rem, 1.5vw, 0.8rem);
-            color: var(--dark-color);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            position: relative;
-            padding: 0.5rem 0;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: var(--primary-color);
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary-color);
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        /* Mobile Menu */
-        .menu-toggle {
-            display: none;
-            cursor: pointer;
-            padding: 0.5rem;
-            border-radius: 4px;
-            transition: var(--transition);
-            background: transparent;
-            border: none;
-            color: var(--primary-color);
-            min-width: 44px;
-            min-height: 44px;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            position: relative;
-        }
-
-        .menu-toggle:hover {
-            background-color: rgba(196, 30, 58, 0.1);
-        }
-
-        .hamburger {
-            width: 24px;
-            height: 18px;
-            position: relative;
-            transform: rotate(0deg);
-            transition: 0.3s ease-in-out;
-            cursor: pointer;
-        }
-
-        .hamburger span {
-            display: block;
-            position: absolute;
-            height: 3px;
-            width: 100%;
-            background: var(--primary-color);
-            border-radius: 2px;
-            opacity: 1;
-            left: 0;
-            transform: rotate(0deg);
-            transition: 0.25s ease-in-out;
-        }
-
-        .hamburger span:nth-child(1) {
-            top: 0px;
-        }
-
-        .hamburger span:nth-child(2) {
-            top: 7px;
-        }
-
-        .hamburger span:nth-child(3) {
-            top: 14px;
-        }
-
-        .menu-toggle.active .hamburger span:nth-child(1) {
-            top: 7px;
-            transform: rotate(135deg);
-        }
-
-        .menu-toggle.active .hamburger span:nth-child(2) {
-            opacity: 0;
-            left: -60px;
-        }
-
-        .menu-toggle.active .hamburger span:nth-child(3) {
-            top: 7px;
-            transform: rotate(-135deg);
-        }
-
-        /* Hero Section */
-        .hero {
-            background: url('images/flyer1.jpg') no-repeat center center/cover;
-            height: 80vh;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            color: var(--white);
-            margin-top: 70px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(2px);
-            z-index: 1;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .hero-content h2 {
-            font-size: clamp(1.8rem, 5vw, 3.5rem);
-            margin-bottom: 0.8rem;
-            text-shadow: 3px 3px 8px rgba(0, 0, 0, 1), 1px 1px 2px rgba(0, 0, 0, 0.8);
-            color: #ffffff;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-align: center;
-            line-height: 1.2;
-        }
-
-        .hero-subtitle {
-            font-size: clamp(1.2rem, 3.5vw, 2.2rem);
-            margin-bottom: 1.8rem;
-            color: var(--accent-color);
-            font-style: italic;
-            font-weight: 600;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 1), 1px 1px 2px rgba(0, 0, 0, 0.8);
-            text-align: center;
-            font-family: var(--font-secondary);
-            position: relative;
-        }
-
-        .hero-subtitle::before {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 3px;
-            background: var(--accent-color);
-            border-radius: 2px;
-            box-shadow: 0 0 10px rgba(248, 180, 0, 0.5);
-        }
-
-        .hero-content p {
-            font-size: clamp(1rem, 2.5vw, 1.2rem);
-            margin-bottom: 2rem;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-            font-weight: 500;
-        }
-
-        /* Current Service */
-        .current-service {
-            background-color: var(--primary-color);
-            color: var(--white);
-            padding: 2rem 0;
-        }
-
-        .service-card {
-            background-color: var(--white);
-            color: var(--dark-color);
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: var(--shadow);
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .service-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-
-        .service-details p {
-            margin-bottom: 0.5rem;
-        }
-
-        .red {
-            color: var(--primary-color);
-            font-weight: bold;
-        }
-
-        /* Grid Systems */
-        .announcements-grid, .prayer-request-grid, .birthday-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(min(280px, calc(100% - 2rem)), 1fr));
-            gap: clamp(1rem, 3vw, 2rem);
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(min(300px, calc(100% - 2rem)), 1fr));
-            gap: clamp(1rem, 3vw, 2rem);
-            align-items: stretch;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .prayer-content, .contact-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(min(320px, calc(100% - 2rem)), 1fr));
-            gap: clamp(1rem, 3vw, 2rem);
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        /* Card Styles */
-        .announcement-card, .service-card, .prayer-points, .food-for-thought, .contact-info, .contact-form,
-        .prayer-request-card, .birthday-card, .complaint-card, .volunteer-card {
-            background-color: var(--white);
-            padding: clamp(1rem, 3vw, 2rem);
-            border-radius: 8px;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            margin-bottom: 1rem;
-        }
-
-        .announcement-card:hover, .prayer-request-card:hover, .birthday-card:hover, 
-        .complaint-card:hover, .volunteer-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .announcement-card h3, .prayer-request-card h3, .birthday-card h3, 
-        .complaint-card h3, .volunteer-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--accent-color);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .announcement-card li {
-            margin-bottom: 0.5rem;
-            padding-left: 1rem;
-            position: relative;
-        }
-
-        .announcement-card li::before {
-            content: '•';
-            position: absolute;
-            left: 0;
-            color: var(--primary-color);
-        }
-
-        /* Prayer Request Section */
-        .prayer-request-section {
-            background: linear-gradient(135deg, var(--light-color) 0%, #fff 100%);
-        }
-
-        .prayer-request-card {
-            border-left: 4px solid var(--primary-color);
-        }
-
-        .prayer-form, .complaint-form {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .prayer-form input, .prayer-form textarea, .prayer-form select,
-        .complaint-form input, .complaint-form textarea, .complaint-form select,
-        .birthday-form input, .birthday-form textarea, .birthday-form select {
-            width: 100%;
-            padding: 0.8rem;
-            border: 1px solid transparent !important;
-            background-color: #f8f9fa !important;
-            border-radius: 4px;
-            font-family: var(--font-primary);
-            font-size: 1rem;
-            transition: var(--transition);
-            box-sizing: border-box;
-            min-height: 44px;
-        }
-
-        .prayer-form input:focus, .prayer-form textarea:focus, .prayer-form select:focus,
-        .complaint-form input:focus, .complaint-form textarea:focus, .complaint-form select:focus,
-        .birthday-form input:focus, .birthday-form textarea:focus, .birthday-form select:focus {
-            outline: none !important;
-            border-color: var(--primary-color) !important;
-            box-shadow: 0 0 0 2px rgba(196, 30, 58, 0.1) !important;
-        }
-
-        .prayer-form textarea, .complaint-form textarea {
-            min-height: 120px;
-            resize: vertical;
-        }
-
-        .anonymous-checkbox {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin: 1rem 0;
-        }
-
-        .anonymous-checkbox input[type="checkbox"] {
-            width: auto;
-            margin: 0;
-        }
-
-        /* Birthday Section */
-        .birthday-section {
-            background: linear-gradient(135deg, #fff5f5 0%, var(--white) 100%);
-        }
-
-        .birthday-card {
-            border: 2px solid var(--accent-color);
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .birthday-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255, 215, 0, 0.1), transparent);
-            transform: rotate(45deg);
-            transition: var(--transition);
-        }
-
-        .birthday-card:hover::before {
-            animation: shimmer 1.5s ease-in-out;
-        }
-
-        @keyframes shimmer {
-            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
-        }
-
-        .birthday-card:hover {
-            transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 10px 30px rgba(196, 30, 58, 0.2);
-        }
-
-        .birthday-icon {
-            font-size: 3rem;
-            color: var(--accent-color);
-            margin-bottom: 1rem;
-            position: relative;
-            z-index: 2;
-        }
-
-        .birthday-list {
-            list-style: none;
-            padding: 0;
-            position: relative;
-            z-index: 2;
-        }
-
-        .birthday-list li {
-            padding: 0.8rem;
-            margin-bottom: 0.5rem;
-            background: var(--light-color);
-            border-radius: 6px;
-            border-left: 3px solid var(--primary-color);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: var(--transition);
-        }
-
-        .birthday-list li:hover {
-            background: rgba(196, 30, 58, 0.1);
-            transform: translateX(5px);
-        }
-
-        .birthday-name {
-            font-weight: 600;
-            color: var(--dark-color);
-        }
-
-        .birthday-date {
-            color: var(--primary-color);
-            font-weight: 500;
-            font-size: 0.9rem;
-        }
-
-        .birthday-form {
-            background-color: var(--white);
-            padding: clamp(1rem, 3vw, 2rem);
-            border-radius: 8px;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            margin-bottom: 1rem;
-            border-left: 4px solid var(--accent-color);
-        }
-        
-        .birthday-form h3 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--accent-color);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-
-
-
-
-        /* Volunteer Section */
-        .volunteer-section {
-            background: linear-gradient(135deg, #e8f5e8 0%, var(--white) 100%);
-        }
-
-        .volunteer-card {
-            border-left: 4px solid var(--primary-color);
-        }
-
-        .volunteer-card h3 {
-            color: var(--primary-color);
-            border-bottom-color: var(--primary-color);
-        }
-
-        .volunteer-opportunities {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-
-        .volunteer-item {
-            background: var(--light-color);
-            padding: 1rem;
-            border-radius: 6px;
-            border-left: 3px solid var(--primary-color);
-            transition: var(--transition);
-        }
-
-        .volunteer-item:hover {
-            background: rgba(196, 30, 58, 0.1);
-            transform: translateX(5px);
-        }
-
-        .volunteer-item h4 {
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-            font-size: 1rem;
-        }
-
-        .volunteer-item p {
-            font-size: 0.9rem;
-            color: var(--dark-color);
-            margin: 0;
-        }
-
-        /* Complaint Section */
-        .complaint-section {
-            background: linear-gradient(135deg, #f8f9fa 0%, var(--white) 100%);
-        }
-
-        .complaint-card {
-            border-left: 4px solid var(--primary-color);
-        }
-
-        .complaint-card h3 {
-            color: var(--primary-color);
-            border-bottom-color: var(--primary-color);
-        }
-
-        .complaint-form input:focus, .complaint-form textarea:focus, .complaint-form select:focus {
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 2px rgba(196, 30, 58, 0.1);
-        }
-
-        /* Services */
-        .service-schedule {
-            background-color: var(--white);
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: var(--shadow);
-            border-left: 4px solid var(--primary-color);
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .service-schedule.communion-service {
-            border-left-color: var(--accent-color);
-        }
-
-        .service-header {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            margin-bottom: 1.5rem;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .service-icon {
-            width: 60px;
-            height: 60px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 3px solid var(--primary-color);
-            flex-shrink: 0;
-        }
-
-        .service-icon.communion-icon {
-            border-color: var(--accent-color);
-        }
-
-        .service-time h3 {
-            color: var(--primary-color);
-            margin: 0;
-            font-size: clamp(1.1rem, 2.5vw, 1.3rem);
-            text-align: left;
-        }
-
-        .service-time ol {
-            padding-left: 1.5rem;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .service-time li {
-            margin-bottom: 0.5rem;
-            word-wrap: break-word;
-        }
-
-        .service-time ul {
-            list-style-type: disc;
-            margin-left: 1.5rem;
-            margin-top: 0.5rem;
-        }
-
-        .service-time ul li {
-            margin-bottom: 0.3rem;
-        }
-
-        /* Prayer Section */
-        .prayer-points h3, .food-for-thought h3 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--accent-color);
-        }
-
-        .food-for-thought p {
-            font-style: italic;
-            font-size: 1.1rem;
-        }
-
-        /* Contact Section */
-        .contact-info h3, .contact-form h3 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--accent-color);
-        }
-
-        .contact-info p {
-            margin-bottom: 1rem;
-        }
-
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: clamp(0.6rem, 2vw, 0.8rem);
-            margin-bottom: 1rem;
-            border: 1px solid transparent !important;
-            background-color: #f8f9fa !important;
-            border-radius: 4px;
-            font-family: var(--font-primary);
-            font-size: clamp(0.9rem, 2vw, 1rem);
-            min-height: 44px;
-            box-sizing: border-box;
-        }
-        
-        .contact-form input:focus, .contact-form textarea:focus {
-            outline: none !important;
-            border-color: var(--primary-color) !important;
-            box-shadow: 0 0 0 2px rgba(196, 30, 58, 0.1) !important;
-        }
-
-        .contact-form textarea {
-            min-height: 120px;
-            resize: vertical;
-        }
-
-        /* Account Details Styling */
-        .account-details {
-            background: var(--light-color);
-            padding: 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid var(--primary-color);
-            margin: 1rem 0;
-        }
-
-        .account-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1rem;
-            padding: 0.5rem 0;
-            border-bottom: 1px solid rgba(0,0,0,0.1);
-        }
-
-        .account-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-        }
-
-        .account-label {
-            font-weight: 600;
-            color: var(--primary-color);
-            min-width: 120px;
-        }
-
-        .account-value {
-            font-weight: 600;
-            color: var(--dark-color);
-            text-align: right;
-            flex: 1;
-        }
-
-        .large-text {
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            letter-spacing: 1px;
-            font-family: 'Courier New', monospace;
-        }
-
-        .account-number {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            flex: 1;
-            justify-content: flex-end;
-        }
-
-        .copy-btn {
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 0.5rem;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: var(--transition);
-            font-size: 0.9rem;
-        }
-
-        .copy-btn:hover {
-            background: var(--secondary-color);
-            transform: scale(1.1);
-        }
-
-        .copy-btn:active {
-            transform: scale(0.95);
-        }
-
-        /* Custom Notification */
-        .notification {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            z-index: 10000;
-            transform: translateX(400px);
-            transition: transform 0.4s ease, opacity 0.4s ease;
-            opacity: 0;
-            max-width: 350px;
-            border-left: 5px solid var(--primary-color);
-        }
-
-        .notification.show {
-            transform: translateX(0);
-            opacity: 1;
-        }
-
-        .notification.success {
-            border-left-color: var(--success-color);
-        }
-
-        .notification.error {
-            border-left-color: var(--error-color);
-        }
-
-        .notification-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 0.8rem;
-        }
-
-        .notification-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 1rem;
-            font-size: 1.2rem;
-            color: white;
-        }
-
-        .notification.success .notification-icon {
-            background: var(--success-color);
-        }
-
-        .notification.error .notification-icon {
-            background: var(--error-color);
-        }
-
-        .notification-content h4 {
-            margin: 0 0 0.3rem 0;
-            font-size: 1.1rem;
-            color: var(--dark-color);
-        }
-
-        .notification-content p {
-            margin: 0;
-            font-size: 0.9rem;
-            color: #666;
-            line-height: 1.4;
-        }
-
-        .notification-close {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: none;
-            border: none;
-            font-size: 1.2rem;
-            color: #999;
-            cursor: pointer;
-            padding: 5px;
-            border-radius: 50%;
-            transition: var(--transition);
-        }
-
-        .notification-close:hover {
-            background: #f0f0f0;
-            color: var(--dark-color);
-        }
-
-        /* Gallery Section */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(min(250px, calc(100% - 2rem)), 1fr));
-            gap: clamp(0.8rem, 2vw, 1.5rem);
-            margin-top: 2rem;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .gallery-item {
-            position: relative;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            background-color: #f5f5f5;
-        }
-
-        .gallery-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .gallery-image {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            display: block;
-            transition: var(--transition);
-        }
-
-        .gallery-item:hover .gallery-image {
-            transform: scale(1.05);
-        }
-
-        .gallery-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-            color: white;
-            padding: 1rem;
-            transform: translateY(100%);
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-item:hover .gallery-overlay {
-            transform: translateY(0);
-        }
-
-        .gallery-overlay h4 {
-            margin: 0 0 0.5rem 0;
-            font-size: 1.1rem;
-        }
-
-        .gallery-overlay p {
-            margin: 0;
-            font-size: 0.9rem;
-            opacity: 0.9;
-        }
-
-        /* Leadership Section */
-        .leadership-content {
-            display: flex;
-            justify-content: center;
-            gap: clamp(1rem, 3vw, 2rem);
-            flex-wrap: wrap;
-            width: 100%;
-            box-sizing: border-box;
-            padding: 0 1rem;
-        }
-
-        .leader-card {
-            background-color: var(--white);
-            border-radius: 8px;
-            box-shadow: var(--shadow);
-            padding: 1.5rem;
-            text-align: center;
-            width: 100%;
-            max-width: 320px;
-            min-width: 250px;
-            flex: 1 1 280px;
-            box-sizing: border-box;
-            transition: var(--transition);
-        }
-
-        .leader-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .leader-image {
-            width: clamp(150px, 25vw, 200px);
-            height: clamp(150px, 25vw, 200px);
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 1rem;
-            border: 3px solid var(--primary-color);
-        }
-
-        .leader-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-
-        .leader-card p {
-            color: var(--dark-color);
-            font-style: italic;
-        }
-
-        /* Flyers Section */
-        .flyers-content {
-            display: flex;
-            justify-content: center;
-            gap: clamp(1rem, 3vw, 2rem);
-            flex-wrap: wrap;
-            width: 100%;
-            box-sizing: border-box;
-            padding: 0 1rem;
-        }
-
-        .flyer-card {
-            position: relative;
-            width: 100%;
-            max-width: 300px;
-            min-width: 250px;
-            flex: 1 1 280px;
-            box-sizing: border-box;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            background-color: #f5f5f5;
-        }
-
-        .flyer-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        }
-
-        .flyer-image {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .flyer-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-            padding: 1.5rem;
-            color: var(--white);
-            transform: translateY(100px);
-            transition: transform 0.3s ease;
-        }
-
-        .flyer-card:hover .flyer-overlay {
-            transform: translateY(0);
-        }
-
-        .flyer-overlay h3 {
-            margin-bottom: 0.5rem;
-        }
-
-        .flyer-overlay p {
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
-        }
-
-        .flyer-overlay .btn {
-            background-color: var(--accent-color);
-            color: var(--dark-color);
-            font-size: 0.9rem;
-            padding: 0.5rem 1rem;
-        }
-
-        .flyer-overlay .btn:hover {
-            background-color: var(--white);
-        }
-
-        /* Footer */
-        .footer {
-            background-color: var(--dark-color);
-            color: var(--white);
-            padding: 3rem 0 1rem;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
-            gap: clamp(1rem, 3vw, 2rem);
-            margin-bottom: 2rem;
-        }
-
-        .footer h3 {
-            color: var(--accent-color);
-            margin-bottom: 1.5rem;
-        }
-
-        .footer-about p {
-            margin-bottom: 1rem;
-        }
-
-        .footer-links li {
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-links a:hover {
-            color: var(--accent-color);
-        }
-
-        .church-social-links a {
-            min-height: 44px;
-            display: flex;
-            align-items: center;
-            padding: 0.8rem 1rem;
-        }
-
-        .footer-bottom {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .footer-bottom p {
-            margin-bottom: 0.5rem;
-            font-size: 0.9rem;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 767px) {
-            .menu-toggle {
-                display: flex;
-            }
-
-            .nav-links {
-                position: fixed;
-                top: 0;
-                left: -100%;
-                width: 100vw;
-                height: 100vh;
-                background-color: var(--white);
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                padding: 2rem 1rem;
-                transition: left 0.3s ease;
-                box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-                z-index: 9999;
-                overflow-y: auto;
-                box-sizing: border-box;
-            }
-
-            .nav-links.active {
-                left: 0;
-            }
-
-            .nav-links a {
-                padding: 1.2rem 2rem;
-                font-size: 1.2rem;
-                width: 100%;
-                max-width: 300px;
-                text-align: center;
-                border-bottom: 1px solid rgba(0,0,0,0.1);
-                min-height: 50px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 0.5rem;
-                border-radius: 8px;
-                transition: all 0.3s ease;
-            }
-
-            .nav-links a:hover {
-                background-color: var(--light-color);
-                color: var(--primary-color);
-            }
-
-            .nav-links a:last-child {
-                border-bottom: none;
-            }
-
-            .hero {
-                height: 60vh;
-                margin-top: 80px;
-            }
-
-            .hero-content {
-                padding: 0 1rem;
-            }
-
-            .section {
-                padding: clamp(2rem, 5vw, 4rem) 0;
-            }
-
-            .logo {
-                flex-direction: row;
-                align-items: center;
-                gap: 0.8rem;
-            }
-
-            .logo img {
-                height: clamp(35px, 8vw, 50px);
-                margin-right: 0;
-                margin-bottom: 0;
-                flex-shrink: 0;
-            }
-
-            .header {
-                padding: 0.8rem 0;
-            }
-
-            .service-schedule {
-                margin-bottom: 1rem;
-                padding: 1.5rem;
-            }
-
-            .service-header {
-                flex-direction: column;
-                align-items: flex-start;
-                text-align: left;
-                gap: 0.8rem;
-            }
-
-            .service-icon {
-                width: 50px;
-                height: 50px;
-            }
-
-            .service-time h3 {
-                text-align: left;
-                font-size: clamp(1rem, 3vw, 1.2rem);
-            }
-
-            .service-time ol {
-                padding-left: 1rem;
-                font-size: clamp(0.85rem, 2vw, 1rem);
-            }
-
-            .service-time ul {
-                margin-left: 1rem;
-            }
-
-            .account-details {
-                padding: 1rem;
-            }
-
-            .account-item {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.5rem;
-                text-align: left;
-            }
-
-            .account-number {
-                justify-content: flex-start;
-                width: 100%;
-                flex-wrap: wrap;
-            }
-
-            .account-value {
-                text-align: left;
-            }
-
-            .large-text {
-                font-size: clamp(1.5rem, 5vw, 2.5rem);
-                word-break: break-all;
-                text-align: left;
-            }
-
-            .copy-btn {
-                margin-top: 0.5rem;
-            }
-
-            .gallery-grid {
-                grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
-            }
-
-            .gallery-image {
-                height: clamp(200px, 40vw, 300px);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 0 0.8rem;
-                max-width: calc(100vw - 1.6rem);
-            }
-
-            .hero {
-                height: 50vh;
-            }
-
-            .gallery-grid, .announcements-grid, .prayer-content, .contact-content, .services-grid,
-            .prayer-request-grid, .birthday-grid {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-
-            .service-schedule {
-                padding: 1rem;
-            }
-
-            .service-header {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.5rem;
-            }
-
-            .service-icon {
-                width: 40px;
-                height: 40px;
-            }
-
-            .service-time h3 {
-                font-size: clamp(0.9rem, 3vw, 1.1rem);
-                text-align: left;
-            }
-
-            .service-time ol {
-                padding-left: 0.8rem;
-                font-size: clamp(0.8rem, 2.5vw, 0.9rem);
-            }
-
-            .service-time ul {
-                margin-left: 0.8rem;
-            }
-
-            .flyers-content {
-                flex-direction: column;
-                align-items: center;
-                padding: 0;
-            }
-
-            .flyer-card {
-                max-width: calc(100vw - 2rem);
-                min-width: auto;
-                width: 100%;
-            }
-
-            .leader-card {
-                max-width: calc(100vw - 2rem);
-                min-width: auto;
-                width: 100%;
-            }
-
-            .footer-content {
-                text-align: center;
-                grid-template-columns: 1fr;
-            }
-
-            .logo {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.3rem;
-            }
-
-            .logo img {
-                margin-bottom: 0.3rem;
-            }
-
-            .logo h1 {
-                font-size: clamp(0.8rem, 3vw, 1.2rem);
-                line-height: 1.2;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .notification {
-                top: 10px;
-                right: 10px;
-                left: 10px;
-                max-width: none;
-                transform: translateY(-100px);
-            }
-
-            .notification.show {
-                transform: translateY(0);
-            }
-        }
-
-        /* Focus improvements for keyboard navigation */
-        .nav-links a:focus,
-        .btn:focus,
-        .menu-toggle:focus {
-            outline: 2px solid var(--primary-color);
-            outline-offset: 2px;
-        }
-
-
-
-        /* Remove all input border colors by default - Clean minimal design */
-        .contact-form input,
-        .contact-form textarea,
-        .prayer-form input,
-        .prayer-form textarea,
-        .prayer-form select,
-        .complaint-form input,
-        .complaint-form textarea,
-        .complaint-form select,
-        .birthday-form input,
-        .birthday-form textarea,
-        .birthday-form select,
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        input[type="number"],
-        input[type="date"],
-        input[type="password"],
-        input[type="url"],
-        textarea,
-        select {
-            border: 1px solid transparent !important;
-            background-color: #f8f9fa;
-            transition: var(--transition);
-        }
-
-        /* Focus states - all red for all input types */
-        .contact-form input:focus,
-        .contact-form textarea:focus,
-        .prayer-form input:focus,
-        .prayer-form textarea:focus,
-        .prayer-form select:focus,
-        .complaint-form input:focus,
-        .complaint-form textarea:focus,
-        .complaint-form select:focus,
-        .birthday-form input:focus,
-        .birthday-form textarea:focus,
-        .birthday-form select:focus,
-        input[type="text"]:focus,
-        input[type="email"]:focus,
-        input[type="tel"]:focus,
-        input[type="number"]:focus,
-        input[type="date"]:focus,
-        input[type="password"]:focus,
-        input[type="url"]:focus,
-        textarea:focus,
-        select:focus {
-            outline: 2px solid var(--primary-color) !important;
-            outline-offset: 2px;
-            border-color: var(--primary-color) !important;
-            box-shadow: 0 0 0 2px rgba(196, 30, 58, 0.1) !important;
-        }
-
-        /* Valid states - red for all input types */
-        .contact-form input:valid,
-        .contact-form textarea:valid,
-        .prayer-form input:valid,
-        .prayer-form textarea:valid,
-        .prayer-form select:valid,
-        .complaint-form input:valid,
-        .complaint-form textarea:valid,
-        .complaint-form select:valid,
-        .birthday-form input:valid,
-        .birthday-form textarea:valid,
-        .birthday-form select:valid,
-        input[type="text"]:valid,
-        input[type="email"]:valid,
-        input[type="tel"]:valid,
-        input[type="number"]:valid,
-        input[type="date"]:valid,
-        input[type="password"]:valid,
-        input[type="url"]:valid,
-        textarea:valid,
-        select:valid {
-            border-color: var(--primary-color) !important;
-        }
-
-        /* Invalid states - still red for errors for all input types */
-        .contact-form input:invalid,
-        .contact-form textarea:invalid,
-        .prayer-form input:invalid,
-        .prayer-form textarea:invalid,
-        .prayer-form select:invalid,
-        .complaint-form input:invalid,
-        .complaint-form textarea:invalid,
-        .complaint-form select:invalid,
-        .birthday-form input:invalid,
-        .birthday-form textarea:invalid,
-        .birthday-form select:invalid,
-        input[type="text"]:invalid,
-        input[type="email"]:invalid,
-        input[type="tel"]:invalid,
-        input[type="number"]:invalid,
-        input[type="date"]:invalid,
-        input[type="password"]:invalid,
-        input[type="url"]:invalid,
-        textarea:invalid,
-        select:invalid {
-            border-color: var(--error-color);
-        }
-
-        /* CLEAN DESIGN - Remove all input borders by default */
-        input, textarea, select,
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        input[type="number"],
-        input[type="date"],
-        input[type="password"],
-        input[type="url"],
-        input[type="search"],
-        input[type="time"],
-        input[type="datetime-local"],
-        input[type="month"],
-        input[type="week"] {
-            border: 1px solid transparent !important;
-            background-color: #f8f9fa !important;
-            border-radius: 4px !important;
-        }
-
-        input:focus, textarea:focus, select:focus,
-        input[type="text"]:focus,
-        input[type="email"]:focus,
-        input[type="tel"]:focus,
-        input[type="number"]:focus,
-        input[type="date"]:focus,
-        input[type="password"]:focus,
-        input[type="url"]:focus,
-        input[type="search"]:focus,
-        input[type="time"]:focus,
-        input[type="datetime-local"]:focus,
-        input[type="month"]:focus,
-        input[type="week"]:focus {
-            border-color: var(--primary-color) !important;
-            outline: 2px solid var(--primary-color) !important;
-            box-shadow: 0 0 0 2px rgba(196, 30, 58, 0.1) !important;
-        }
-
-        /* ULTIMATE CLEAN DESIGN - Remove ALL input borders by default */
-        * input,
-        * textarea,
-        * select,
-        form input,
-        form textarea,
-        form select,
-        input,
-        textarea,
-        select,
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        input[type="number"],
-        input[type="date"],
-        input[type="password"],
-        input[type="url"],
-        input[type="search"],
-        input[type="time"],
-        input[type="datetime-local"],
-        input[type="month"],
-        input[type="week"] {
-            border: 1px solid transparent !important;
-            background-color: #f8f9fa !important;
-            transition: var(--transition) !important;
-            box-sizing: border-box !important;
-            border-radius: 4px !important;
-        }
-        
-        /* ULTIMATE FOCUS OVERRIDE - Force ALL inputs to have red focus borders */
-        * input:focus,
-        * textarea:focus,
-        * select:focus,
-        form input:focus,
-        form textarea:focus,
-        form select:focus,
-        input:focus,
-        textarea:focus,
-        select:focus,
-        input[type="text"]:focus,
-        input[type="email"]:focus,
-        input[type="tel"]:focus,
-        input[type="number"]:focus,
-        input[type="date"]:focus,
-        input[type="password"]:focus,
-        input[type="url"]:focus,
-        input[type="search"]:focus,
-        input[type="time"]:focus,
-        input[type="datetime-local"]:focus,
-        input[type="month"]:focus,
-        input[type="week"]:focus {
-            outline: 2px solid var(--primary-color) !important;
-            outline-offset: 2px !important;
-            border-color: var(--primary-color) !important;
-            box-shadow: 0 0 0 2px rgba(196, 30, 58, 0.1) !important;
-        }
-        
-        /* Exception for checkboxes and radio buttons */
-        input[type="checkbox"],
-        input[type="radio"] {
-            width: auto !important;
-            margin: 0 !important;
-            outline: none !important;
-            box-shadow: none !important;
-        }
-        
-        input[type="checkbox"]:focus,
-        input[type="radio"]:focus {
-            outline: 2px solid var(--primary-color) !important;
-            outline-offset: 2px !important;
-            box-shadow: none !important;
-        }
-
-        /* Accessibility Improvements */
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
-        }
-    </style>
+    }
+    </script>
 </head>
+
 <body>
+    <!-- Page Loader -->
+    <div id="pageLoader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); z-index: 9999; display: flex; align-items: center; justify-content: center; transition: opacity 0.5s ease;">
+        <div style="text-align: center; color: white;">
+            <img src="assets/images/gallery/logo.jpg" alt="Salem Church" style="width: 80px; height: 80px; margin-bottom: 20px; animation: pulse 1.5s ease-in-out infinite;">
+            <h2 style="margin: 0; font-size: 1.5rem; animation: fadeInUp 1s ease-out;">Salem African Church</h2>
+            <p style="margin: 10px 0 0 0; opacity: 0.9; animation: fadeInUp 1s ease-out 0.3s both;">Stay Updated • Stay Blessed</p>
+            <div style="width: 50px; height: 3px; background: var(--accent-color); margin: 20px auto; border-radius: 2px; animation: shimmer 1.5s ease-in-out infinite;"></div>
+        </div>
+    </div>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
-            <div class="logo">
-                <img src="images/logo.jpg" alt="Church Logo" style="height: 60px; margin-right: 15px;">
-                <div>
-                    <h1>The African Church Salem Parish Of Christ Abekoko<span></span></h1>
+            <a href="index.html" class="logo">
+                <img src="assets/images/gallery/logo.jpg" alt="Salem Church Logo">
+                <div class="logo-text">
+                    <h1>Salem African Church of Christ Abekoko</h1>
                     <p>Stay Updated • Stay Blessed</p>
                 </div>
-            </div>
+            </a>
+            
             <nav class="navbar">
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#announcements">Announcements</a></li>
-                    <li><a href="#prayer-requests">Prayer Requests</a></li>
-                    <li><a href="#birthdays">Birthdays</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="pages/about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="pages/leadership.html"><i class="fas fa-users"></i> Leadership</a></li>
+                    <li><a href="pages/services.html"><i class="fas fa-church"></i> Services</a></li>
+                    <li><a href="pages/events.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+                    <li><a href="pages/prayer.html"><i class="fas fa-praying-hands"></i> Prayer</a></li>
+                    <li><a href="pages/get-involved.html"><i class="fas fa-hands-helping"></i> Get Involved</a></li>
+                    <li><a href="pages/contact.html"><i class="fas fa-phone"></i> Contact</a></li>
                 </ul>
             </nav>
-            <button class="menu-toggle" aria-label="Toggle navigation menu">
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
                 <div class="hamburger">
                     <span></span>
                     <span></span>
@@ -1730,1339 +211,415 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h2>Welcome to Our Church</h2>
-                <h3 class="hero-subtitle">(One Big Family)</h3>
-                <p>Join us for worship, fellowship, and spiritual growth</p>
-                <a href="#services" class="btn">Order Of Service</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Current Service Info -->
-    <section class="current-service">
-        <div class="container">
-            <div class="service-card">
-                <h3>This Sunday's Service</h3>
-                <div class="service-details">
-                    <p><strong>Date:</strong> 27th July, 2025</p>
-                    <p><strong>Collect:</strong> 6th Sunday After Trinity</p>
-                    <p><strong>Liturgical Colour:</strong> <span class="red">Red</span></p>
-                    <p><strong>Theme:</strong> Minister's Appreciation Day</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Announcements Section -->
-    <section class="section announcements" id="announcements">
-        <div class="container">
-            <h2 class="section-title">Announcements</h2>
-            <div class="announcements-grid">
-                <div class="announcement-card">
-                    <h3>Weekly/Monthly Services</h3>
-                    <ul>
-                        <li>Gethsemane (ONA-ABAYO) - 7am Wed</li>
-                        <li>Bible Study - 5pm Tuesday</li>
-                        <li>Expectant Women/Pregnant Mothers - Every Tuesday 5:30pm</li>
-                        <li>Youth Special Prayer - After service</li>
-                        <li>Choir Rehearsal - After service & Thursday, Friday 5pm</li>
-                        <li>O TO GE - Every Thursday @ Cathedral Salem, Elvite Metta</li>
-                        <li>Night Vigil - Last Friday of the Month</li>
-                    </ul>
-                </div>
-                <div class="announcement-card">
-                    <h3>Upcoming Events</h3>
-                    <ul>
-                        <li>Holy Communion - First Sunday of the Month</li>
-                        <li>Family Harvest - First Sunday of August</li>
-                        <li>Confirmation Classes - Ongoing</li>
-                    </ul>
-                </div>
-                <div class="announcement-card">
-                    <h3>Church Needs</h3>
-                    <ul>
-                        <li>Iron, Cement and Blocks for building</li>
-                        <li>Church Bus</li>
-                        <li>Chairs</li>
-                        <li>Air Conditioners</li>
-                        <li>2 Pairs of New Loudspeakers</li>
-                        <li>Choir Robes</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Upcoming Events Flyers -->
-    <section class="section flyers">
-        <div class="container">
-            <h2 class="section-title">Church Events</h2>
-            <div class="flyers-content">
-                <div class="flyer-card">
-                    <img src="images/flyer1.jpg" alt="Church Event Flyer 1" class="flyer-image">
-                    <div class="flyer-overlay">
-                        <h3>Church Event</h3>
-                        <p>Join us for this special church event</p>
-                        <a href="#contact" class="btn">Contact Us</a>
-                    </div>
-                </div>
-                <div class="flyer-card">
-                    <img src="images/flyer2.jpg" alt="Church Event Flyer 2" class="flyer-image">
-                    <div class="flyer-overlay">
-                        <h3>Special Service</h3>
-                        <p>Join us for this special service</p>
-                        <a href="#contact" class="btn">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="section services" id="services">
-        <div class="container">
-            <h2 class="section-title">Order Of Service</h2>
-            <div class="services-grid">
-                <div class="service-schedule">
-                    <div class="service-time">
-                        <div class="service-header">
-                            <img src="images/churchpic.png" alt="Church Service" class="service-icon">
-                            <h3>Regular Sunday Service</h3>
-                        </div>
-                        <ol>
-                            <li>Processional Hymn ACHB</li>
-                            <li>Opening Hymn ACHB</li>
-                            <li>Praise & Worship</li>
-                            <li>Opening Prayer</li>
-                            <li>Psalm</li>
-                            <li>Lesson: New Testament</li>
-                            <li>Hymn Before Prayer ACHB</li>
-                            <li>Intercessory Prayer</li>
-                            <li>Hymn Before Sermon ACHB</li>
-                            <li>Sermon</li>
-                            <li>Tithe/Church Maintenance Collection</li>
-                            <li>Thanksgiving</li>
-                            <li>Peace Greetings/Announcements</li>
-                            <li>Closing Hymn ACHB</li>
-                            <li>Benediction/Watchword</li>
-                            <li>Withdrawal Hymn ACHB</li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="service-schedule communion-service">
-                    <div class="service-time">
-                        <div class="service-header">
-                            <img src="images/Communion.jpg" alt="Holy Communion" class="service-icon communion-icon">
-                            <h3>First Sunday - Holy Communion</h3>
-                        </div>
-                        <ol>
-                            <li>Processional Hymn ACHB</li>
-                            <li>Opening Hymn ACHB</li>
-                            <li>Ante Communion
-                                <ul>
-                                    <li>Old Testament</li>
-                                    <li>Epistles</li>
-                                    <li>Gradual Hymn ACHB</li>
-                                    <li>Gospel</li>
-                                </ul>
-                            </li>
-                            <li>Hymn Before Sermon ACHB</li>
-                            <li>Sermon</li>
-                            <li>Nicene Creed</li>
-                            <li>Communion Proper</li>
-                            <li>God First/Tithe/Church Maintenance Collection</li>
-                            <li>Thanksgiving</li>
-                            <li>Peace Greetings/Announcements</li>
-                            <li>Closing Hymn ACHB</li>
-                            <li>Benediction/Watchword</li>
-                            <li>Withdrawal Hymn ACHB</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Prayer Section -->
-    <section class="section prayer">
-        <div class="container">
-            <div class="prayer-content">
-                <div class="prayer-points">
-                    <h3>Prayer Points for the Week</h3>
-                    <ul id="daily-prayers">
-                        <li>Loading prayer points...</li>
-                    </ul>
-                </div>
-                <div class="food-for-thought">
-                    <h3>Food for Thought</h3>
-                    <p id="daily-thought">
-                        Loading inspirational thought...
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Prayer Requests Section -->
-    <section class="section prayer-request-section" id="prayer-requests">
-        <div class="container">
-            <h2 class="section-title">Prayer Requests & Testimonials</h2>
-            <div class="prayer-request-grid">
-                <div class="prayer-request-card">
-                    <h3><i class="fas fa-praying-hands"></i> Submit Prayer Request</h3>
-                    <form class="prayer-form" id="prayerRequestForm">
-                        <input type="text" name="prayer_name" placeholder="Your Name (Optional)" autocomplete="off">
-                        <input type="email" name="prayer_email" placeholder="Email (Optional)" autocomplete="off">
-                        <input type="tel" name="prayer_phone" placeholder="Phone Number (Optional)" autocomplete="off">
-                        
-                        <label for="prayer_category">Prayer Category:</label>
-                        <select name="prayer_category" id="prayer_category" required>
-                            <option value="">Select Category</option>
-                            <option value="healing">Healing & Health</option>
-                            <option value="family">Family & Relationships</option>
-                            <option value="financial">Financial Breakthrough</option>
-                            <option value="spiritual">Spiritual Growth</option>
-                            <option value="guidance">Guidance & Direction</option>
-                            <option value="thanksgiving">Thanksgiving</option>
-                            <option value="protection">Protection & Safety</option>
-                            <option value="other">Other</option>
-                        </select>
-                        
-                        <textarea name="prayer_request" placeholder="Please share your prayer request..." required></textarea>
-                        
-                        <div class="anonymous-checkbox">
-                            <input type="checkbox" id="anonymous_prayer" name="anonymous_prayer">
-                            <label for="anonymous_prayer">Submit anonymously</label>
-                        </div>
-                        
-                        <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Submit Prayer Request</button>
-                    </form>
-                </div>
-                
-                <div class="prayer-request-card">
-                    <h3><i class="fas fa-heart"></i> Share Your Testimony</h3>
-                    <form class="prayer-form" id="testimonyForm">
-                        <input type="text" name="testimony_name" placeholder="Your Name" required autocomplete="off">
-                        <input type="email" name="testimony_email" placeholder="Email (Optional)" autocomplete="off">
-                        
-                        <label for="testimony_category">Testimony Category:</label>
-                        <select name="testimony_category" id="testimony_category" required>
-                            <option value="">Select Category</option>
-                            <option value="healing">Divine Healing</option>
-                            <option value="financial">Financial Miracle</option>
-                            <option value="family">Family Restoration</option>
-                            <option value="career">Career Breakthrough</option>
-                            <option value="spiritual">Spiritual Experience</option>
-                            <option value="protection">Divine Protection</option>
-                            <option value="other">Other Blessing</option>
-                        </select>
-                        
-                        <textarea name="testimony_text" placeholder="Share your testimony of God's goodness..." required></textarea>
-                        
-                        <button type="submit" class="btn"><i class="fas fa-share"></i> Share Testimony</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Birthday Registration Section -->
-    <section class="section birthday-section" id="birthdays">
-        <div class="container">
-            <h2 class="section-title">Birthday Registration</h2>
-            <div class="prayer-request-grid">
-                <div class="birthday-form">
-                    <h3><i class="fas fa-calendar-plus"></i> Register Your Birthday</h3>
-                    <p>Let us celebrate your special day with you! Register your birthday so we can remember and celebrate together as one church family.</p>
-                    <form class="prayer-form" id="birthdayForm">
-                        <input type="text" name="birthday_name" placeholder="Full Name" required autocomplete="off">
-                        <input type="email" name="birthday_email" placeholder="Email Address" required autocomplete="off">
-                        <input type="tel" name="birthday_phone" placeholder="Phone Number" autocomplete="off">
-                        <input type="date" name="birthday_date" required>
-                        <textarea name="birthday_message" placeholder="Special message or prayer request for your birthday (Optional)"></textarea>
-                        <button type="submit" class="btn"><i class="fas fa-plus"></i> Register Birthday</button>
-                    </form>
-                </div>
-                
-                <div class="birthday-card">
-                    <div class="birthday-icon"><i class="fas fa-birthday-cake"></i></div>
-                    <h3>Why Register Your Birthday?</h3>
-                    <div style="text-align: left;">
-                        <ul style="list-style-type: disc; margin-left: 1.5rem; margin-top: 1rem;">
-                            <li><strong>Church Family Celebration:</strong> We celebrate together as one big family</li>
-                            <li><strong>Special Prayers:</strong> We pray for God's blessings on your new year</li>
-                            <li><strong>Birthday Wishes:</strong> Receive warm wishes from your church family</li>
-                            <li><strong>Community Connection:</strong> Strengthen bonds within our church community</li>
-                            <li><strong>Thanksgiving:</strong> Give thanks to God for another year of life</li>
-                        </ul>
-                        
-                        <h4 style="margin-top: 1.5rem; color: var(--primary-color);">Birthday Blessings</h4>
-                        <p style="font-style: italic;">"This is the day the Lord has made; let us rejoice and be glad in it." - Psalm 118:24</p>
-                        
-                        <p>Your birthday is a gift from God, and we want to celebrate His goodness in your life!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Volunteer Opportunities Section -->
-    <section class="section volunteer-section">
-        <div class="container">
-            <h2 class="section-title">Volunteer Opportunities</h2>
-            <div class="prayer-request-grid">
-                <div class="volunteer-card">
-                    <h3><i class="fas fa-hands-helping"></i> Join Our Ministry Teams</h3>
-                    <p>God has given each of us unique gifts and talents. Join one of our ministry teams and use your gifts to serve God and bless others.</p>
-                    
-                    <div class="volunteer-opportunities">
-                        <div class="volunteer-item">
-                            <h4>Choir Ministry</h4>
-                            <p>Lead worship through music and song</p>
-                        </div>
-                        <div class="volunteer-item">
-                            <h4>Ushering Team</h4>
-                            <p>Welcome and assist church members and visitors</p>
-                        </div>
-                        <div class="volunteer-item">
-                            <h4>Children's Ministry</h4>
-                            <p>Teach and mentor the next generation</p>
-                        </div>
-                        <div class="volunteer-item">
-                            <h4>Technical Team</h4>
-                            <p>Handle sound, lighting, and media equipment</p>
-                        </div>
-                        <div class="volunteer-item">
-                            <h4>Cleaning & Maintenance</h4>
-                            <p>Keep God's house clean and well-maintained</p>
-                        </div>
-                        <div class="volunteer-item">
-                            <h4>Evangelism Team</h4>
-                            <p>Share the Gospel in the community</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="volunteer-card">
-                    <h3><i class="fas fa-user-plus"></i> Volunteer Registration</h3>
-                    <form class="prayer-form" id="volunteerForm">
-                        <input type="text" name="volunteer_name" placeholder="Full Name" required autocomplete="off">
-                        <input type="email" name="volunteer_email" placeholder="Email Address" required autocomplete="off">
-                        <input type="tel" name="volunteer_phone" placeholder="Phone Number" required autocomplete="off">
-                        
-                        <label for="volunteer_ministry">Preferred Ministry:</label>
-                        <select name="volunteer_ministry" id="volunteer_ministry" required>
-                            <option value="">Select Ministry</option>
-                            <option value="choir">Choir Ministry</option>
-                            <option value="ushering">Ushering Team</option>
-                            <option value="children">Children's Ministry</option>
-                            <option value="technical">Technical Team</option>
-                            <option value="cleaning">Cleaning & Maintenance</option>
-                            <option value="evangelism">Evangelism Team</option>
-                            <option value="multiple">Multiple Ministries</option>
-                        </select>
-                        
-                        <textarea name="volunteer_experience" placeholder="Tell us about your experience, skills, or why you want to volunteer..."></textarea>
-                        
-                        <label for="volunteer_availability">Availability:</label>
-                        <select name="volunteer_availability" id="volunteer_availability" required>
-                            <option value="">Select Availability</option>
-                            <option value="sundays">Sundays Only</option>
-                            <option value="weekdays">Weekdays</option>
-                            <option value="weekends">Weekends</option>
-                            <option value="flexible">Flexible Schedule</option>
-                        </select>
-                        
-                        <button type="submit" class="btn"><i class="fas fa-hand-paper"></i> Register to Volunteer</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Complaints & Suggestions Section -->
-    <section class="section complaint-section">
-        <div class="container">
-            <h2 class="section-title">Feedback & Suggestions</h2>
-            <div class="prayer-request-grid">
-                <div class="complaint-card">
-                    <h3><i class="fas fa-comment-alt"></i> Share Your Feedback</h3>
-                    <p>Your feedback helps us improve our ministry and better serve our church family. Please feel free to share your thoughts, suggestions, or concerns.</p>
-                    
-                    <form class="complaint-form" id="feedbackForm">
-                        <input type="text" name="feedback_name" placeholder="Your Name (Optional)" autocomplete="off">
-                        <input type="email" name="feedback_email" placeholder="Email Address (Optional)" autocomplete="off">
-                        
-                        <label for="feedback_type">Feedback Type:</label>
-                        <select name="feedback_type" id="feedback_type" required>
-                            <option value="">Select Type</option>
-                            <option value="suggestion">Suggestion</option>
-                            <option value="complaint">Complaint</option>
-                            <option value="compliment">Compliment</option>
-                            <option value="question">Question</option>
-                            <option value="other">Other</option>
-                        </select>
-                        
-                        <label for="feedback_category">Category:</label>
-                        <select name="feedback_category" id="feedback_category" required>
-                            <option value="">Select Category</option>
-                            <option value="worship">Worship Service</option>
-                            <option value="facilities">Church Facilities</option>
-                            <option value="programs">Church Programs</option>
-                            <option value="leadership">Leadership</option>
-                            <option value="communication">Communication</option>
-                            <option value="community">Community Outreach</option>
-                            <option value="other">Other</option>
-                        </select>
-                        
-                        <textarea name="feedback_message" placeholder="Please share your feedback, suggestion, or concern..." required></textarea>
-                        
-                        <div class="anonymous-checkbox">
-                            <input type="checkbox" id="anonymous_feedback" name="anonymous_feedback">
-                            <label for="anonymous_feedback">Submit anonymously</label>
-                        </div>
-                        
-                        <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Submit Feedback</button>
-                    </form>
-                </div>
-                
-                <div class="complaint-card">
-                    <h3><i class="fas fa-info-circle"></i> Feedback Guidelines</h3>
-                    <div style="text-align: left;">
-                        <h4>We Value Your Input</h4>
-                        <p>Your feedback is important to us and helps us grow as a church community. Here are some guidelines:</p>
-                        
-                        <ul style="list-style-type: disc; margin-left: 1.5rem; margin-top: 1rem;">
-                            <li><strong>Be Respectful:</strong> Please communicate with love and respect</li>
-                            <li><strong>Be Specific:</strong> Detailed feedback helps us understand and address issues better</li>
-                            <li><strong>Be Constructive:</strong> Suggest solutions when possible</li>
-                            <li><strong>Be Patient:</strong> We will review and respond to all feedback</li>
-                        </ul>
-                        
-                        <h4 style="margin-top: 1.5rem;">Response Time</h4>
-                        <p>We aim to respond to all feedback within 7 business days. For urgent matters, please contact the church office directly.</p>
-                        
-                        <h4 style="margin-top: 1.5rem;">Confidentiality</h4>
-                        <p>All feedback is treated confidentially. Anonymous submissions are completely private.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Church Gallery Section -->
-    <section class="section gallery">
-        <div class="container">
-            <h2 class="section-title">Church Activities & Programs</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="images/1.jpg" alt="Gethsemane Activity" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <h4>Gethsemane (ONA-ABAYO)</h4>
-                        <p>Wednesday 7am prayer and worship service</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/2.jpg" alt="Gethsemane Activity" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <h4>Gethsemane (ONA-ABAYO)</h4>
-                        <p>Early morning prayer and spiritual fellowship</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/3.jpg" alt="Gethsemane Activity" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <h4>Gethsemane (ONA-ABAYO)</h4>
-                        <p>Community gathering for prayer and worship</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/4.jpg" alt="Gethsemane Activity" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <h4>Gethsemane (ONA-ABAYO)</h4>
-                        <p>Dedicated time for intercession and praise</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/5.jpg" alt="Gethsemane Activity" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <h4>Gethsemane (ONA-ABAYO)</h4>
-                        <p>Spiritual growth through prayer and fellowship</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/6.jpg" alt="Gethsemane Activity" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <h4>Gethsemane (ONA-ABAYO)</h4>
-                        <p>Wednesday morning spiritual gathering</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/7.jpg" alt="Church Activity" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <h4>Community Outreach</h4>
-                        <p>Serving our local community</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/8.jpg" alt="Palm Sunday Celebration" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <h4>Palm Sunday</h4>
-                        <p>Celebrating Jesus' triumphant entry into Jerusalem</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/9.jpg" alt="Palm Sunday Celebration" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <h4>Palm Sunday</h4>
-                        <p>Joyful worship and palm branch procession</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/10.jpg" alt="Church Activity" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <h4>Special Service</h4>
-                        <p>Memorable church service and ministry</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/11.jpg" alt="Palm Sunday Celebration" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <h4>Palm Sunday</h4>
-                        <p>Holy Week celebration and worship service</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/12.jpg" alt="Church Activity" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <h4>Church Life</h4>
-                        <p>Daily life and activities in our church</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Leadership Section -->
-    <section class="section leadership">
-        <div class="container">
-            <h2 class="section-title">Our Leadership</h2>
-            <div class="leadership-content">
-                <div class="leader-card">
-                    <img src="images/vicar.jpg" alt="Church Vicar" class="leader-image">
-                    <h3>Rev'd Canon Olufemi Oyelola</h3>
-                    <p>Vicar in Charge</p>
-                    <h4>For Prayer & Counselling Contact</h4>
-                    <p class="contact-details">
-                        <b>Rev'd Canon Olufemi Oyelola:</b>
-                        <br>
-                        <a href="tel:+2349062759260">+234 906 275 9260</a>
-                        <br>
-                        <a href="tel:+2347030698300">+234 703 069 8300</a>
-                        <br><br>
-                        <a href="https://wa.me/+2349062725926" target="_blank" style="background-color: #25D366; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-weight: 500;">
-                            <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i>
-                            Contact on WhatsApp
+    <!-- Main Content -->
+    <main class="main-content page-transition">
+        <!-- Hero Section -->
+        <section class="hero" style="height: 60vh; background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('assets/images/gallery/churchpic.png') center/cover;">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Welcome to Our Church Family</h2>
+                    <h3 class="hero-subtitle">(One Big Family)</h3>
+                    <p>Join us for worship, fellowship, and spiritual growth in the heart of Agege, Lagos</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                        <a href="pages/services.html" class="btn">
+                            <i class="fas fa-calendar-alt"></i>
+                            Service Times
                         </a>
-                    </p>
+                        <a href="pages/prayer.html" class="btn btn-secondary">
+                            <i class="fas fa-praying-hands"></i>
+                            Prayer Request
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section class="section contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Contact & Giving</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Church Location</h3>
-                    <p><strong>Address:</strong> 43, Arigbanla Street, Abekoko Bus-stop, Orile Agege, Lagos, Nigeria</p>
-                    <p><strong>Church:</strong> Salem African Church of Christ</p>
-                    <h3>Church Account Details</h3>
-                    <div class="account-details">
-                        <div class="account-item">
-                            <span class="account-label">Bank:</span>
-                            <span class="account-value">Zenith Bank</span>
+        <!-- Current Service Info -->
+        <section class="section" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: var(--white); padding: 2rem 0;">
+            <div class="container">
+                <div class="card" style="max-width: 900px; margin: 0 auto; text-align: center; background: var(--white); color: var(--dark-color); padding: 2rem; border-radius: 1rem; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 2rem; font-size: 1.8rem;"><i class="fas fa-calendar-check"></i> This Sunday's Service</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+                        <div style="padding: 1rem; background: rgba(196, 30, 58, 0.05); border-radius: 0.8rem; border-left: 4px solid var(--primary-color);">
+                            <div style="font-weight: 700; color: var(--primary-color); margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase;">Date</div>
+                            <div style="color: var(--dark-color); font-size: 1.1rem; font-weight: 600;">24th August, 2025</div>
                         </div>
-                        <div class="account-item">
-                            <span class="account-label">Account Name:</span>
-                            <span class="account-value">The African Church Salem Parish Of Christ Abekoko</span>
+                        <div style="padding: 1rem; background: rgba(196, 30, 58, 0.05); border-radius: 0.8rem; border-left: 4px solid var(--primary-color);">
+                            <div style="font-weight: 700; color: var(--primary-color); margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase;">Collect</div>
+                            <div style="color: var(--dark-color); font-size: 1.1rem; font-weight: 600;">10th Sunday After Trinity</div>
                         </div>
-                        <div class="account-item">
-                            <span class="account-label">Account Number:</span>
-                            <div class="account-number">
-                                <span class="account-value large-text">1010270199</span>
-                                <button class="copy-btn" onclick="copyAccountNumber()" title="Copy Account Number">
-                                    <i class="fas fa-copy"></i>
-                                </button>
+                        <div style="padding: 1rem; background: rgba(196, 30, 58, 0.05); border-radius: 0.8rem; border-left: 4px solid var(--primary-color);">
+                            <div style="font-weight: 700; color: var(--primary-color); margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase;">Liturgical Colour</div>
+                            <div style="color: var(--success-color); font-size: 1.1rem; font-weight: bold;">Green</div>
+                        </div>
+                        <!-- Theme section removed temporarily - can be easily added back -->
+                        <!-- <div style="padding: 1rem; background: rgba(196, 30, 58, 0.05); border-radius: 0.8rem; border-left: 4px solid var(--primary-color);">
+                            <div style="font-weight: 700; color: var(--primary-color); margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase;">Theme</div>
+                            <div style="color: var(--dark-color); font-size: 1.1rem; font-weight: 600;">Theme will go here</div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Announcements -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Latest Announcements</h2>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <h3><i class="fas fa-calendar-week"></i> Weekly Services</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-clock" style="color: var(--accent-color); margin-right: 0.5rem;"></i> <strong>Gethsemane (ONA-ABAYO)</strong> - Wednesday 7am</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-book" style="color: var(--accent-color); margin-right: 0.5rem;"></i> <strong>Bible Study</strong> - Tuesday 5pm</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-music" style="color: var(--accent-color); margin-right: 0.5rem;"></i> <strong>Choir Rehearsal</strong> - Thursday & Friday 5pm</li>
+                        </ul>
+                        <a href="pages/services.html" class="btn" style="margin-top: 1rem;">
+                            <i class="fas fa-arrow-right"></i> View All Services
+                        </a>
+                    </div>
+                    
+                    <div class="card">
+                        <h3><i class="fas fa-calendar-alt"></i> Monthly Events</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-star" style="color: var(--accent-color); margin-right: 0.5rem;"></i> <strong>O TO GE</strong> - Every Thursday @ Cathedral Salem</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-moon" style="color: var(--accent-color); margin-right: 0.5rem;"></i> <strong>Night Vigil</strong> - Last Friday of Month</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-bread-slice" style="color: var(--accent-color); margin-right: 0.5rem;"></i> <strong>Holy Communion</strong> - First Sunday</li>
+                        </ul>
+                        <a href="pages/events.html" class="btn" style="margin-top: 1rem;">
+                            <i class="fas fa-arrow-right"></i> View All Events
+                        </a>
+                    </div>
+                    
+                    <div class="card">
+                        <h3><i class="fas fa-hands-helping"></i> Church Needs</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-hammer" style="color: var(--accent-color); margin-right: 0.5rem;"></i> Iron, Cement and Blocks</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-bus" style="color: var(--accent-color); margin-right: 0.5rem;"></i> Church Bus</li>
+                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-chair" style="color: var(--accent-color); margin-right: 0.5rem;"></i> Chairs & Air Conditioners</li>
+                        </ul>
+                        <a href="pages/get-involved.html" class="btn" style="margin-top: 1rem;">
+                            <i class="fas fa-heart"></i> How to Help
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Preview -->
+        <section class="section" style="background-color: #fafafa;">
+            <div class="container">
+                <h2 class="section-title">Meet Our Leadership</h2>
+                <div class="grid grid-3">
+                    <!-- People's Warden - Left -->
+                    <div class="leader-card" style="border: 2px solid var(--primary-color); position: relative;">
+                        <div style="position: absolute; top: -8px; left: 50%; transform: translateX(-50%); background: var(--primary-color); color: var(--white); padding: 0.2rem 0.8rem; border-radius: 0.8rem; font-size: 0.7rem; font-weight: 600; box-shadow: 0 2px 8px rgba(196, 30, 58, 0.3);">PEOPLE'S WARDEN</div>
+                        <img src="assets/images/leaders/Bro. olawale rotimi.jpg" alt="Bro. Olawale Rotimi" class="leader-image">
+                        <div class="leader-name">Bro. Olawale Rotimi</div>
+                        <div class="leader-role">The People's Warden</div>
+                        <p class="leader-bio">Dedicated to serving the congregation and ensuring the spiritual welfare of our church family.</p>
+                    </div>
+                    
+                    <!-- Vicar in Charge - Center -->
+                    <div class="leader-card" style="border: 4px solid var(--accent-color); position: relative; background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(196, 30, 58, 0.02)); transform: scale(1.05); z-index: 10; box-shadow: 0 15px 35px rgba(255, 215, 0, 0.3);">
+                        <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, var(--accent-color), #e6c200); color: var(--dark-color); padding: 0.4rem 1.2rem; border-radius: 1.2rem; font-size: 0.85rem; font-weight: 700; box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5); text-transform: uppercase; letter-spacing: 0.5px;">✨ VICAR IN CHARGE ✨</div>
+                        <img src="assets/images/leaders/vicar.jpg" alt="Rev'd Canon Olufemi Oyelola" class="leader-image">
+                        <div class="leader-name" style="color: var(--accent-color); font-size: 1.3rem;">Rev'd Canon Olufemi Oyelola</div>
+                        <div class="leader-role" style="color: var(--primary-color); font-size: 1.1rem; font-weight: 700;">Vicar in Charge</div>
+                        <p class="leader-bio" style="font-weight: 500;">Our spiritual leader providing pastoral care and guidance to our church family with wisdom and love.</p>
+                        <div style="margin-top: 1rem; text-align: center; position: relative; z-index: 100;">
+                            <p style="margin: 0 0 1rem 0; font-size: 0.95rem; font-weight: 700; color: var(--primary-color);">📞 For Prayer & Counselling:</p>
+                            <a href="https://wa.me/+2349062725926" style="background: #25D366; color: white; padding: 12px 24px; font-size: 16px; font-weight: 600; border-radius: 8px; text-decoration: none; position: relative; z-index: 101; pointer-events: auto; display: inline-block; transition: background-color 0.3s ease; box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3);" onmouseover="this.style.backgroundColor='#128c7e'" onmouseout="this.style.backgroundColor='#25D366'">
+                                <i class="fab fa-whatsapp" style="margin-right: 8px;"></i>WhatsApp: +234 906 272 5926
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Pastor's Warden - Right -->
+                    <div class="leader-card" style="border: 2px solid var(--primary-color); position: relative;">
+                        <div style="position: absolute; top: -8px; left: 50%; transform: translateX(-50%); background: var(--primary-color); color: var(--white); padding: 0.2rem 0.8rem; border-radius: 0.8rem; font-size: 0.7rem; font-weight: 600; box-shadow: 0 2px 8px rgba(196, 30, 58, 0.3);">PASTOR'S WARDEN</div>
+                        <img src="assets/images/leaders/Bro. Seun Igbinyade.jpg" alt="Bro. Seun Igbinyade" class="leader-image">
+                        <div class="leader-name">Bro. Seun Igbinyade</div>
+                        <div class="leader-role">Pastor's Warden</div>
+                        <p class="leader-bio">Supporting pastoral duties and coordinating church activities with dedication and organizational skills.</p>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="pages/leadership.html" class="btn">
+                        <i class="fas fa-users"></i>
+                        Meet All Our Leaders
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prayer Points -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h3><i class="fas fa-praying-hands"></i> Prayer Points for the Week</h3>
+                        <ul style="list-style: none; padding: 0;" id="daily-prayers">
+                            <li style="margin-bottom: 1rem; padding: 1rem; background: #f8f9fa; border-left: 4px solid var(--primary-color); border-radius: 0.5rem;">
+                                <strong>Monday:</strong> Pray for wisdom and guidance for our church leadership
+                            </li>
+                            <li style="margin-bottom: 1rem; padding: 1rem; background: #f8f9fa; border-left: 4px solid var(--primary-color); border-radius: 0.5rem;">
+                                <strong>Tuesday:</strong> Intercede for the sick and those in need of healing
+                            </li>
+                            <li style="margin-bottom: 1rem; padding: 1rem; background: #f8f9fa; border-left: 4px solid var(--primary-color); border-radius: 0.5rem;">
+                                <strong>Wednesday:</strong> Pray for unity and love within our church family
+                            </li>
+                        </ul>
+                        <a href="pages/prayer.html" class="btn">
+                            <i class="fas fa-arrow-right"></i> View All Prayer Points
+                        </a>
+                    </div>
+                    
+                    <div class="card">
+                        <h3><i class="fas fa-lightbulb"></i> Food for Thought</h3>
+                        <blockquote style="font-style: italic; font-size: 1.1rem; line-height: 1.8; border-left: 4px solid var(--accent-color); padding-left: 1rem; margin: 1.5rem 0;">
+                            "This is the day the Lord has made; let us rejoice and be glad in it."
+                            <footer style="margin-top: 1rem; font-weight: 600; color: var(--primary-color);">- Psalm 118:24</footer>
+                        </blockquote>
+                        <p>Every day is a gift from God. Let us approach each day with gratitude, joy, and expectation of His goodness in our lives.</p>
+                        <a href="pages/prayer.html" class="btn">
+                            <i class="fas fa-heart"></i> Submit Prayer Request
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Contact -->
+        <section class="section" style="background: linear-gradient(135deg, var(--dark-color), #2c2c2c); color: var(--white);">
+            <div class="container">
+                <div class="grid grid-2">
+                    <div>
+                        <h2 style="color: var(--accent-color); margin-bottom: 1.5rem;">Get in Touch</h2>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <i class="fas fa-map-marker-alt" style="color: var(--accent-color); font-size: 1.2rem; width: 20px;"></i>
+                                <span>43, Arigbanla Street, Abekoko Bus-stop, Orile Agege, Lagos</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <i class="fas fa-phone" style="color: var(--accent-color); font-size: 1.2rem; width: 20px;"></i>
+                                <span>+234 906 275 9260 | +234 703 069 8300</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <i class="fab fa-whatsapp" style="color: var(--accent-color); font-size: 1.2rem; width: 20px;"></i>
+                                <a href="https://wa.me/+2349062725926" style="color: var(--white); text-decoration: none;">WhatsApp: +234 906 272 5926</a>
                             </div>
                         </div>
                     </div>
                     
+                    <div>
+                        <h3 style="color: var(--accent-color); margin-bottom: 1.5rem;">Service Times</h3>
+                        <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                <span><i class="fas fa-clock" style="color: var(--accent-color); margin-right: 0.5rem;"></i>Sunday Service</span>
+                                <span style="font-weight: 600;">10:00 AM</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                <span><i class="fas fa-clock" style="color: var(--accent-color); margin-right: 0.5rem;"></i>Bible Study</span>
+                                <span style="font-weight: 600;">Tuesday 5:00 PM</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0;">
+                                <span><i class="fas fa-clock" style="color: var(--accent-color); margin-right: 0.5rem;"></i>Gethsemane</span>
+                                <span style="font-weight: 600;">Wednesday 7:00 AM</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-form">
-                    <h3>Send Us a Message for prayer or counseling</h3>
-                    <form id="contactForm" autocomplete="off">
-                        <input type="text" name="name" placeholder="Name" required>
-                        <input type="text" name="address" placeholder="Address" required>
-                        <input type="number" name="phone" placeholder="Phone no.">
-                        <input type="email" name="email" placeholder="Email" required>
-                        <textarea name="message" placeholder="Your message" required></textarea>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
+                
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="pages/contact.html" class="btn">
+                        <i class="fas fa-envelope"></i>
+                        Contact Us
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-about">
-                    <h3>The African Church Salem Parish Of Christ Abekoko</h3>
-                    <p>A place of worship, fellowship, and spiritual growth.</p>
+                <div>
+                    <h3>Salem African Church of Christ</h3>
+                    <p>Abekoko Parish, Agege Lagos</p>
+                    <p>Building a community of faith, hope, and love in the heart of Lagos.</p>
+                    <p style="margin-top: 1rem; font-style: italic; color: var(--accent-color);">"Stay Updated • Stay Blessed"</p>
                 </div>
-                <div class="footer-links">
+                
+                <div>
                     <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#announcements">Announcements</a></li>
-                        <li><a href="#prayer-requests">Prayer Requests</a></li>
-                        <li><a href="#birthdays">Birthdays</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                    <ul class="footer-links">
+                        <li><a href="pages/about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="pages/leadership.html"><i class="fas fa-users"></i> Leadership</a></li>
+                        <li><a href="pages/services.html"><i class="fas fa-church"></i> Services</a></li>
+                        <li><a href="pages/events.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
                     </ul>
                 </div>
-                <div class="footer-social">
-                    <h3>Connect With Us</h3>
-                    <div class="church-social-links">
-                        <div class="social-link">
-                            <a href="https://www.facebook.com/salem.parish.abekoko" target="_blank" title="Follow Salem Church Abekoko on Facebook" style="display: flex; align-items: center; gap: 0.6rem; padding: 0.6rem 1rem; background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px; text-decoration: none; color: #495057; transition: all 0.2s ease; margin-bottom: 0.5rem;">
-                                <i class="fab fa-facebook-f" style="font-size: 1.1rem; color: #1877f2; width: 20px; text-align: center;"></i>
-                                <span style="font-weight: 500; font-size: 0.9rem;">Church Facebook Page</span>
-                            </a>
-                        </div>
-                        <div class="social-link">
-                            <a href="https://www.facebook.com/oyelola.olufemi1" target="_blank" title="Follow Rev'd Canon Olufemi Oyelola (Pastor) on Facebook" style="display: flex; align-items: center; gap: 0.6rem; padding: 0.6rem 1rem; background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px; text-decoration: none; color: #495057; transition: all 0.2s ease; margin-bottom: 0.5rem;">
-                                <i class="fab fa-facebook-f" style="font-size: 1.1rem; color: #1877f2; width: 20px; text-align: center;"></i>
-                                <span style="font-weight: 500; font-size: 0.9rem;">Pastor's Facebook Page</span>
-                            </a>
-                        </div>
-                        <div class="social-link">
-                            <a href="https://www.instagram.com/rev_olufemi_oyelola?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" title="Follow Rev'd Canon Olufemi Oyelola on Instagram" style="display: flex; align-items: center; gap: 0.6rem; padding: 0.6rem 1rem; background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px; text-decoration: none; color: #495057; transition: all 0.2s ease; margin-bottom: 0.5rem;">
-                                <i class="fab fa-instagram" style="font-size: 1.1rem; color: #e4405f; width: 20px; text-align: center;"></i>
-                                <span style="font-weight: 500; font-size: 0.9rem;">Pastor's Instagram</span>
-                            </a>
-                        </div>
-                        <div class="social-link">
-                            <a href="https://www.youtube.com/@femioyelola8118" target="_blank" title="Visit our YouTube Channel" style="display: flex; align-items: center; gap: 0.6rem; padding: 0.6rem 1rem; background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px; text-decoration: none; color: #495057; transition: all 0.2s ease;">
-                                <i class="fab fa-youtube" style="font-size: 1.1rem; color: #ff0000; width: 20px; text-align: center;"></i>
-                                <span style="font-weight: 500; font-size: 0.9rem;">YouTube Channel</span>
-                            </a>
-                        </div>
+                
+                <div>
+                    <h3>Get Involved</h3>
+                    <ul class="footer-links">
+                        <li><a href="pages/prayer.html"><i class="fas fa-praying-hands"></i> Prayer Requests</a></li>
+                        <li><a href="pages/get-involved.html"><i class="fas fa-hands-helping"></i> Volunteer</a></li>
+                        <li><a href="pages/get-involved.html#birthday"><i class="fas fa-birthday-cake"></i> Birthday Registration</a></li>
+                        <li><a href="pages/contact.html"><i class="fas fa-comment-alt"></i> Feedback</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Contact Info</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <p><i class="fas fa-map-marker-alt" style="color: var(--accent-color); margin-right: 0.5rem;"></i> 43, Arigbanla Street, Abekoko Bus-stop, Orile Agege, Lagos</p>
+                        <p><i class="fas fa-phone" style="color: var(--accent-color); margin-right: 0.5rem;"></i> +234 906 275 9260</p>
+                        <p><i class="fas fa-phone" style="color: var(--accent-color); margin-right: 0.5rem;"></i> +234 703 069 8300</p>
+                        <a href="https://wa.me/+2349062725926" style="color: var(--white); text-decoration: none;">
+                            <i class="fab fa-whatsapp" style="color: var(--accent-color); margin-right: 0.5rem;"></i> WhatsApp Chat
+                        </a>
+                    </div>
+                    <h3 style="margin-top: 1.5rem;">Follow Us</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <a href="https://www.facebook.com/salem.parish.abekoko" target="_blank" style="color: var(--white); text-decoration: none;">
+                            <i class="fab fa-facebook-f" style="color: var(--accent-color); margin-right: 0.5rem;"></i> Church Facebook
+                        </a>
+                        <a href="https://www.facebook.com/oyelola.olufemi1" target="_blank" style="color: var(--white); text-decoration: none;">
+                            <i class="fab fa-facebook-f" style="color: var(--accent-color); margin-right: 0.5rem;"></i> Pastor's Facebook
+                        </a>
+                        <a href="https://www.instagram.com/rev_olufemi_oyelola" target="_blank" style="color: var(--white); text-decoration: none;">
+                            <i class="fab fa-instagram" style="color: var(--accent-color); margin-right: 0.5rem;"></i> Pastor's Instagram
+                        </a>
+                        <a href="https://www.youtube.com/@femioyelola8118" target="_blank" style="color: var(--white); text-decoration: none;">
+                            <i class="fab fa-youtube" style="color: var(--accent-color); margin-right: 0.5rem;"></i> YouTube Channel
+                        </a>
                     </div>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; <span class="current-year">2025</span> Salem African Church of Christ. All rights reserved.</p>
+                <p>&copy; 2025 Salem African Church of Christ, Abekoko Parish. All rights reserved.</p>
+                <p>Built with ❤️ for the glory of God</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Enhanced Mobile Menu Toggle
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        const body = document.body;
+    <!-- Quick Action Buttons -->
+    <div class="quick-actions">
+        <a href="https://wa.me/+2349062725926" class="quick-action-btn whatsapp" title="WhatsApp Us">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="pages/prayer.html" class="quick-action-btn" title="Prayer Request">
+            <i class="fas fa-praying-hands"></i>
+        </a>
+        <a href="pages/contact.html" class="quick-action-btn" title="Contact Us">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
 
-        // Form Submission Handlers
-        
-        // Prayer Request Form
-        const prayerRequestForm = document.getElementById('prayerRequestForm');
-        if (prayerRequestForm) {
-            prayerRequestForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const formData = new FormData(this);
-                const templateParams = {
-                    form_type: 'Prayer Request',
-                    from_name: formData.get('prayer_name') || 'Anonymous',
-                    from_email: formData.get('prayer_email') || 'anonymous@prayer.com',
-                    phone: formData.get('prayer_phone') || 'Not provided',
-                    category: formData.get('prayer_category'),
-                    message: formData.get('prayer_request'),
-                    anonymous: formData.get('anonymous_prayer') ? 'Yes' : 'No'
-                };
-                
-emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
-                    .then(function(response) {
-                        showNotification('Prayer request submitted successfully! We will pray for you.', 'success');
-                        prayerRequestForm.reset();
-                    }, function(error) {
-                        showNotification('Failed to submit prayer request. Please try again.', 'error');
-                        console.error('EmailJS error:', error);
-                    });
-            });
-        }
-        
-        // Testimony Form
-        const testimonyForm = document.getElementById('testimonyForm');
-        if (testimonyForm) {
-            testimonyForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const formData = new FormData(this);
-                const templateParams = {
-                    form_type: 'Testimony',
-                    from_name: formData.get('testimony_name'),
-                    from_email: formData.get('testimony_email') || 'noemail@testimony.com',
-                    category: formData.get('testimony_category'),
-                    message: formData.get('testimony_text')
-                };
-                
-                emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
-                    .then(function(response) {
-                        showNotification('Testimony submitted successfully! Thank you for sharing God\'s goodness.', 'success');
-                        testimonyForm.reset();
-                    }, function(error) {
-                        showNotification('Failed to submit testimony. Please try again.', 'error');
-                        console.error('EmailJS error:', error);
-                    });
-            });
-        }
-        
-        // Birthday Form
-        const birthdayForm = document.getElementById('birthdayForm');
-        if (birthdayForm) {
-            birthdayForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const formData = new FormData(this);
-                const templateParams = {
-                    form_type: 'Birthday Registration',
-                    from_name: formData.get('birthday_name'),
-                    from_email: formData.get('birthday_email'),
-                    phone: formData.get('birthday_phone') || 'Not provided',
-                    birthday_date: formData.get('birthday_date'),
-                    message: formData.get('birthday_message') || 'No special message'
-                };
-                
-                emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
-                    .then(function(response) {
-                        showNotification('Birthday registered successfully! We look forward to celebrating with you.', 'success');
-                        birthdayForm.reset();
-                    }, function(error) {
-                        showNotification('Failed to register birthday. Please try again.', 'error');
-                        console.error('EmailJS error:', error);
-                    });
-            });
-        }
-        
-        // Volunteer Form
-        const volunteerForm = document.getElementById('volunteerForm');
-        if (volunteerForm) {
-            volunteerForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const formData = new FormData(this);
-                const templateParams = {
-                    form_type: 'Volunteer Registration',
-                    from_name: formData.get('volunteer_name'),
-                    from_email: formData.get('volunteer_email'),
-                    phone: formData.get('volunteer_phone'),
-                    ministry: formData.get('volunteer_ministry'),
-                    experience: formData.get('volunteer_experience') || 'No experience provided',
-                    availability: formData.get('volunteer_availability')
-                };
-                
-                emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
-                    .then(function(response) {
-                        showNotification('Volunteer registration submitted successfully! We will contact you soon.', 'success');
-                        volunteerForm.reset();
-                    }, function(error) {
-                        showNotification('Failed to submit volunteer registration. Please try again.', 'error');
-                        console.error('EmailJS error:', error);
-                    });
-            });
-        }
-        
-        // Feedback Form
-        const feedbackForm = document.getElementById('feedbackForm');
-        if (feedbackForm) {
-            feedbackForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const formData = new FormData(this);
-                const templateParams = {
-                    form_type: 'Feedback/Complaint',
-                    from_name: formData.get('feedback_name') || 'Anonymous',
-                    from_email: formData.get('feedback_email') || 'anonymous@feedback.com',
-                    feedback_type: formData.get('feedback_type'),
-                    category: formData.get('feedback_category'),
-                    message: formData.get('feedback_message'),
-                    anonymous: formData.get('anonymous_feedback') ? 'Yes' : 'No'
-                };
-                
-                emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
-                    .then(function(response) {
-                        showNotification('Feedback submitted successfully! Thank you for helping us improve.', 'success');
-                        feedbackForm.reset();
-                    }, function(error) {
-                        showNotification('Failed to submit feedback. Please try again.', 'error');
-                        console.error('EmailJS error:', error);
-                    });
-            });
-        }
-
-        if (menuToggle && navLinks) {
-            menuToggle.addEventListener('click', (e) => {
-                e.preventDefault();
-                navLinks.classList.toggle('active');
-                menuToggle.classList.toggle('active');
-                
-                // Prevent body scroll when menu is open
-                if (navLinks.classList.contains('active')) {
-                    body.style.overflow = 'hidden';
-                } else {
-                    body.style.overflow = '';
-                }
-            });
-
-            // Close mobile menu when clicking a link
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.addEventListener('click', () => {
-                    navLinks.classList.remove('active');
-                    menuToggle.classList.remove('active');
-                    body.style.overflow = '';
-                });
-            });
-
-            // Close menu when clicking outside
-            document.addEventListener('click', (e) => {
-                if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
-                    navLinks.classList.remove('active');
-                    menuToggle.classList.remove('active');
-                    body.style.overflow = '';
-                }
-            });
-
-            // Close menu on escape key
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && navLinks.classList.contains('active')) {
-                    navLinks.classList.remove('active');
-                    menuToggle.classList.remove('active');
-                    body.style.overflow = '';
-                }
-            });
-
-            // Handle window resize
-            window.addEventListener('resize', () => {
-                if (window.innerWidth > 767) {
-                    navLinks.classList.remove('active');
-                    menuToggle.classList.remove('active');
-                    body.style.overflow = '';
-                }
-            });
-        }
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 70,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Copy account number function
-        function copyAccountNumber() {
-            const accountNumber = '1010270199';
-            navigator.clipboard.writeText(accountNumber).then(function() {
-                showNotification('Account number copied to clipboard!', 'success');
-            }, function(err) {
-                console.error('Could not copy text: ', err);
-                showNotification('Failed to copy account number', 'error');
-            });
-        }
-
-        // Show notification function
-        function showNotification(message, type) {
-            // Remove existing notifications
-            const existingNotifications = document.querySelectorAll('.notification');
-            existingNotifications.forEach(notification => notification.remove());
-
-            // Create new notification
-            const notification = document.createElement('div');
-            notification.className = `notification ${type}`;
-            notification.innerHTML = `
-                <div class="notification-header">
-                    <div class="notification-icon">
-                        <i class="fas ${type === 'success' ? 'fa-check' : 'fa-exclamation-triangle'}"></i>
-                    </div>
-                    <div class="notification-content">
-                        <h4>${type === 'success' ? 'Success' : 'Error'}</h4>
-                        <p>${message}</p>
-                    </div>
-                </div>
-                <button class="notification-close" onclick="this.parentElement.remove()">
-                    <i class="fas fa-times"></i>
-                </button>
-            `;
-
-            document.body.appendChild(notification);
-
-            // Show notification
-            setTimeout(() => {
-                notification.classList.add('show');
-            }, 100);
-
-            // Auto remove after 5 seconds
-            setTimeout(() => {
-                notification.classList.remove('show');
-                setTimeout(() => {
-                    if (notification.parentElement) {
-                        notification.remove();
-                    }
-                }, 400);
-            }, 5000);
-        }
-
-        // Contact form handler
-        const contactForm = document.getElementById('contactForm');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const formData = new FormData(this);
-                const templateParams = {
-                    form_type: 'Contact Form',
-                    from_name: formData.get('name'),
-                    from_email: formData.get('email'),
-                    phone: formData.get('phone') || 'Not provided',
-                    address: formData.get('address'),
-                    message: formData.get('message')
-                };
-                
-                emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
-                    .then(function(response) {
-                        showNotification('Message sent successfully! We will get back to you soon.', 'success');
-                        contactForm.reset();
-                    }, function(error) {
-                        showNotification('Failed to send message. Please try again.', 'error');
-                        console.error('EmailJS error:', error);
-                    });
-            });
-        }
-
-        // Dynamic prayer points and thoughts
-        const prayerPoints = [
-            "Pray for the peace of Jerusalem and our nation",
-            "Intercede for the sick and those in need of healing",
-            "Pray for our church leadership and their families",
-            "Ask God for wisdom in all our decisions",
-            "Pray for the salvation of the lost",
-            "Intercede for our youth and children",
-            "Pray for financial breakthrough for church members"
-        ];
-
-        const thoughts = [
-            "Faith is taking the first step even when you don't see the whole staircase. - Martin Luther King Jr.",
-            "God's love is like the rain that falls on all. - Unknown",
-            "Trust in the Lord with all your heart and lean not on your own understanding. - Proverbs 3:5",
-            "Be still and know that I am God. - Psalm 46:10",
-            "For I know the plans I have for you, declares the Lord. - Jeremiah 29:11",
-            "The Lord is my shepherd; I shall not want. - Psalm 23:1",
-            "Cast all your anxiety on him because he cares for you. - 1 Peter 5:7"
-        ];
-
-        // Set random prayer points and thoughts
-        document.addEventListener('DOMContentLoaded', function() {
-            const prayerList = document.getElementById('daily-prayers');
-            const thoughtElement = document.getElementById('daily-thought');
-            
-            if (prayerList) {
-                prayerList.innerHTML = '';
-                const randomPrayers = prayerPoints.sort(() => 0.5 - Math.random()).slice(0, 5);
-                randomPrayers.forEach(prayer => {
-                    const li = document.createElement('li');
-                    li.textContent = prayer;
-                    prayerList.appendChild(li);
-                });
-            }
-            
-            if (thoughtElement) {
-                const randomThought = thoughts[Math.floor(Math.random() * thoughts.length)];
-                thoughtElement.textContent = randomThought;
-            }
-
-            // Set current year
-            const yearElement = document.querySelector('.current-year');
-            if (yearElement) {
-                yearElement.textContent = new Date().getFullYear();
-            }
-        });
-    </script>
     <!-- JavaScript -->
     <script>
-        // EmailJS Configuration - Single template for all forms
-        const EMAILJS_PUBLIC_KEY = 'Tk_a5VuZRTEMNh4SL';
-        const EMAILJS_SERVICE_ID = 'service_qr5y3or';
-        const EMAILJS_TEMPLATE_ID = 'template_nu6l6nf'; // Single template for all forms
+        // Page Loader - Simple and reliable
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('pageLoader');
+            if (loader) {
+                loader.style.opacity = '0';
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 300);
+            }
+        });
         
-        // Initialize EmailJS when the script loads
-        (function() {
-            if (typeof emailjs !== 'undefined') {
-                emailjs.init({
-                    publicKey: EMAILJS_PUBLIC_KEY,
-                });
-                console.log('EmailJS initialized successfully');
-                console.log('Service ID:', EMAILJS_SERVICE_ID);
-                console.log('Template ID:', EMAILJS_TEMPLATE_ID);
-            } else {
-                console.error('EmailJS library not loaded');
+        // Fallback - hide loader after 1 second regardless
+        setTimeout(() => {
+            const loader = document.getElementById('pageLoader');
+            if (loader) {
+                loader.style.display = 'none';
             }
-        })();
-
-        // Mobile Menu Toggle
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.querySelector('.menu-toggle');
-            const navLinks = document.querySelector('.nav-links');
-            const body = document.body;
-
-            if (menuToggle && navLinks) {
-                menuToggle.addEventListener('click', function() {
-                    menuToggle.classList.toggle('active');
-                    navLinks.classList.toggle('active');
-                    body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
-                });
-
-                // Close menu when clicking on a link
-                const navLinksItems = navLinks.querySelectorAll('a');
-                navLinksItems.forEach(link => {
-                    link.addEventListener('click', function() {
-                        menuToggle.classList.remove('active');
-                        navLinks.classList.remove('active');
-                        body.style.overflow = '';
-                    });
-                });
-
-                // Close menu when clicking outside
-                document.addEventListener('click', function(e) {
-                    if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
-                        menuToggle.classList.remove('active');
-                        navLinks.classList.remove('active');
-                        body.style.overflow = '';
-                    }
-                });
-            }
-        });
-
-        // Copy Account Number Function
-        function copyAccountNumber() {
-            const accountNumber = '1010270199';
-            
-            if (navigator.clipboard && window.isSecureContext) {
-                navigator.clipboard.writeText(accountNumber).then(() => {
-                    showNotification('Account number copied to clipboard!', 'success');
-                }).catch(() => {
-                    fallbackCopyTextToClipboard(accountNumber);
-                });
-            } else {
-                fallbackCopyTextToClipboard(accountNumber);
-            }
-        }
-
-        function fallbackCopyTextToClipboard(text) {
-            const textArea = document.createElement('textarea');
-            textArea.value = text;
-            textArea.style.top = '0';
-            textArea.style.left = '0';
-            textArea.style.position = 'fixed';
-            document.body.appendChild(textArea);
-            textArea.focus();
-            textArea.select();
-            
-            try {
-                document.execCommand('copy');
-                showNotification('Account number copied to clipboard!', 'success');
-            } catch (err) {
-                showNotification('Failed to copy account number. Please copy manually: ' + text, 'error');
-            }
-            
-            document.body.removeChild(textArea);
-        }
-
-        // Notification System
-        function showNotification(message, type = 'success') {
-            // Remove existing notifications
-            const existingNotifications = document.querySelectorAll('.notification');
-            existingNotifications.forEach(notification => notification.remove());
-
-            const notification = document.createElement('div');
-            notification.className = `notification ${type}`;
-            
-            const icon = type === 'success' ? 'fas fa-check-circle' : 'fas fa-exclamation-circle';
-            const title = type === 'success' ? 'Success!' : 'Error!';
-            
-            notification.innerHTML = `
-                <button class="notification-close" onclick="this.parentElement.remove()">&times;</button>
-                <div class="notification-header">
-                    <div class="notification-icon">
-                        <i class="${icon}"></i>
-                    </div>
-                    <div class="notification-content">
-                        <h4>${title}</h4>
-                        <p>${message}</p>
-                    </div>
-                </div>
-            `;
-            
-            document.body.appendChild(notification);
-            
-            // Show notification
-            setTimeout(() => {
-                notification.classList.add('show');
-            }, 100);
-            
-            // Auto remove after 5 seconds
-            setTimeout(() => {
-                if (notification.parentElement) {
-                    notification.classList.remove('show');
+        }, 1000);
+        
+        // Simple button ripple effect
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    let ripple = document.createElement('span');
+                    ripple.style.cssText = `
+                        position: absolute;
+                        border-radius: 50%;
+                        background: rgba(255, 255, 255, 0.6);
+                        transform: scale(0);
+                        animation: ripple-animation 0.6s linear;
+                        pointer-events: none;
+                        left: ${e.clientX - e.target.offsetLeft}px;
+                        top: ${e.clientY - e.target.offsetTop}px;
+                        width: 20px;
+                        height: 20px;
+                    `;
+                    this.appendChild(ripple);
+                    
                     setTimeout(() => {
-                        if (notification.parentElement) {
-                            notification.remove();
-                        }
-                    }, 400);
-                }
-            }, 5000);
-        }
-
-        // Form Submission Handler
-        function handleFormSubmission(formId, templateId, successMessage) {
-            const form = document.getElementById(formId);
-            if (!form) return;
-
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const submitButton = form.querySelector('button[type="submit"]');
-                const originalText = submitButton.innerHTML;
-                
-                // Show loading state
-                submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-                submitButton.disabled = true;
-                
-                // Prepare form data
-                const formData = new FormData(form);
-                const templateParams = {};
-                
-                for (let [key, value] of formData.entries()) {
-                    templateParams[key] = value;
-                }
-                
-                // Add timestamp
-                templateParams.timestamp = new Date().toLocaleString();
-                
-                // Send email using EmailJS with working configuration
-                console.log('Sending email with params:', templateParams);
-                emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
-                    .then(function(response) {
-                        console.log('SUCCESS!', response.status, response.text);
-                        showNotification(successMessage, 'success');
-                        form.reset();
-                    })
-                    .catch(function(error) {
-                        console.log('FAILED...', error);
-                        showNotification('Failed to send message. Please try again or contact us directly.', 'error');
-                    })
-                    .finally(function() {
-                        // Restore button state
-                        submitButton.innerHTML = originalText;
-                        submitButton.disabled = false;
-                    });
-            });
-        }
-
-        // Initialize all forms when DOM is loaded
-        document.addEventListener('DOMContentLoaded', function() {
-            // Contact Form
-            handleFormSubmission('contactForm', 'template_contact', 'Your message has been sent successfully! We will get back to you soon.');
-            
-            // Prayer Request Form
-            handleFormSubmission('prayerRequestForm', 'template_prayer', 'Your prayer request has been submitted. Our prayer team will pray for you.');
-            
-            // Testimony Form
-            handleFormSubmission('testimonyForm', 'template_testimony', 'Thank you for sharing your testimony! It will encourage others.');
-            
-            // Birthday Form
-            handleFormSubmission('birthdayForm', 'template_birthday', 'Your birthday has been registered! We look forward to celebrating with you.');
-            
-            // Volunteer Form
-            handleFormSubmission('volunteerForm', 'template_volunteer', 'Thank you for volunteering! We will contact you soon with more details.');
-            
-            // Feedback Form
-            handleFormSubmission('feedbackForm', 'template_feedback', 'Thank you for your feedback! We appreciate your input.');
-            
-            // Load dynamic content
-            loadDailyPrayers();
-            loadDailyThought();
-        });
-
-        // Dynamic Content Loading
-        function loadDailyPrayers() {
-            const prayers = [
-                'Pray for the peace of Jerusalem and our nation Nigeria',
-                'Pray for our church leadership and spiritual growth',
-                'Pray for the sick and those in need of healing',
-                'Pray for our youth and children\'s ministry',
-                'Pray for unity in our church family',
-                'Pray for evangelism and outreach in our community',
-                'Pray for God\'s provision and blessing upon our church'
-            ];
-            
-            const prayersList = document.getElementById('daily-prayers');
-            if (prayersList) {
-                prayersList.innerHTML = prayers.map(prayer => `<li>${prayer}</li>`).join('');
-            }
-        }
-
-        function loadDailyThought() {
-            const thoughts = [
-                '"Trust in the Lord with all your heart and lean not on your own understanding." - Proverbs 3:5',
-                '"For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you." - Jeremiah 29:11',
-                '"Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go." - Joshua 1:9',
-                '"The Lord is my shepherd, I lack nothing." - Psalm 23:1',
-                '"Cast all your anxiety on him because he cares for you." - 1 Peter 5:7',
-                '"And we know that in all things God works for the good of those who love him." - Romans 8:28',
-                '"The joy of the Lord is your strength." - Nehemiah 8:10'
-            ];
-            
-            const thoughtElement = document.getElementById('daily-thought');
-            if (thoughtElement) {
-                const today = new Date().getDay();
-                thoughtElement.textContent = thoughts[today] || thoughts[0];
-            }
-        }
-
-        // Smooth scrolling for navigation links
-        document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('a[href^="#"]');
-            
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    
-                    if (targetElement) {
-                        const headerHeight = document.querySelector('.header').offsetHeight;
-                        const targetPosition = targetElement.offsetTop - headerHeight - 20;
-                        
-                        window.scrollTo({
-                            top: targetPosition,
-                            behavior: 'smooth'
-                        });
-                    }
+                        ripple.remove();
+                    }, 600);
                 });
             });
         });
-
-        // Service Worker Registration for PWA
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(function(registration) {
-                        console.log('ServiceWorker registration successful');
-                    })
-                    .catch(function(error) {
-                        console.log('ServiceWorker registration failed');
-                    });
-            });
-        }
-
-        // Form validation enhancement
-        document.addEventListener('DOMContentLoaded', function() {
-            const forms = document.querySelectorAll('form');
-            
-            forms.forEach(form => {
-                const inputs = form.querySelectorAll('input, textarea, select');
-                
-                inputs.forEach(input => {
-                    input.addEventListener('blur', function() {
-                        validateField(this);
-                    });
-                    
-                    input.addEventListener('input', function() {
-                        if (this.classList.contains('error')) {
-                            validateField(this);
-                        }
-                    });
-                });
-            });
-        });
-
-        function validateField(field) {
-            const value = field.value.trim();
-            const isRequired = field.hasAttribute('required');
-            const fieldType = field.type;
-            
-            // Remove previous error styling
-            field.classList.remove('error');
-            
-            // Check if required field is empty
-            if (isRequired && !value) {
-                field.classList.add('error');
-                return false;
-            }
-            
-            // Email validation
-            if (fieldType === 'email' && value) {
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailRegex.test(value)) {
-                    field.classList.add('error');
-                    return false;
-                }
-            }
-            
-            // Phone validation
-            if (fieldType === 'tel' && value) {
-                const phoneRegex = /^[\+]?[0-9\s\-\(\)]{10,}$/;
-                if (!phoneRegex.test(value)) {
-                    field.classList.add('error');
-                    return false;
-                }
-            }
-            
-            return true;
-        }
-
-        // Add error styling to CSS
+        
+        // Add minimal CSS
         const style = document.createElement('style');
         style.textContent = `
-            .error {
-                border-color: var(--error-color) !important;
-                box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.1) !important;
+            @keyframes ripple-animation {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
             }
         `;
         document.head.appendChild(style);
+        
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
 
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        navLinks.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
     </script>
 </body>
 </html>
