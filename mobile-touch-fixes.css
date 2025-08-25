@@ -1,0 +1,67 @@
+/* ===== MOBILE TOUCH FIXES - PREVENT IMAGE SCALING ===== */
+/* Fix the specific issue where tapping images causes text to go out of borders */
+
+@media (max-width: 768px) {
+    /* Disable ALL hover/tap scaling effects on mobile */
+    .leader-card:hover,
+    .leader-card:active,
+    .leader-card:focus {
+        transform: none !important;
+        box-shadow: var(--shadow) !important;
+    }
+    
+    /* Prevent image scaling when tapped - THIS FIXES THE MAIN ISSUE */
+    .leader-card:hover .leader-image,
+    .leader-card:active .leader-image,
+    .leader-card:focus .leader-image {
+        transform: none !important;
+        border-color: var(--primary-color) !important;
+        filter: none !important;
+        box-shadow: none !important;
+    }
+    
+    /* Keep badges within card bounds - PREVENTS TEXT OVERFLOW */
+    .leader-card [style*="position: absolute"] {
+        max-width: 80% !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+    
+    /* Ensure vicar card doesn't scale either */
+    .leader-card[style*="transform: scale"] {
+        transform: none !important;
+        box-shadow: var(--shadow) !important;
+    }
+    
+    /* Remove all card hover effects on mobile */
+    .card:hover {
+        transform: none !important;
+        box-shadow: var(--shadow) !important;
+    }
+}
+
+/* Touch device specific fixes */
+@media (hover: none) and (pointer: coarse) {
+    /* This targets touch devices specifically */
+    .leader-card,
+    .leader-card:hover,
+    .leader-card:active {
+        transform: none !important;
+        transition: none !important;
+    }
+    
+    .leader-image,
+    .leader-card:hover .leader-image {
+        transform: none !important;
+        filter: none !important;
+    }
+    
+    /* Disable all scaling animations on touch devices */
+    .card:hover,
+    .btn:hover {
+        transform: none !important;
+    }
+}
