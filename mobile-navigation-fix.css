@@ -7,21 +7,27 @@
     .menu-toggle {
         display: flex !important;
         position: relative;
-        z-index: 1001;
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 8px;
+        z-index: 1001 !important;
+        background: none !important;
+        border: none !important;
+        cursor: pointer !important;
+        padding: 8px !important;
         border-radius: 4px;
         transition: background-color 0.3s ease;
+        width: 44px !important;
+        height: 44px !important;
         /* Ensure it's touchable */
-        -webkit-touch-callout: auto;
-        -webkit-user-select: auto;
-        -khtml-user-select: auto;
-        -moz-user-select: auto;
-        -ms-user-select: auto;
-        user-select: auto;
+        -webkit-touch-callout: auto !important;
+        -webkit-user-select: auto !important;
+        -khtml-user-select: auto !important;
+        -moz-user-select: auto !important;
+        -ms-user-select: auto !important;
+        user-select: auto !important;
         pointer-events: auto !important;
+        /* Remove any conflicting styles */
+        transform: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
     }
     
     .menu-toggle:hover,
@@ -73,27 +79,31 @@
     /* Fix mobile navigation menu */
     .nav-links {
         position: fixed !important;
-        top: 60px;
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 60px);
-        background: var(--white);
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 2rem 0;
-        transition: left 0.3s ease;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        overflow-y: auto;
-        gap: 1rem;
+        top: 60px !important;
+        left: -100% !important;
+        width: 100% !important;
+        height: calc(100vh - 60px) !important;
+        background: var(--white) !important;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        padding: 2rem 0 !important;
+        transition: left 0.3s ease !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+        z-index: 1000 !important;
+        overflow-y: auto !important;
+        gap: 1rem !important;
         /* Ensure menu items are touchable */
-        -webkit-touch-callout: auto;
-        -webkit-user-select: auto;
-        -khtml-user-select: auto;
-        -moz-user-select: auto;
-        -ms-user-select: auto;
-        user-select: auto;
+        -webkit-touch-callout: auto !important;
+        -webkit-user-select: auto !important;
+        -khtml-user-select: auto !important;
+        -moz-user-select: auto !important;
+        -ms-user-select: auto !important;
+        user-select: auto !important;
+        /* Remove any conflicting display properties */
+        display: flex !important;
+        opacity: 1 !important;
+        visibility: visible !important;
     }
     
     .nav-links.active {
