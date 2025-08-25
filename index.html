@@ -786,84 +786,90 @@
         </a>
     </div>
 
-    <!-- SUPER SIMPLE WORKING JAVASCRIPT -->
+    <!-- BULLETPROOF SIMPLE JAVASCRIPT -->
     <script>
-        console.log('🔴 CHURCH WEBSITE WITH INLINE CSS LOADING...');
+        console.log('🔴 BULLETPROOF MOBILE NAVIGATION LOADING...');
         
-        // SUPER SIMPLE MOBILE MENU
-        function initMobileMenu() {
-            const menuBtn = document.getElementById('menuToggle');
-            const navMenu = document.getElementById('navLinks');
+        // Simple toggle function - no complex logic
+        function toggleMobileMenu() {
+            console.log('🔴 Toggle function called');
             
-            console.log('🔴 Menu button found:', !!menuBtn);
-            console.log('🔴 Nav menu found:', !!navMenu);
-            
-            if (menuBtn && navMenu) {
-                console.log('✅ All menu elements found');
+            try {
+                const navMenu = document.getElementById('navLinks');
                 
-                // Open menu function
-                function openMenu() {
-                    console.log('🔴 OPENING MENU');
-                    navMenu.classList.add('active');
-                    document.body.style.overflow = 'hidden';
-                    console.log('✅ Menu opened - should see full screen navigation');
+                if (!navMenu) {
+                    console.log('❌ Nav menu not found');
+                    return;
                 }
                 
-                // Close menu function
-                function closeMenu() {
-                    console.log('🔴 CLOSING MENU');
+                const isActive = navMenu.classList.contains('active');
+                console.log('🔴 Menu currently active:', isActive);
+                
+                if (isActive) {
+                    // Close menu
                     navMenu.classList.remove('active');
                     document.body.style.overflow = '';
                     console.log('❌ Menu closed');
+                } else {
+                    // Open menu
+                    navMenu.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                    console.log('✅ Menu opened');
                 }
-                
-                // Add event listeners
-                menuBtn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    console.log('🔴 HAMBURGER CLICKED!');
-                    openMenu();
-                });
-                
-                menuBtn.addEventListener('touchend', function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    console.log('🔴 HAMBURGER TOUCH END!');
-                    openMenu();
-                });
-                
-                // Close menu when clicking navigation links
-                navMenu.addEventListener('click', function(e) {
-                    if (e.target.tagName === 'A') {
-                        console.log('🔴 Navigation link clicked, closing menu');
-                        closeMenu();
-                    }
-                });
-                
-                // Close menu when clicking outside
-                navMenu.addEventListener('click', function(e) {
-                    if (e.target === navMenu) {
-                        console.log('🔴 Clicked outside menu, closing');
-                        closeMenu();
-                    }
-                });
-                
-                console.log('🎉 MOBILE NAVIGATION READY!');
-                console.log('🔴 Look for 60px red button with gold border in top-right corner');
-            } else {
-                console.log('❌ Menu elements not found');
+            } catch (error) {
+                console.log('❌ Error in toggle function:', error);
             }
         }
         
-        // Initialize when page loads
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initMobileMenu);
-        } else {
-            initMobileMenu();
+        // Setup menu when page loads
+        function setupMenu() {
+            console.log('🔴 Setting up menu...');
+            
+            try {
+                const menuBtn = document.getElementById('menuToggle');
+                const navMenu = document.getElementById('navLinks');
+                
+                console.log('🔴 Menu button found:', !!menuBtn);
+                console.log('🔴 Nav menu found:', !!navMenu);
+                
+                if (menuBtn && navMenu) {
+                    // Remove any existing listeners
+                    menuBtn.onclick = null;
+                    menuBtn.ontouchend = null;
+                    
+                    // Add simple click handler
+                    menuBtn.onclick = function(e) {
+                        e.preventDefault();
+                        console.log('🔴 Button clicked!');
+                        toggleMobileMenu();
+                    };
+                    
+                    // Close menu when clicking links
+                    navMenu.onclick = function(e) {
+                        if (e.target.tagName === 'A') {
+                            console.log('🔴 Link clicked, closing menu');
+                            navMenu.classList.remove('active');
+                            document.body.style.overflow = '';
+                        }
+                    };
+                    
+                    console.log('✅ Menu setup complete!');
+                } else {
+                    console.log('❌ Menu elements not found');
+                }
+            } catch (error) {
+                console.log('❌ Error in setup:', error);
+            }
         }
         
-        // Also try after delay
-        setTimeout(initMobileMenu, 1000);
+        // Wait for page to load
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', setupMenu);
+        } else {
+            setupMenu();
+        }
+        
+        console.log('🔴 Script loaded successfully');
     </script>
 </body>
 </html>
