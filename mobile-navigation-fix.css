@@ -1,0 +1,103 @@
+/* ===== MOBILE NAVIGATION FIXES ===== */
+/* Fix mobile navigation issues and ensure hamburger menu works properly */
+
+/* Ensure mobile menu toggle is always clickable */
+@media (max-width: 768px) {
+    /* Fix hamburger menu button */
+    .menu-toggle {
+        display: flex !important;
+        position: relative;
+        z-index: 1001;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        /* Ensure it's touchable */
+        -webkit-touch-callout: auto;
+        -webkit-user-select: auto;
+        -khtml-user-select: auto;
+        -moz-user-select: auto;
+        -ms-user-select: auto;
+        user-select: auto;
+        pointer-events: auto !important;
+    }
+    
+    .menu-toggle:hover,
+    .menu-toggle:focus,
+    .menu-toggle:active {
+        background-color: rgba(196, 30, 58, 0.1);
+        outline: none;
+    }
+    
+    /* Fix hamburger lines */
+    .hamburger {
+        width: 24px;
+        height: 18px;
+        position: relative;
+        pointer-events: none;
+    }
+    
+    .hamburger span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: var(--primary-color);
+        border-radius: 2px;
+        transition: all 0.3s ease;
+        pointer-events: none;
+    }
+    
+    .hamburger span:nth-child(1) { top: 0; }
+    .hamburger span:nth-child(2) { top: 7px; }
+    .hamburger span:nth-child(3) { top: 14px; }
+    
+    /* Active state animation */
+    .menu-toggle.active .hamburger span:nth-child(1) {
+        top: 7px;
+        transform: rotate(135deg);
+    }
+    
+    .menu-toggle.active .hamburger span:nth-child(2) {
+        opacity: 0;
+        left: -60px;
+    }
+    
+    .menu-toggle.active .hamburger span:nth-child(3) {
+        top: 7px;
+        transform: rotate(-135deg);
+    }
+    
+    /* Fix mobile navigation menu */
+    .nav-links {
+        position: fixed !important;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: var(--white);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 2rem 0;
+        transition: left 0.3s ease;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        overflow-y: auto;
+        gap: 1rem;
+        /* Ensure menu items are touchable */
+        -webkit-touch-callout: auto;
+        -webkit-user-select: auto;
+        -khtml-user-select: auto;
+        -moz-user-select: auto;
+        -ms-user-select: auto;
+        user-select: auto;
+    }
+    
+    .nav-links.active {
+        left: 0 !important;
+    }
+    
+    /* Fix navigation links in mobile menu */\n    .nav-links a {\n        padding: 1rem 2rem;\n        width: 90%;\n        max-width: 300px;\n        text-align: center;\n        border: 2px solid rgba(196, 30, 58, 0.1);\n        background: rgba(255, 255, 255, 0.9);\n        min-height: 60px;\n        margin-bottom: 1rem;\n        border-radius: 12px;\n        font-weight: 600;\n        text-transform: uppercase;\n        letter-spacing: 1px;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        gap: 0.5rem;\n        transition: all 0.3s ease;\n        /* Ensure links are touchable */\n        -webkit-touch-callout: auto;\n        -webkit-user-select: auto;\n        -khtml-user-select: auto;\n        -moz-user-select: auto;\n        -ms-user-select: auto;\n        user-select: auto;\n        pointer-events: auto !important;\n        /* Remove any transform that might interfere */\n        transform: none !important;\n    }\n    \n    .nav-links a:hover,\n    .nav-links a:focus,\n    .nav-links a:active {\n        background: var(--primary-color);\n        color: var(--white);\n        border-color: var(--primary-color);\n        transform: none !important;\n    }\n    \n    .nav-links a.active {\n        background: var(--primary-color);\n        color: var(--white);\n        border-color: var(--primary-color);\n    }\n    \n    /* Hide desktop navigation on mobile */\n    .navbar {\n        display: block;\n    }\n    \n    /* Ensure header doesn't interfere */\n    .header {\n        position: fixed;\n        top: 0;\n        left: 0;\n        right: 0;\n        z-index: 1002;\n        background: var(--white);\n        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);\n    }\n    \n    /* Fix header container */\n    .header .container {\n        display: flex;\n        align-items: center;\n        justify-content: space-between;\n        min-height: 60px;\n        padding: 0 1rem;\n    }\n    \n    /* Ensure logo is clickable */\n    .logo {\n        pointer-events: auto !important;\n        -webkit-touch-callout: auto;\n        -webkit-user-select: auto;\n        user-select: auto;\n    }\n    \n    .logo img {\n        pointer-events: auto !important;\n    }\n}\n\n/* Fix for very small screens */\n@media (max-width: 480px) {\n    .nav-links a {\n        width: 95%;\n        padding: 0.8rem 1.5rem;\n        font-size: 0.9rem;\n    }\n    \n    .header .container {\n        padding: 0 0.5rem;\n    }\n    \n    .logo-text h1 {\n        font-size: 0.8rem;\n    }\n    \n    .logo-text p {\n        font-size: 0.6rem;\n    }\n}\n\n/* Ensure menu works on all touch devices */\n@media (hover: none) and (pointer: coarse) {\n    .menu-toggle,\n    .nav-links a {\n        pointer-events: auto !important;\n        -webkit-touch-callout: auto;\n        -webkit-user-select: auto;\n        user-select: auto;\n    }\n    \n    /* Remove hover effects that might interfere */\n    .nav-links a:hover {\n        transform: none !important;\n    }\n}
