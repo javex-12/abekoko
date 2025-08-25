@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     
     <!-- Cache Control Meta Tags -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -82,6 +85,9 @@
     
     <!-- EMERGENCY CSS FIX -->
     <link rel="stylesheet" href="EMERGENCY_CSS_FIX.css">
+    
+    <!-- MOBILE DEVICE SPECIFIC FIX -->
+    <link rel="stylesheet" href="MOBILE_DEVICE_FIX.css">
     
     <!-- INLINE EMERGENCY CSS -->
     <style>
@@ -584,6 +590,9 @@
         </a>
     </div>
 
+    <!-- MOBILE DEVICE SPECIFIC FIX -->
+    <script src="MOBILE_DEVICE_FIX.js"></script>
+    
     <!-- EMERGENCY MOBILE FIX -->
     <script src="SIMPLE_MOBILE_FIX.js"></script>
     
