@@ -2,68 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, shrink-to-fit=no">
     <title>About Us - Salem African Church of Christ</title>
-
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Learn about Salem African Church of Christ, Abekoko Parish. Our history, mission, vision, and beliefs that guide our church family in Agege, Lagos. Join our vibrant Christian community.">
-    <meta name="keywords" content="About Salem African Church, Church History, Mission, Vision, Beliefs, Abekoko Parish, Agege Lagos, Christian Community, African Church of Christ, Rev Canon Olufemi Oyelola, Church Values, Faith Community">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://abekokoparish.netlify.app/pages/about.html">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="../assets/images/gallery/logo.jpg">
-
-    <!-- Fonts & Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="../assets/css/main.css">
-    
-    <!-- Mobile Touch Fixes -->
-    <link rel="stylesheet" href="../mobile-touch-fixes.css">
-    
-    <!-- Mobile Navigation Fixes -->
-    <link rel="stylesheet" href="../mobile-navigation-fix.css">
-    
-    <!-- Cache Fix CSS -->
-    <link rel="stylesheet" href="../cache-fix.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header" id="header">
-        <div class="container">
-            <a href="../index.html" class="logo">
-                <img src="../assets/images/gallery/logo.jpg" alt="Salem Church Logo">
-                <div class="logo-text">
-                    <h1>Salem African Church of Christ Abekoko</h1>
-                    <p>Stay Updated • Stay Blessed</p>
-                </div>
-            </a>
-            
-            <nav class="navbar">
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="about.html" class="active"><i class="fas fa-info-circle"></i> About</a></li>
-                    <li><a href="leadership.html"><i class="fas fa-users"></i> Leadership</a></li>
-                    <li><a href="services.html"><i class="fas fa-church"></i> Services</a></li>
-                    <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
-                    <li><a href="prayer.html"><i class="fas fa-praying-hands"></i> Prayer</a></li>
-                    <li><a href="get-involved.html"><i class="fas fa-hands-helping"></i> Get Involved</a></li>
-                    <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
-                </ul>
-            </nav>
-            
-            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </button>
-        </div>
+    <header class="site-header" id="header">
+      <div class="container">
+        <a href="../index.html" class="logo">
+          <img src="../assets/images/gallery/logo.jpg" alt="Salem Church Logo">
+          <div class="logo-text">
+            <h1>Salem African Church of Christ Abekoko</h1>
+            <p>Stay Updated • Stay Blessed</p>
+          </div>
+        </a>
+        <nav class="navbar" aria-label="Main navigation">
+          <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+            <span class="hamburger"><span></span><span></span><span></span></span>
+          </button>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html" class="active"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="leadership.html"><i class="fas fa-users"></i> Leadership</a></li>
+            <li><a href="services.html"><i class="fas fa-church"></i> Services</a></li>
+            <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+            <li><a href="prayer.html"><i class="fas fa-praying-hands"></i> Prayer</a></li>
+            <li><a href="get-involved.html"><i class="fas fa-hands-helping"></i> Get Involved</a></li>
+            <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- Main Content -->
@@ -398,53 +367,31 @@
         </a>
     </div>
 
-    <!-- Mobile Navigation Scripts -->
-    <script src="../mobile-navigation-fix.js"></script>
-    <script src="../mobile-menu-simple.js"></script>
-    
     <!-- JavaScript -->
     <script>
-        // ENHANCED Mobile menu toggle with touch support
+        // Mobile menu toggle
         const menuToggle = document.getElementById('menuToggle');
         const navLinks = document.getElementById('navLinks');
 
-        if (menuToggle && navLinks) {
-            function toggleMenu(e) {
-                if (e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                }
-                console.log('Mobile menu toggle clicked');
-                menuToggle.classList.toggle('active');
-                navLinks.classList.toggle('active');
-                
-                if (navLinks.classList.contains('active')) {
-                    document.body.style.overflow = 'hidden';
-                } else {
-                    document.body.style.overflow = '';
-                }
-            }
-            
-            // Add both click and touch events
-            menuToggle.addEventListener('click', toggleMenu);
-            menuToggle.addEventListener('touchend', toggleMenu);
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
 
-            // Close mobile menu when clicking on a link
-            navLinks.addEventListener('click', (e) => {
-                if (e.target.tagName === 'A') {
-                    menuToggle.classList.remove('active');
-                    navLinks.classList.remove('active');
-                    document.body.style.overflow = '';
-                }
-            });
-        }
+        // Close mobile menu when clicking on a link
+        navLinks.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
+        });
 
         // Header scroll effect
         window.addEventListener('scroll', () => {
-            const header = document.getElementById('header');
-            if (window.scrollY > 100) {
+            const header = document.querySelector('.site-header');
+            if (header && window.scrollY > 100) {
                 header.classList.add('scrolled');
-            } else {
+            } else if (header) {
                 header.classList.remove('scrolled');
             }
         });
