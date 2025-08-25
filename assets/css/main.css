@@ -69,6 +69,10 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    /* Mobile performance optimizations */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 body {
@@ -80,6 +84,42 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     transition: var(--transition-smooth);
+    /* Mobile touch optimizations */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* Prevent text selection on mobile */
+    -webkit-tap-highlight-color: transparent;
+    /* Remove tap highlight */
+}
+
+/* Allow text selection for content areas */
+p, h1, h2, h3, h4, h5, h6, li, span, div.card, div.leader-bio {
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+/* Mobile image optimization */
+img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    /* Prevent image scaling/zooming */
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
 }
 
 /* Page transition effects */
@@ -744,6 +784,63 @@ h4, h5, h6 {
 
 .quick-action-btn.whatsapp:hover {
     background: #128c7e;
+}
+
+/* ===== MOBILE PERFORMANCE OPTIMIZATIONS ===== */
+
+/* Hardware acceleration for smooth performance */
+.header,
+.hero,
+.card,
+.leader-card,
+.btn,
+.nav-links,
+.quick-action-btn {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+}
+
+/* Optimize animations for mobile */
+@media (max-width: 768px) {
+    * {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    
+    /* Reduce animation complexity on mobile */
+    .card:hover,
+    .leader-card:hover,
+    .btn:hover {
+        transform: translateZ(0) !important;
+    }
+    
+    /* Disable complex animations on mobile */
+    .leader-card[style*="transform: scale(1.05)"] {
+        transform: none !important;
+        box-shadow: var(--shadow) !important;
+    }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) and (pointer: coarse) {
+    /* Mobile/touch devices */
+    .card:hover,
+    .leader-card:hover,
+    .btn:hover {
+        transform: none !important;
+    }
+    
+    /* Simplify hover effects for touch */
+    .nav-links a:hover {
+        transform: none !important;
+    }
 }
 
 /* ===== ANIMATIONS & TRANSITIONS ===== */
