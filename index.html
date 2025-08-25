@@ -79,6 +79,54 @@
     
     <!-- Cache Fix CSS -->
     <link rel="stylesheet" href="cache-fix.css?v=2025">
+    
+    <!-- EMERGENCY CSS FIX -->
+    <link rel="stylesheet" href="EMERGENCY_CSS_FIX.css">
+    
+    <!-- INLINE EMERGENCY CSS -->
+    <style>
+        @media (max-width: 768px) {
+            #navLinks {
+                position: fixed !important;
+                top: 60px !important;
+                left: -100% !important;
+                width: 100% !important;
+                height: calc(100vh - 60px) !important;
+                background: white !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                justify-content: flex-start !important;
+                padding: 50px 20px !important;
+                transition: left 0.3s ease !important;
+                z-index: 1000 !important;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important;
+                transform: none !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+            }
+            
+            #navLinks.active {
+                left: 0 !important;
+            }
+            
+            #navLinks a {
+                width: 90% !important;
+                max-width: 300px !important;
+                text-align: center !important;
+                padding: 15px 20px !important;
+                margin: 8px 0 !important;
+                border: 2px solid #c41e3a !important;
+                border-radius: 12px !important;
+                background: white !important;
+                color: #333 !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                gap: 8px !important;
+            }
+        }
+    </style>
 
     <!-- EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -553,6 +601,18 @@
                 menuBtn.onclick = function() {
                     console.log('📱 MENU CLICKED!');
                     navMenu.classList.toggle('active');
+                    
+                    // Lock/unlock body scroll
+                    if (navMenu.classList.contains('active')) {
+                        document.body.style.overflow = 'hidden';
+                        document.body.classList.add('menu-open');
+                        console.log('✅ Menu opened, body scroll locked');
+                    } else {
+                        document.body.style.overflow = '';
+                        document.body.classList.remove('menu-open');
+                        console.log('❌ Menu closed, body scroll unlocked');
+                    }
+                    
                     console.log('Menu active:', navMenu.classList.contains('active'));
                 };
                 

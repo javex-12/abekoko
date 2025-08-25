@@ -1,0 +1,144 @@
+/* ===== EMERGENCY CSS FIX FOR MOBILE NAVIGATION ===== */
+/* This will force the navigation menu to show when active */
+
+/* CRITICAL: Force mobile navigation to work */
+@media (max-width: 768px) {
+    /* Ensure hamburger button is visible and clickable */
+    .menu-toggle,
+    #menuToggle {
+        display: flex !important;
+        position: relative !important;
+        z-index: 1001 !important;
+        width: 44px !important;
+        height: 44px !important;
+        background: none !important;
+        border: none !important;
+        cursor: pointer !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 8px !important;
+    }
+    
+    /* Hamburger lines */
+    .hamburger span {
+        display: block !important;
+        width: 24px !important;
+        height: 3px !important;
+        background: #c41e3a !important;
+        margin: 2px 0 !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    /* FORCE NAVIGATION MENU TO BE POSITIONED CORRECTLY */
+    .nav-links,
+    #navLinks {
+        position: fixed !important;
+        top: 60px !important;
+        left: -100% !important;
+        width: 100% !important;
+        height: calc(100vh - 60px) !important;
+        background: white !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        padding: 50px 20px !important;
+        transition: left 0.3s ease !important;
+        z-index: 1000 !important;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important;
+        overflow-y: auto !important;
+        /* CRITICAL: Remove any conflicting properties */
+        transform: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+    }
+    
+    /* FORCE ACTIVE STATE TO SHOW MENU */
+    .nav-links.active,
+    #navLinks.active {
+        left: 0 !important;
+        /* Double ensure it's visible */
+        display: flex !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateX(0) !important;
+    }
+    
+    /* Style navigation links for mobile */
+    .nav-links a,
+    #navLinks a {
+        width: 90% !important;
+        max-width: 300px !important;
+        text-align: center !important;
+        padding: 15px 20px !important;
+        margin: 8px 0 !important;
+        border: 2px solid #c41e3a !important;
+        border-radius: 12px !important;
+        background: rgba(255, 255, 255, 0.95) !important;
+        color: #333 !important;
+        text-decoration: none !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 8px !important;
+        font-weight: 600 !important;
+        font-size: 16px !important;
+        transition: all 0.3s ease !important;
+        /* Remove any conflicting styles */
+        transform: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    
+    .nav-links a:hover,
+    #navLinks a:hover {
+        background: #c41e3a !important;
+        color: white !important;
+        transform: none !important;
+    }
+    
+    /* Hide desktop navigation on mobile */
+    .navbar {
+        display: block !important;
+    }
+    
+    /* Ensure header doesn't interfere */
+    .header {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 1002 !important;
+        background: white !important;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+    }
+    
+    /* Prevent body scroll when menu is open */
+    body.menu-open {
+        overflow: hidden !important;
+    }
+}
+
+/* DESKTOP: Hide hamburger menu */
+@media (min-width: 769px) {
+    .menu-toggle,
+    #menuToggle {
+        display: none !important;
+    }
+    
+    .nav-links,
+    #navLinks {
+        position: static !important;
+        display: flex !important;
+        flex-direction: row !important;
+        width: auto !important;
+        height: auto !important;
+        background: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        left: auto !important;
+        top: auto !important;
+    }
+}
