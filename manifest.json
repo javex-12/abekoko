@@ -1,12 +1,12 @@
 {
   "name": "Salem African Church of Christ Abekoko",
   "short_name": "Salem Church",
-  "description": "Salem African Church of Christ Abekoko Parish - Stay Updated, Stay Blessed",
+  "description": "Salem African Church of Christ, Abekoko Parish - A vibrant Christian community in Agege, Lagos. Join us for worship, fellowship, and spiritual growth.",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#c41e3a",
   "theme_color": "#c41e3a",
-  "orientation": "portrait-primary",
+  "orientation": "any",
   "icons": [
     {
       "src": "./assets/images/gallery/logo.jpg",

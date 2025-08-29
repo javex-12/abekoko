@@ -1,0 +1,567 @@
+/* ===== SALEM CHURCH LOADING SCREEN ===== */
+
+/* Loading Screen Container */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #c41e3a 0%, #8b1538 50%, #c41e3a 100%);
+    background-size: 400% 400%;
+    animation: gradientShift 3s ease infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.loading-screen.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+}
+
+/* Church Logo Animation */
+.loading-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #ffd700;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    margin-bottom: 30px;
+    animation: logoFloat 2s ease-in-out infinite, logoGlow 3s ease-in-out infinite;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.loading-logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: brightness(1.1) contrast(1.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.loading-logo img.loaded {
+    opacity: 1;
+}
+
+/* Church Name Animation */
+.loading-title {
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: titleSlideIn 1s ease-out 0.5s forwards;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+/* Church Motto */
+.loading-motto {
+    color: #ffd700;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: mottoFadeIn 1s ease-out 1s forwards;
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Cross Animation */
+.loading-cross {
+    position: relative;
+    width: 40px;
+    height: 60px;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: crossAppear 1s ease-out 1.5s forwards;
+}
+
+.loading-cross::before,
+.loading-cross::after {
+    content: '';
+    position: absolute;
+    background: #ffd700;
+    border-radius: 2px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.loading-cross::before {
+    width: 8px;
+    height: 60px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.loading-cross::after {
+    width: 40px;
+    height: 8px;
+    left: 0;
+    top: 15px;
+    transform: translateY(-50%);
+}
+
+/* Loading Dots Animation */
+.loading-dots {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: dotsAppear 1s ease-out 2s forwards;
+}
+
+.loading-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ffd700;
+    animation: dotBounce 1.4s ease-in-out infinite;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.loading-dot:nth-child(1) { animation-delay: 0s; }
+.loading-dot:nth-child(2) { animation-delay: 0.2s; }
+.loading-dot:nth-child(3) { animation-delay: 0.4s; }
+
+/* Loading Text */
+.loading-text {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    opacity: 0;
+    animation: textFadeIn 1s ease-out 2.2s forwards;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Floating Particles */
+.loading-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 215, 0, 0.6);
+    border-radius: 50%;
+    animation: particleFloat 6s linear infinite;
+}
+
+.particle:nth-child(1) { left: 10%; animation-delay: 0s; }
+.particle:nth-child(2) { left: 20%; animation-delay: 1s; }
+.particle:nth-child(3) { left: 30%; animation-delay: 2s; }
+.particle:nth-child(4) { left: 40%; animation-delay: 3s; }
+.particle:nth-child(5) { left: 50%; animation-delay: 4s; }
+.particle:nth-child(6) { left: 60%; animation-delay: 5s; }
+.particle:nth-child(7) { left: 70%; animation-delay: 0.5s; }
+.particle:nth-child(8) { left: 80%; animation-delay: 1.5s; }
+.particle:nth-child(9) { left: 90%; animation-delay: 2.5s; }
+
+/* Blessing Text Animation */
+.blessing-text {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-align: center;
+    opacity: 0;
+    animation: blessingFadeIn 1s ease-out 2.5s forwards;
+    font-style: italic;
+}
+
+/* ===== KEYFRAME ANIMATIONS ===== */
+
+@keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+@keyframes logoFloat {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+@keyframes logoGlow {
+    0%, 100% { 
+        border-color: #ffd700;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 215, 0, 0.3);
+    }
+    50% { 
+        border-color: #ffffff;
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4), 0 0 50px rgba(255, 255, 255, 0.4);
+    }
+}
+
+@keyframes titleSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes mottoFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes crossAppear {
+    from {
+        opacity: 0;
+        transform: scale(0) rotate(180deg);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+@keyframes dotsAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes dotBounce {
+    0%, 80%, 100% {
+        transform: scale(0.8);
+        opacity: 0.7;
+    }
+    40% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+@keyframes textFadeIn {
+    from {
+        opacity: 0;
+        letter-spacing: 5px;
+    }
+    to {
+        opacity: 1;
+        letter-spacing: 2px;
+    }
+}
+
+@keyframes particleFloat {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes blessingFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* ===== MOBILE OPTIMIZATIONS ===== */
+
+@media (max-width: 768px) {
+    .loading-logo {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 25px;
+    }
+    
+    .loading-title {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+    
+    .loading-motto {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    .loading-cross {
+        width: 30px;
+        height: 45px;
+        margin-bottom: 25px;
+    }
+    
+    .loading-cross::before {
+        width: 6px;
+        height: 45px;
+    }
+    
+    .loading-cross::after {
+        width: 30px;
+        height: 6px;
+        top: 12px;
+    }
+    
+    .loading-dots {
+        gap: 6px;
+        margin-bottom: 15px;
+    }
+    
+    .loading-dot {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .loading-text {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+    
+    .blessing-text {
+        bottom: 30px;
+        font-size: 0.8rem;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .loading-logo {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+    
+    .loading-title {
+        font-size: 1.3rem;
+    }
+    
+    .loading-motto {
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+    }
+    
+    .loading-text {
+        font-size: 0.8rem;
+    }
+}
+
+/* ===== QUICK LOADING SCREEN (Subsequent Pages) ===== */
+
+.loading-screen.quick-loading {
+    background: linear-gradient(135deg, #c41e3a, #8b1538);
+    animation: none;
+}
+
+.loading-logo-quick {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #ffd700;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    margin-bottom: 20px;
+    animation: quickFloat 1s ease-in-out infinite;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.loading-logo-quick img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.loading-logo-quick img.loaded {
+    opacity: 1;
+}
+
+.loading-logo-fallback-quick {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.loading-text-quick {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    opacity: 0;
+    animation: quickTextFadeIn 0.5s ease-out 0.3s forwards;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Quick loading animations */
+@keyframes quickFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+}
+
+@keyframes quickTextFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile optimizations for quick loading */
+@media (max-width: 768px) {
+    .loading-logo-quick {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+    
+    .loading-text-quick {
+        font-size: 0.9rem;
+    }
+    
+    .loading-logo-fallback-quick {
+        font-size: 2rem;
+    }
+}
+
+/* Fallback for when image doesn't load */
+.loading-logo-fallback {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #ffd700;
+    background: linear-gradient(135deg, #c41e3a, #8b1538);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    animation: logoFloat 2s ease-in-out infinite, logoGlow 3s ease-in-out infinite;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+}
+
+.loading-logo-fallback::before {
+    content: '⛪';
+    font-size: 3.5rem;
+    margin-bottom: 8px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+    animation: logoFloat 2s ease-in-out infinite;
+}
+
+.loading-logo-fallback .fallback-text {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== ACCESSIBILITY ===== */
+
+@media (prefers-reduced-motion: reduce) {
+    .loading-screen,
+    .loading-logo,
+    .loading-title,
+    .loading-motto,
+    .loading-cross,
+    .loading-dots,
+    .loading-dot,
+    .loading-text,
+    .blessing-text,
+    .particle {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .loading-screen {
+        background: #c41e3a;
+    }
+}
+
+/* ===== HIGH CONTRAST MODE ===== */
+
+@media (prefers-contrast: high) {
+    .loading-screen {
+        background: #000000;
+    }
+    
+    .loading-title,
+    .loading-text,
+    .blessing-text {
+        color: #ffffff;
+    }
+    
+    .loading-motto,
+    .loading-cross::before,
+    .loading-cross::after,
+    .loading-dot {
+        background: #ffff00;
+        color: #ffff00;
+    }
+}

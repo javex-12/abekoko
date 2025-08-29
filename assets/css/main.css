@@ -113,7 +113,6 @@ img {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    pointer-events: none;
     /* Prevent image scaling/zooming */
     -webkit-user-drag: none;
     -khtml-user-drag: none;
@@ -560,7 +559,7 @@ body.menu-open {
 
 /* ===== HERO SECTION ===== */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('../images/flyer1.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('..\images\flyer1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -858,7 +857,12 @@ body.menu-open {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-sm);
-    z-index: 999;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.quick-actions * {
+    pointer-events: auto;
 }
 
 .quick-action-btn {
@@ -876,6 +880,10 @@ body.menu-open {
     font-size: var(--font-size-xl);
     box-shadow: var(--shadow-lg);
     text-decoration: none;
+    position: relative;
+    z-index: 1;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .quick-action-btn:hover {
@@ -1454,12 +1462,54 @@ a[href*="wa.me"]:hover {
     background: rgba(0, 0, 0, 0.1);
 }
 
+/* ===== SPECIAL PROGRAM STYLES ===== */
+
+/* Program announcement responsive grid */
+.program-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .program-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    .program-grid div[style*="text-align: left"] {
+        text-align: center !important;
+    }
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
 
 /* Mobile First Approach */
 
 /* Extra Small Devices (phones, 576px and down) */
 @media (max-width: 576px) {
+    /* Quick Actions for Small Mobile */
+    .quick-actions {
+        bottom: 12px;
+        right: 12px;
+        z-index: 10001;
+        position: fixed !important;
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        gap: 8px;
+    }
+    
+    .quick-action-btn {
+        width: 52px;
+        height: 52px;
+        font-size: 1.1rem;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
     .container {
         padding: 0 1rem;
     }
@@ -1594,6 +1644,32 @@ a[href*="wa.me"]:hover {
 
 /* Medium Devices (tablets, 768px and up) */
 @media (max-width: 768px) {
+    /* Quick Actions Mobile Optimization */
+    .quick-actions {
+        bottom: 15px;
+        right: 15px;
+        z-index: 10000;
+        position: fixed !important;
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    
+    .quick-action-btn {
+        width: 56px;
+        height: 56px;
+        font-size: 1.2rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+    
+    .quick-action-btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+    }
+    
     .menu-toggle {
         display: flex;
     }
@@ -1819,18 +1895,6 @@ a[href*="wa.me"]:hover {
     }
 }
 
-    .quick-actions {
-        bottom: 10px;
-        right: 10px;
-    }
-
-    .quick-action-btn {
-        width: 50px;
-        height: 50px;
-        font-size: var(--font-size-lg);
-    }
-}
-
 @media (max-width: 480px) {
     .container {
         padding: 0 var(--spacing-md);
@@ -1933,22 +1997,3 @@ a[href*="wa.me"]:hover {
     }
     
     .section {
-        padding: var(--spacing-lg) 0;
-        break-inside: avoid;
-    }
-}
-
-/* Debugging Styles */
-.site-header .navbar {
-  border: none !important;
-  background: none !important;
-  padding: 0 !important;
-}
-.menu-toggle {
-  border: none !important;
-  background: none !important;
-}
-.nav-links {
-  border: none !important;
-  background: none !important;
-}

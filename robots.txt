@@ -8,11 +8,37 @@ Sitemap: https://abekokoparish.netlify.app/sitemap.xml
 Disallow: /docs/
 Disallow: /templates/
 Disallow: /.git/
+Disallow: /.qodo/
 Disallow: /ORGANIZATION_COMPLETE.md
+Disallow: /*SUMMARY.md
+Disallow: /*GUIDE.md
+Disallow: /*CHECKLIST.md
+Disallow: /test-navigation.html
+Disallow: /clear-cache.html
+Disallow: /apply-mobile-fix-to-all-pages.js
 
 # Allow important pages
 Allow: /pages/
 Allow: /assets/
+Allow: /manifest.json
+Allow: /social-share-optimization.html
+
+# Mobile-first indexing
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
 
 # Crawl delay (optional)
 Crawl-delay: 1

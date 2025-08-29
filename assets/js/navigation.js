@@ -83,9 +83,16 @@
             }
         });
         
-        // Close menu when clicking outside
+        // Close menu when clicking outside (on overlay)
         document.addEventListener('click', function(e) {
-            if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+            if (!menuToggle.contains(e.target) && !navLinks.contains(e.target) && navLinks.classList.contains('active')) {
+                closeMenu();
+            }
+        });
+        
+        // Close menu when clicking on overlay
+        navLinks.addEventListener('click', function(e) {
+            if (e.target === navLinks) {
                 closeMenu();
             }
         });
@@ -115,6 +122,12 @@
             if (firstLink) {
                 firstLink.focus();
             }
+            
+            // Add overlay click handler
+            setTimeout(() => {
+                const overlay = document.querySelector('.nav-links.active::before');
+                document.addEventListener('click', overlayClickHandler);
+            }, 100);
         }
         
         function closeMenu() {
@@ -122,6 +135,16 @@
             navLinks.classList.remove('active');
             body.classList.remove('menu-open');
             menuToggle.setAttribute('aria-expanded', 'false');
+            
+            // Remove overlay click handler
+            document.removeEventListener('click', overlayClickHandler);
+        }
+        
+        function overlayClickHandler(e) {
+            // Check if click is outside the navigation menu
+            if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+                closeMenu();
+            }
         }
         
         // Touch event handling for better mobile experience
@@ -254,12 +277,16 @@
 })();
 
 // Force reload navigation on mobile devices
+// Register service worker for caching
 if ('serviceWorker' in navigator) {
-    // Clear any cached service worker
-    navigator.serviceWorker.getRegistrations().then(function(registrations) {
-        for(let registration of registrations) {
-            registration.unregister();
-        }
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js')
+            .then(function(registration) {
+                console.log('Service Worker registered successfully:', registration.scope);
+            })
+            .catch(function(error) {
+                console.log('Service Worker registration failed:', error);
+            });
     });
 }
 
