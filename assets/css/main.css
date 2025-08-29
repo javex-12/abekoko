@@ -149,7 +149,7 @@ img {
 /* ===== TYPOGRAPHY ===== */
 h1, h2, h3 {
     font-family: var(--font-secondary);
-    font-weight: 700;
+    font-weight: 600;
     color: var(--primary-color);
     position: relative;
     display: inline-block;
@@ -197,10 +197,10 @@ h4, h5, h6 {
     text-decoration: none;
     cursor: pointer;
     transition: var(--transition-smooth);
-    min-height: 44px;
-    min-width: 44px;
+    min-height: fit-content;
+    min-width: fit-content;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
     z-index: 1;
 }
 
@@ -390,7 +390,7 @@ h4, h5, h6 {
 /* Responsive Navigation System */
 .site-header {
   width: 100%;
-  background: #fff;
+  background: linear-gradient(135deg,beige, whitesmoke);
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   position: sticky;
   top: 0;
@@ -444,14 +444,14 @@ h4, h5, h6 {
 .nav-links li a {
   text-decoration: none;
   color: #222;
-  font-weight: 500;
-  padding: 0.5rem 0.75rem;
-  border-radius: 4px;
-  transition: background 0.2s;
+  font-weight: 50px;
+  padding: 3px 5px;
+  border-radius: 4px double gold;
+  transition: background 0.2s ease;
 }
 .nav-links li a.active,
 .nav-links li a:hover {
-  background: #f7e6eb;
+  background: #b49d0c;
   color: #c41e3a;
 }
 @media (max-width: 900px) {
@@ -470,7 +470,7 @@ h4, h5, h6 {
     width: 70vw;
     max-width: 320px;
     height: calc(100vh - 60px);
-    background: #fff;
+    background: #d06915;
     box-shadow: -2px 0 16px rgba(0,0,0,0.08);
     flex-direction: column;
     align-items: flex-start;
@@ -548,14 +548,11 @@ body.menu-open {
 
 /* ===== MAIN CONTENT ===== */
 .main-content {
-    margin-top: 50px;
+    margin-top: 10px;
     min-height: calc(100vh - 50px);
 }
 
-/* Extra spacing for pages with header blocking issues */
-.main-content.page-spacing {
-    padding-top: 40px;
-}
+
 
 /* ===== HERO SECTION ===== */
 .hero {
@@ -563,22 +560,22 @@ body.menu-open {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    max-height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: var(--white);
     position: relative;
-    overflow: hidden;
+    overflow: auto;
     padding-top: 2rem;
 }
 
 .hero-content {
-    max-width: 800px;
+    max-width: fit-content;
     padding: var(--spacing-xl);
     text-align: center;
-    margin: 4rem auto 0 auto;
+    margin: 2rem auto 0 auto;
 }
 
 .hero-content h2 {
@@ -686,7 +683,7 @@ body.menu-open {
     transition: var(--transition-smooth);
     border: 1px solid rgba(0, 0, 0, 0.05);
     position: relative;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .leader-card::after {
@@ -717,7 +714,7 @@ body.menu-open {
     height: 200px;
     border-radius: var(--radius-full);
     object-fit: cover;
-    margin: 0 auto var(--spacing-lg);
+    margin-top: 3rem; 
     border: 4px solid var(--primary-color);
     transition: var(--transition-smooth);
     position: relative;
@@ -726,13 +723,13 @@ body.menu-open {
 
 .leader-card:hover .leader-image {
     border-color: var(--accent-color);
-    transform: scale(1.08) rotate(2deg);
+    transform: scale(1) rotate(2deg);
     box-shadow: 0 10px 30px rgba(196, 30, 58, 0.3);
 }
 
 .leader-name {
     font-size: var(--font-size-xl);
-    font-weight: 700;
+    font-weight: 700px;
     color: var(--primary-color);
     margin-bottom: var(--spacing-sm);
 }
@@ -858,7 +855,6 @@ body.menu-open {
     flex-direction: column;
     gap: var(--spacing-sm);
     z-index: 9999;
-    pointer-events: none;
 }
 
 .quick-actions * {
@@ -1503,9 +1499,9 @@ a[href*="wa.me"]:hover {
     }
     
     .quick-action-btn {
-        width: 52px;
-        height: 52px;
-        font-size: 1.1rem;
+        width: 48px; /* Smaller */
+        height: 48px; /* Smaller */
+        font-size: 1rem; /* Smaller */
         box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
         border: 2px solid rgba(255, 255, 255, 0.3);
     }
@@ -1656,9 +1652,9 @@ a[href*="wa.me"]:hover {
     }
     
     .quick-action-btn {
-        width: 56px;
-        height: 56px;
-        font-size: 1.2rem;
+        width: 52px; /* Smaller */
+        height: 52px; /* Smaller */
+        font-size: 1.1rem; /* Smaller */
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         border: 2px solid rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(10px);

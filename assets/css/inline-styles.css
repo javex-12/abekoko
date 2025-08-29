@@ -11,7 +11,7 @@
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 2rem;
+    margin-top: 2rem; /* Base margin-top */
 }
 
 /* Current Service Info */
@@ -22,13 +22,13 @@
 }
 
 .current-service-card {
-    max-width: 900px;
+    max-width: fit-content;
     margin: 0 auto;
     text-align: center;
-    background: var(--white);
+    background: whitesmoke;
     color: var(--dark-color);
-    padding: 2rem;
-    border-radius: 1rem;
+    padding: 20px;
+    border-radius: 4rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -48,8 +48,8 @@
 .service-info-item {
     padding: 1rem;
     background: rgba(196, 30, 58, 0.05);
-    border-radius: 0.8rem;
     border-left: 4px solid var(--primary-color);
+    border-radius: 0.8rem;
 }
 
 .service-info-item-title {
@@ -112,9 +112,9 @@
     transform: translateX(-50%);
     background: linear-gradient(135deg, var(--accent-color), #e6c200);
     color: var(--dark-color);
-    padding: 0.4rem 1.2rem;
+    padding: 0.4rem 1rem;
     border-radius: 1.2rem;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 700;
     box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5);
     text-transform: uppercase;
@@ -123,13 +123,14 @@
 
 .vicar-name {
     color: var(--accent-color);
-    font-size: 1.3rem;
+    font-size: 1rem; /* Even smaller */
 }
 
 .vicar-role {
-    color: var(--primary-color);
-    font-size: 1.1rem;
-    font-weight: 700;
+    color: var(--accent-color); /* Changed to yellow */
+    font-size: clamp(0.9rem, 1.5vw, 1rem); /* Matched leader-role font size */
+    font-weight: 600; /* Matched leader-role font weight */
+    font-style: italic; /* Matched leader-role font style */
 }
 
 .vicar-bio {
@@ -169,6 +170,11 @@
 .warden-card {
     border: 2px solid var(--primary-color);
     position: relative;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(196, 30, 58, 0.02));
+    transform: scale(1.05);
+    z-index: 10;
+    box-shadow: 0 15px 35px rgba(255, 215, 0, 0.3);
+    margin-top: 20px;
 }
 
 .warden-badge {
@@ -325,24 +331,30 @@
 }
 
 .program-image {
-    max-width: 100%;
+    max-width: fit-content;
     height: auto;
     display: block; /* Remove extra space below image */
     margin: 0 auto; /* Center the image */
+    border: 3px double goldenrod;
     border-radius: 0.5rem; /* Add some border-radius for aesthetics */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    box-shadow: 0 4px 15px rgba(235, 139, 5, 0.918); /* Add a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.program-image:hover{
+    transform: scale(1.18);
+    box-shadow: 0 4px 25px goldenrod;
 }
 
 /* Adjust image size for smaller screens within the program grid */
 @media (max-width: 768px) {
     .program-image {
-        max-width: 80%; /* Make image slightly smaller on very small screens */
+        max-width: 70%; /* Made smaller */
     }
 }
 
 @media (max-width: 576px) {
     .program-image {
-        max-width: 90%; /* Adjust for even smaller screens */
+        max-width: 60%; /* Made even smaller */
     }
 }
 
@@ -361,7 +373,7 @@
 
 @media (max-width: 576px) {
     .btn {
-        padding: 0.7rem 1.2rem; /* Even smaller padding */
+        padding: 0.3rem 1rem; /* Even smaller padding */
         font-size: 0.85rem; /* Even smaller font size */
     }
 
@@ -374,19 +386,18 @@
 /* Ensure hero buttons are visible and positioned correctly on mobile */
 @media (max-width: 768px) {
     .hero-buttons {
-        display: flex !important; /* Ensure flex display */
-        flex-direction: row; /* Ensure row direction for wrapping */
-        justify-content: center; /* Center buttons */
-        align-items: center; /* Align items vertically */
-        width: 100%; /* Take full width of parent */
-        margin-top: 1.5rem !important; /* Adjust margin top for spacing */
-        padding: 0 1rem; /* Add some horizontal padding */
-        box-sizing: border-box; /* Include padding in width calculation */
+        flex-direction: row; /* Default for 768px and up */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 1.5rem; /* Adjusted margin-top, removed !important */
+        padding: 0 1rem;
+        box-sizing: border-box;
     }
 
     .hero-buttons .btn {
-        flex-shrink: 0; /* Prevent buttons from shrinking too much */
-        margin: 0.5rem; /* Add some margin between buttons */
+        flex-shrink: 0;
+        margin: 0.5rem;
     }
 }
 
@@ -399,5 +410,27 @@
         width: 90%; /* Make buttons take up more width when stacked */
         max-width: 250px; /* Limit max width */
         margin: 0.4rem auto; /* Center stacked buttons */
+    }
+}
+
+/* Add media queries for even smaller sizes if needed, but start with this */
+@media (max-width: 576px) {
+    .vicar-name {
+        font-size: 0.9rem; /* Further reduced for very small screens */
+    }
+    .vicar-role {
+        font-size: 0.6rem; /* Further reduced for very small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .program-alert-section {
+        padding-top: 2rem; /* Reduced from 4rem (var(--spacing-3xl)) */
+    }
+}
+
+@media (max-width: 576px) {
+    .program-alert-section {
+        padding-top: 1.5rem; /* Even more reduced for very small screens */
     }
 }
