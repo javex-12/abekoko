@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://abekokoparish.netlify.app/sitemap.xml
+
+# Allow all search engines to crawl the site
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Disallow crawling of certain file types
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.docx$
+
+# Allow crawling of images
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Crawl delay (optional)
+Crawl-delay: 1
