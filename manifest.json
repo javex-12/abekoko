@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "Salem African Church of Christ Abekoko Parish",
   "short_name": "Salem Church",
   "description": "Salem African Church of Christ Abekoko Parish, Agege Lagos - Stay Updated, Stay Blessed. Join our church family for worship, fellowship, and spiritual growth.",
@@ -27,11 +28,49 @@
     },
     {
       "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iI2M0MWUzYSIvPgogICAgPGcgZmlsbD0id2hpdGUiPgogICAgICAgIDwhLS0gQ2h1cmNoIGJ1aWxkaW5nIC0tPgogICAgICAgIDxyZWN0IHg9IjE1MCIgeT0iMjAwIiB3aWR0aD0iMjEyIiBoZWlnaHQ9IjI1MCIvPgogICAgICAgIDwhLS0gQ2h1cmNoIHJvb2YgLS0+CiAgICAgICAgPHBvbHlnb24gcG9pbnRzPSIxNTAsMjAwIDI1NiwxMjAgMzYyLDIwMCIvPgogICAgICAgIDwhLS0gQ3Jvc3MgLS0+CiAgICAgICAgPHJlY3QgeD0iMjQwIiB5PSI4MCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjgwIi8+CiAgICAgICAgPHJlY3QgeD0iMjIwIiB5PSIxMDAiIHdpZHRoPSI3MiIgaGVpZ2h0PSIzMiIvPgogICAgICAgIDwhLS0gRG9vciAtLT4KICAgICAgICA8cmVjdCB4PSIyMjAiIHk9IjM1MCIgd2lkdGg9IjcyIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2M0MWUzYSIvPgogICAgICAgIDwhLS0gV2luZG93cyAtLT4KICAgICAgICA8cmVjdCB4PSIxODAiIHk9IjI1MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjZmZkNzAwIi8+CiAgICAgICAgPHJlY3QgeD0iMjkyIiB5PSIyNTAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI2MCIgZmlsbD0iI2ZmZDcwMCIvPgogICAgICAgIDwhLS0gQmVsbCB0b3dlciAtLT4KICAgICAgICA8cmVjdCB4PSIyMzAiIHk9IjE1MCIgd2lkdGg9IjUyIiBoZWlnaHQ9IjUwIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iMjU2IiBjeT0iMTc1IiByPSI4IiBmaWxsPSIjZmZkNzAwIi8+CiAgICAgICAgPCEtLSBIZWFydCBzeW1ib2wgZm9yIGxvdmUgLS0+CiAgICAgICAgPHBhdGggZD0iTTI1NiAzODBjLTEwLTEwLTMwLTMwLTMwLTUwIDAtMTUgMTUtMzAgMzAtMzAgMTUgMCAzMCAxNSAzMCAzMCAwIDIwLTIwIDQwLTMwIDUweiIgZmlsbD0iI2ZmZDcwMCIvPgogICAgPC9nPgo8L3N2Zz4=",
+=======
+  "name": "Salem African Church of Christ Abekoko",
+  "short_name": "Salem Church",
+  "description": "Salem African Church of Christ, Abekoko Parish - A vibrant Christian community in Agege, Lagos. Join us for worship, fellowship, and spiritual growth.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#c41e3a",
+  "theme_color": "#c41e3a",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "./assets/images/gallery/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/images/gallery/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/images/gallery/church-icon.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/images/gallery/church-icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzE2NmEzYSIvPgogICAgPGcgZmlsbD0id2hpdGUiPgogICAgICAgIDwhLS0gQ2h1cmNoIGJ1aWxkaW5nIC0tPgogICAgICAgIDxyZWN0IHg9IjE1MCIgeT0iMjAwIiB3aWR0aD0iMjEyIiBoZWlnaHQ9IjI1MCIvPgogICAgICAgIDwhLS0gQ2h1cmNoIHJvb2YgLS0+CiAgICAgICAgPHBvbHlnb24gcG9pbnRzPSIxNTAsMjAwIDI1NiwxMjAgMzYyLDIwMCIvPgogICAgICAgIDwhLS0gQ3Jvc3MgLS0+CiAgICAgICAgPHJlY3QgeD0iMjQwIiB5PSI4MCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjgwIi8+CiAgICAgICAgPHJlY3QgeD0iMjIwIiB5PSIxMDAiIHdpZHRoPSI3MiIgaGVpZ2h0PSIzMiIvPgogICAgICAgIDwhLS0gRG9vciAtLT4KICAgICAgICA8cmVjdCB4PSIyMjAiIHk9IjM1MCIgd2lkdGg9IjcyIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzE2NmEzYSIvPgogICAgICAgIDwhLS0gV2luZG93cyAtLT4KICAgICAgICA8cmVjdCB4PSIxODAiIHk9IjI1MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjMTY2YTNhIi8+CiAgICAgICAgPHJlY3QgeD0iMjkyIiB5PSIyNTAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI2MCIgZmlsbD0iIzE2NmEzYSIvPgogICAgICAgIDwhLS0gQmVsbCB0b3dlciAtLT4KICAgICAgICA8cmVjdCB4PSIyMzAiIHk9IjE1MCIgd2lkdGg9IjUyIiBoZWlnaHQ9IjUwIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iMjU2IiBjeT0iMTc1IiByPSI4IiBmaWxsPSIjMTY2YTNhIi8+CiAgICA8L2c+Cjwvc3ZnPg==",
+>>>>>>> 3024f9900854f59a0573fa8e32c90363bba1d21a
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
     }
   ],
+<<<<<<< HEAD
   "shortcuts": [
     {
       "name": "Sunday Service",
@@ -91,4 +130,11 @@
       "label": "Church Events and Activities"
     }
   ]
+=======
+  "categories": ["lifestyle", "social"],
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "./",
+  "prefer_related_applications": false
+>>>>>>> 3024f9900854f59a0573fa8e32c90363bba1d21a
 }

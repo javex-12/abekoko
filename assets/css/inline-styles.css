@@ -1,0 +1,436 @@
+/* inline-styles.css */
+
+/* Hero Section */
+.hero-home {
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../images/gallery/churchpic.png') center/cover;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem; /* Base margin-top */
+}
+
+/* Current Service Info */
+.current-service-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: 2rem 0;
+}
+
+.current-service-card {
+    max-width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    background: whitesmoke;
+    color: var(--dark-color);
+    padding: 20px;
+    border-radius: 4rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.current-service-title {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.current-service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.service-info-item {
+    padding: 1rem;
+    background: rgba(196, 30, 58, 0.05);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 0.8rem;
+}
+
+.service-info-item-title {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.service-info-item-content {
+    color: var(--dark-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.liturgical-color-green {
+    color: var(--success-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Announcements */
+.announcement-list {
+    list-style: none;
+    padding: 0;
+}
+
+.announcement-list-item {
+    margin-bottom: 0.5rem;
+}
+
+.announcement-icon {
+    color: var(--accent-color);
+    margin-right: 0.5rem;
+}
+
+.view-all-button {
+    margin-top: 1rem;
+}
+
+/* Leadership Preview */
+.leadership-preview-section {
+    background-color: #fafafa;
+}
+
+.vicar-card {
+    border: 4px solid var(--accent-color);
+    position: relative;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(196, 30, 58, 0.02));
+    transform: scale(1.05);
+    z-index: 10;
+    box-shadow: 0 15px 35px rgba(255, 215, 0, 0.3);
+}
+
+.vicar-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, var(--accent-color), #e6c200);
+    color: var(--dark-color);
+    padding: 0.4rem 1rem;
+    border-radius: 1.2rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.vicar-name {
+    color: var(--accent-color);
+    font-size: 1rem; /* Even smaller */
+}
+
+.vicar-role {
+    color: var(--accent-color); /* Changed to yellow */
+    font-size: clamp(0.9rem, 1.5vw, 1rem); /* Matched leader-role font size */
+    font-weight: 600; /* Matched leader-role font weight */
+    font-style: italic; /* Matched leader-role font style */
+}
+
+.vicar-bio {
+    font-weight: 500;
+}
+
+.vicar-contact {
+    margin-top: 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+}
+
+.vicar-contact-intro {
+    margin: 0 0 1rem 0;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.whatsapp-button {
+    background: #25D366;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    position: relative;
+    z-index: 101;
+    pointer-events: auto;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3);
+}
+
+.warden-card {
+    border: 2px solid var(--primary-color);
+    position: relative;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(196, 30, 58, 0.02));
+    transform: scale(1.05);
+    z-index: 10;
+    box-shadow: 0 15px 35px rgba(255, 215, 0, 0.3);
+    margin-top: 20px;
+}
+
+.warden-badge {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.8rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(196, 30, 58, 0.3);
+}
+
+.meet-all-leaders-button {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Prayer Points */
+.daily-prayers-list {
+    list-style: none;
+    padding: 0;
+}
+
+.prayer-point {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+/* Food for Thought */
+.food-for-thought-quote {
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    border-left: 4px solid var(--accent-color);
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+}
+
+.quote-footer {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Quick Contact */
+.quick-contact-section {
+    background: linear-gradient(135deg, var(--dark-color), #2c2c2c);
+    color: var(--white);
+}
+
+.quick-contact-title {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-detail-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-icon {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    width: 20px;
+}
+
+.contact-link {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.service-times-title {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.service-times-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.service-time-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.service-time-icon {
+    color: var(--accent-color);
+    margin-right: 0.5rem;
+}
+
+.service-time {
+    font-weight: 600;
+}
+
+.contact-us-button {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Footer */
+.footer-quote {
+    margin-top: 1rem;
+    font-style: italic;
+    color: var(--accent-color);
+}
+
+.footer-contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-contact-icon {
+    color: var(--accent-color);
+    margin-right: 0.5rem;
+}
+
+.footer-link {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer-social-title {
+    margin-top: 1.5rem;
+}
+
+.footer-social-link > i {
+    color: var(--accent-color);
+    margin-right: 0.5rem;
+}
+
+.program-image-container {
+    width: 100%; /* Ensure container takes full width */
+    text-align: center; /* Center the image if it's smaller than container */
+}
+
+.program-image {
+    max-width: fit-content;
+    height: auto;
+    display: block; /* Remove extra space below image */
+    margin: 0 auto; /* Center the image */
+    border: 3px double goldenrod;
+    border-radius: 0.5rem; /* Add some border-radius for aesthetics */
+    box-shadow: 0 4px 15px rgba(235, 139, 5, 0.918); /* Add a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.program-image:hover{
+    transform: scale(1.18);
+    box-shadow: 0 4px 25px goldenrod;
+}
+
+/* Adjust image size for smaller screens within the program grid */
+@media (max-width: 768px) {
+    .program-image {
+        max-width: 70%; /* Made smaller */
+    }
+}
+
+@media (max-width: 576px) {
+    .program-image {
+        max-width: 60%; /* Made even smaller */
+    }
+}
+
+/* Button size adjustments for mobile */
+@media (max-width: 768px) {
+    .btn {
+        padding: 0.8rem 1.5rem; /* Slightly smaller padding */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .whatsapp-button {
+        padding: 10px 20px; /* Smaller padding for this specific button */
+        font-size: 14px; /* Smaller font size */
+    }
+}
+
+@media (max-width: 576px) {
+    .btn {
+        padding: 0.3rem 1rem; /* Even smaller padding */
+        font-size: 0.85rem; /* Even smaller font size */
+    }
+
+    .whatsapp-button {
+        padding: 8px 16px; /* Even smaller padding for this specific button */
+        font-size: 13px; /* Even smaller font size */
+    }
+}
+
+/* Ensure hero buttons are visible and positioned correctly on mobile */
+@media (max-width: 768px) {
+    .hero-buttons {
+        flex-direction: row; /* Default for 768px and up */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 1.5rem; /* Adjusted margin-top, removed !important */
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+
+    .hero-buttons .btn {
+        flex-shrink: 0;
+        margin: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-buttons {
+        flex-direction: column; /* Stack buttons vertically on very small screens */
+        gap: 0.8rem; /* Adjust gap for stacked buttons */
+    }
+    .hero-buttons .btn {
+        width: 90%; /* Make buttons take up more width when stacked */
+        max-width: 250px; /* Limit max width */
+        margin: 0.4rem auto; /* Center stacked buttons */
+    }
+}
+
+/* Add media queries for even smaller sizes if needed, but start with this */
+@media (max-width: 576px) {
+    .vicar-name {
+        font-size: 0.9rem; /* Further reduced for very small screens */
+    }
+    .vicar-role {
+        font-size: 0.6rem; /* Further reduced for very small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .program-alert-section {
+        padding-top: 2rem; /* Reduced from 4rem (var(--spacing-3xl)) */
+    }
+}
+
+@media (max-width: 576px) {
+    .program-alert-section {
+        padding-top: 1.5rem; /* Even more reduced for very small screens */
+    }
+}

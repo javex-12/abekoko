@@ -1,0 +1,59 @@
+═══════════════════════════════════════════════════════════════
+🏛️ SALEM AFRICAN CHURCH OF CHRIST
+Abekoko Parish, Agege Lagos
+Stay Updated • Stay Blessed
+═══════════════════════════════════════════════════════════════
+
+📧 NEW {{form_type}} SUBMISSION
+
+Dear Church Administrator,
+
+You have received a new {{form_type}} submission from the church website.
+
+───────────────────────────────────────────────────────────────
+
+📋 CONTACT INFORMATION:
+{{#name}}👤 Name: {{name}}{{/name}}
+{{#email}}📧 Email: {{email}}{{/email}}
+{{#phone}}📞 Phone: {{phone}}{{/phone}}
+{{#subject}}📝 Subject: {{subject}}{{/subject}}
+{{#response_method}}📲 Preferred Response: {{response_method}}{{/response_method}}
+{{#address}}🏠 Address: {{address}}{{/address}}
+
+───────────────────────────────────────────────────────────────
+
+📝 FORM DETAILS:
+{{#category}}📂 Category: {{category}}{{/category}}
+{{#type}}🏷️ Type: {{type}}{{/type}}
+{{#birthday_date}}🎂 Birthday Date: {{birthday_date}}{{/birthday_date}}
+{{#ministry}}⛪ Preferred Ministry: {{ministry}}{{/ministry}}
+{{#experience}}💼 Experience/Skills: {{experience}}{{/experience}}
+{{#availability}}📅 Availability: {{availability}}{{/availability}}
+{{#anonymous}}🔒 Anonymous Submission: {{anonymous}}{{/anonymous}}
+
+───────────────────────────────────────────────────────────────
+
+💬 MESSAGE:
+{{#message}}
+{{message}}
+{{/message}}
+
+───────────────────────────────────────────────────────────────
+
+{{#timestamp}}⏰ Submitted on: {{timestamp}}{{/timestamp}}
+
+═══════════════════════════════════════════════════════════════
+
+📍 CHURCH CONTACT INFORMATION:
+43, Arigbanla Street, Abekoko Bus-stop, Orile Agege, Lagos
+📞 Phone: +234 906 275 9260 | +234 703 069 8300
+💬 WhatsApp: +234 906 272 5926
+
+This message was automatically sent from the Salem African Church 
+website contact system. Please respond promptly to serve our 
+church family effectively.
+
+God bless,
+Salem African Church Website System
+
+═══════════════════════════════════════════════════════════════

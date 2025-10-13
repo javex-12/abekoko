@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 
+<<<<<<< HEAD
 # Sitemap location
 Sitemap: https://abekokoparish.netlify.app/sitemap.xml
 
@@ -22,6 +23,46 @@ Disallow: /*.docx$
 # Allow crawling of images
 User-agent: Googlebot-Image
 Allow: /images/
+=======
+# Sitemap
+Sitemap: https://abekokoparish.netlify.app/sitemap.xml
+
+# Disallow sensitive areas
+Disallow: /docs/
+Disallow: /templates/
+Disallow: /.git/
+Disallow: /.qodo/
+Disallow: /ORGANIZATION_COMPLETE.md
+Disallow: /*SUMMARY.md
+Disallow: /*GUIDE.md
+Disallow: /*CHECKLIST.md
+Disallow: /test-navigation.html
+Disallow: /clear-cache.html
+Disallow: /apply-mobile-fix-to-all-pages.js
+
+# Allow important pages
+Allow: /pages/
+Allow: /assets/
+Allow: /manifest.json
+Allow: /social-share-optimization.html
+
+# Mobile-first indexing
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+>>>>>>> 3024f9900854f59a0573fa8e32c90363bba1d21a
 
 # Crawl delay (optional)
 Crawl-delay: 1
